@@ -1,0 +1,81 @@
+method,percentile_or_K,model,pred_class,category,proportion,n_selected
+proportional_K,5.0,biasdetector,TP,Emotional/Evaluative,95.1219512195122,82
+proportional_K,5.0,biasdetector,TP,Explicit Bias Terms,3.658536585365854,82
+proportional_K,5.0,biasdetector,TP,Framing/Reporting Verbs,0.0,82
+proportional_K,5.0,biasdetector,TP,Function/Temporal Words,1.2195121951219512,82
+proportional_K,10.0,biasdetector,TP,Emotional/Evaluative,95.70552147239263,163
+proportional_K,10.0,biasdetector,TP,Explicit Bias Terms,1.8404907975460123,163
+proportional_K,10.0,biasdetector,TP,Framing/Reporting Verbs,1.8404907975460123,163
+proportional_K,10.0,biasdetector,TP,Function/Temporal Words,0.6134969325153374,163
+proportional_K,20.0,biasdetector,TP,Emotional/Evaluative,96.3302752293578,327
+proportional_K,20.0,biasdetector,TP,Explicit Bias Terms,0.9174311926605505,327
+proportional_K,20.0,biasdetector,TP,Framing/Reporting Verbs,1.2232415902140672,327
+proportional_K,20.0,biasdetector,TP,Function/Temporal Words,1.529051987767584,327
+proportional_K,30.0,biasdetector,TP,Emotional/Evaluative,96.3265306122449,490
+proportional_K,30.0,biasdetector,TP,Explicit Bias Terms,0.6122448979591837,490
+proportional_K,30.0,biasdetector,TP,Framing/Reporting Verbs,0.8163265306122449,490
+proportional_K,30.0,biasdetector,TP,Function/Temporal Words,2.2448979591836733,490
+proportional_K,5.0,biasdetector,FP,Emotional/Evaluative,90.9090909090909,33
+proportional_K,5.0,biasdetector,FP,Explicit Bias Terms,3.0303030303030303,33
+proportional_K,5.0,biasdetector,FP,Framing/Reporting Verbs,3.0303030303030303,33
+proportional_K,5.0,biasdetector,FP,Function/Temporal Words,3.0303030303030303,33
+proportional_K,10.0,biasdetector,FP,Emotional/Evaluative,90.9090909090909,66
+proportional_K,10.0,biasdetector,FP,Explicit Bias Terms,1.5151515151515151,66
+proportional_K,10.0,biasdetector,FP,Framing/Reporting Verbs,3.0303030303030303,66
+proportional_K,10.0,biasdetector,FP,Function/Temporal Words,4.545454545454546,66
+proportional_K,20.0,biasdetector,FP,Emotional/Evaluative,92.42424242424242,132
+proportional_K,20.0,biasdetector,FP,Explicit Bias Terms,0.7575757575757576,132
+proportional_K,20.0,biasdetector,FP,Framing/Reporting Verbs,2.272727272727273,132
+proportional_K,20.0,biasdetector,FP,Function/Temporal Words,4.545454545454546,132
+proportional_K,30.0,biasdetector,FP,Emotional/Evaluative,90.9090909090909,198
+proportional_K,30.0,biasdetector,FP,Explicit Bias Terms,0.5050505050505051,198
+proportional_K,30.0,biasdetector,FP,Framing/Reporting Verbs,2.0202020202020203,198
+proportional_K,30.0,biasdetector,FP,Function/Temporal Words,6.565656565656566,198
+proportional_K,5.0,daroberta,TP,Emotional/Evaluative,91.78082191780823,73
+proportional_K,5.0,daroberta,TP,Explicit Bias Terms,2.73972602739726,73
+proportional_K,5.0,daroberta,TP,Framing/Reporting Verbs,5.47945205479452,73
+proportional_K,5.0,daroberta,TP,Function/Temporal Words,0.0,73
+proportional_K,10.0,daroberta,TP,Emotional/Evaluative,94.48275862068965,145
+proportional_K,10.0,daroberta,TP,Explicit Bias Terms,1.3793103448275863,145
+proportional_K,10.0,daroberta,TP,Framing/Reporting Verbs,4.137931034482759,145
+proportional_K,10.0,daroberta,TP,Function/Temporal Words,0.0,145
+proportional_K,20.0,daroberta,TP,Emotional/Evaluative,96.55172413793103,290
+proportional_K,20.0,daroberta,TP,Explicit Bias Terms,0.6896551724137931,290
+proportional_K,20.0,daroberta,TP,Framing/Reporting Verbs,2.7586206896551726,290
+proportional_K,20.0,daroberta,TP,Function/Temporal Words,0.0,290
+proportional_K,30.0,daroberta,TP,Emotional/Evaluative,95.86206896551724,435
+proportional_K,30.0,daroberta,TP,Explicit Bias Terms,0.45977011494252873,435
+proportional_K,30.0,daroberta,TP,Framing/Reporting Verbs,2.0689655172413794,435
+proportional_K,30.0,daroberta,TP,Function/Temporal Words,1.6091954022988506,435
+proportional_K,5.0,daroberta,FP,Emotional/Evaluative,83.33333333333333,12
+proportional_K,5.0,daroberta,FP,Explicit Bias Terms,0.0,12
+proportional_K,5.0,daroberta,FP,Framing/Reporting Verbs,16.666666666666668,12
+proportional_K,5.0,daroberta,FP,Function/Temporal Words,0.0,12
+proportional_K,10.0,daroberta,FP,Emotional/Evaluative,84.0,25
+proportional_K,10.0,daroberta,FP,Explicit Bias Terms,0.0,25
+proportional_K,10.0,daroberta,FP,Framing/Reporting Verbs,12.0,25
+proportional_K,10.0,daroberta,FP,Function/Temporal Words,4.0,25
+proportional_K,20.0,daroberta,FP,Emotional/Evaluative,86.0,50
+proportional_K,20.0,daroberta,FP,Explicit Bias Terms,0.0,50
+proportional_K,20.0,daroberta,FP,Framing/Reporting Verbs,6.0,50
+proportional_K,20.0,daroberta,FP,Function/Temporal Words,8.0,50
+proportional_K,30.0,daroberta,FP,Emotional/Evaluative,82.66666666666667,75
+proportional_K,30.0,daroberta,FP,Explicit Bias Terms,0.0,75
+proportional_K,30.0,daroberta,FP,Framing/Reporting Verbs,6.666666666666667,75
+proportional_K,30.0,daroberta,FP,Function/Temporal Words,10.666666666666666,75
+threshold_p75,0.040638,biasdetector,TP,Emotional/Evaluative,95.98997493734336,399
+threshold_p75,0.040638,biasdetector,TP,Explicit Bias Terms,0.7518796992481203,399
+threshold_p75,0.040638,biasdetector,TP,Framing/Reporting Verbs,1.0025062656641603,399
+threshold_p75,0.040638,biasdetector,TP,Function/Temporal Words,2.255639097744361,399
+threshold_p75,0.040638,biasdetector,FP,Emotional/Evaluative,90.47619047619048,231
+threshold_p75,0.040638,biasdetector,FP,Explicit Bias Terms,0.4329004329004329,231
+threshold_p75,0.040638,biasdetector,FP,Framing/Reporting Verbs,2.1645021645021645,231
+threshold_p75,0.040638,biasdetector,FP,Function/Temporal Words,6.926406926406926,231
+threshold_p75,0.040638,daroberta,TP,Emotional/Evaluative,96.66666666666667,330
+threshold_p75,0.040638,daroberta,TP,Explicit Bias Terms,0.6060606060606061,330
+threshold_p75,0.040638,daroberta,TP,Framing/Reporting Verbs,2.4242424242424243,330
+threshold_p75,0.040638,daroberta,TP,Function/Temporal Words,0.30303030303030304,330
+threshold_p75,0.040638,daroberta,FP,Emotional/Evaluative,87.17948717948718,39
+threshold_p75,0.040638,daroberta,FP,Explicit Bias Terms,0.0,39
+threshold_p75,0.040638,daroberta,FP,Framing/Reporting Verbs,7.6923076923076925,39
+threshold_p75,0.040638,daroberta,FP,Function/Temporal Words,5.128205128205129,39

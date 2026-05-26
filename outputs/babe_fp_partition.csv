@@ -1,0 +1,5 @@
+partition,model,n_sentences,n_selected_words,threshold_p75,pct_emotional_evaluative,pct_explicit_bias,pct_framing_reporting,pct_function_temporal
+shared,biasdetector,5,28,0.047801,92.86,0.0,0.0,7.14
+shared,daroberta,5,19,0.047801,89.47,0.0,0.0,10.53
+bd_only,biasdetector,32,177,0.047801,89.83,0.56,2.82,6.78
+dr_only,daroberta,7,20,0.047801,75.0,0.0,15.0,10.0

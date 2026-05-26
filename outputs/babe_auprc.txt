@@ -1,0 +1,13 @@
+BABE test set — AUPRC
+============================================================
+n = 1000
+positives = 559 (55.90%)
+prevalence baseline (random classifier AUPRC) = 0.5590
+
+model                     AUPRC       lift      ratio
+------------------------------------------------------------
+bias-detector            0.9528    +0.3938     1.705x
+DA-RoBERTa-BABE-FT       0.9571    +0.3981     1.712x
+
+lift  = AUPRC - prevalence
+ratio = AUPRC / prevalence (how many times better than random)
