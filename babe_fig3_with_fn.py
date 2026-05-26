@@ -33,6 +33,7 @@ OUT_PDF  = ROOT / "outputs" / "paperReady" / "babe_fig3_with_fn.pdf"
 SAMPLES = [
     ("biasdetector", "bias-detector", ROOT / "outputs" / "shap_samples.jsonl"),
     ("daroberta",    "DA-RoBERTa",    ROOT / "outputs" / "shap_samples_daroberta.jsonl"),
+    ("deberta",      "DeBERTa-base",  ROOT / "outputs" / "shap_samples_deberta.jsonl"),
 ]
 
 COLORS = {"TP": "#2ecc71", "FP": "#e74c3c", "TN": "#3498db", "FN": "#f39c12"}

@@ -19,15 +19,15 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 SENTENCE = "And who, exactly, sucked as much as the other side?"
 
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 MODELS = [
     ("biasdetector", "himel7/bias-detector"),
     ("daroberta", "mediabiasgroup/DA-RoBERTa-BABE-FT"),
+    ("deberta", os.path.join(_PROJECT_ROOT, "models", "deberta-base-babe-ft")),
 ]
 
-OUT_DIR = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "outputs", "examples",
-)
+OUT_DIR = os.path.join(_PROJECT_ROOT, "outputs", "examples")
 MAX_LENGTH = 256
 
 

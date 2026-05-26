@@ -173,6 +173,8 @@ MODELS = [
     ("biasdetector", "himel7/bias-detector", OUT_DIR / "shap_samples.jsonl"),
     ("daroberta",    "mediabiasgroup/DA-RoBERTa-BABE-FT",
      OUT_DIR / "shap_samples_daroberta.jsonl"),
+    ("deberta",      str(ROOT / "models" / "deberta-base-babe-ft"),
+     OUT_DIR / "shap_samples_deberta.jsonl"),
 ]
 
 MAX_LENGTH = 256
@@ -316,7 +318,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n_fn", type=int, default=100)
     ap.add_argument("--seed", type=int, default=7)
-    ap.add_argument("--models", type=str, default="biasdetector,daroberta")
+    ap.add_argument("--models", type=str, default="biasdetector,daroberta,deberta")
     args = ap.parse_args()
 
     print("Loading BABE test split ...")

@@ -48,3 +48,6 @@ secrets.json
 
 # Logs
 *.log
+
+# Trained model checkpoints (large, regeneratable)
+models/

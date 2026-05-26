@@ -372,6 +372,11 @@ def build_predict_fn(model, tokenizer, device: torch.device, max_length: int, po
     """
 
     def predict(texts: List[str]) -> np.ndarray:
+        if hasattr(texts, "tolist"):
+            texts = texts.tolist()
+        elif isinstance(texts, str):
+            texts = [texts]
+        texts = [str(t) for t in texts]
         enc = tokenizer(
             texts,
             padding=True,
@@ -481,8 +486,8 @@ def main():
     label_col = args.label_col.strip() or pick_label_column(cols)
     print(f"[INFO] Using text_col='{text_col}' label_col='{label_col}' from columns={cols}")
 
-    texts = [str(x) for x in ds[text_col]]
-    y_true = normalize_label_values(ds[label_col])
+    texts = [str(x) for x in list(ds[text_col])]
+    y_true = normalize_label_values(list(ds[label_col]))
 
     # ---- Batch inference
     probs_all = []

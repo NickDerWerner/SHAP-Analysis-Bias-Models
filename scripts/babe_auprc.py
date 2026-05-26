@@ -25,6 +25,8 @@ OUT_PATH = ROOT / "outputs" / "babe_auprc.txt"
 MODELS = [
     ("biasdetector", "bias-detector",       "himel7/bias-detector"),
     ("daroberta",    "DA-RoBERTa-BABE-FT",  "mediabiasgroup/DA-RoBERTa-BABE-FT"),
+    ("deberta",      "DeBERTa-base BABE-FT",
+                     str(ROOT / "models" / "deberta-base-babe-ft")),
 ]
 MAX_LENGTH = 256
 BATCH = 32

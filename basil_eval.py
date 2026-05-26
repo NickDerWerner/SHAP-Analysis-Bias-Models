@@ -30,6 +30,7 @@ OUT_DIR = ROOT / "outputs" / "basil"
 MODELS = [
     ("biasdetector", "himel7/bias-detector"),
     ("daroberta", "mediabiasgroup/DA-RoBERTa-BABE-FT"),
+    ("deberta", str(ROOT / "models" / "deberta-base-babe-ft")),
 ]
 
 EXPECTED_ROWS = 7984

@@ -313,6 +313,19 @@ def build_manifest(df, seed, limit):
     emit(bd, "magnitude_FN", pick(rng, bd_fn, cap_for("magnitude_FN", limit)))
     emit(dr, "magnitude_FN", pick(rng, dr_fn, cap_for("magnitude_FN", limit)))
 
+    # Deberta magnitude strata appended last (same reason as above): adding
+    # these doesn't touch the RNG state used for any of the bd/dr emits.
+    if "pred_deberta" in df.columns:
+        db = "deberta"
+        db_tp = np.where((df.biased == 1) & (df[f"pred_{db}"] == 1))[0]
+        db_fp = np.where((df.biased == 0) & (df[f"pred_{db}"] == 1))[0]
+        db_tn = np.where((df.biased == 0) & (df[f"pred_{db}"] == 0))[0]
+        db_fn = np.where((df.biased == 1) & (df[f"pred_{db}"] == 0))[0]
+        emit(db, "magnitude_TP", pick(rng, db_tp, cap_for("magnitude_TP", limit)))
+        emit(db, "magnitude_FP", pick(rng, db_fp, cap_for("magnitude_FP", limit)))
+        emit(db, "magnitude_TN", pick(rng, db_tn, cap_for("magnitude_TN", limit)))
+        emit(db, "magnitude_FN", pick(rng, db_fn, cap_for("magnitude_FN", limit)))
+
     return pd.DataFrame(rows)
 
 

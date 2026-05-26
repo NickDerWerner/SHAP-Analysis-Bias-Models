@@ -39,12 +39,14 @@ OUT_PDF = ROOT / "outputs" / "fig3_facet_2x2.pdf"
 BABE_SAMPLES = {
     "biasdetector": ROOT / "outputs" / "shap_samples.jsonl",
     "daroberta":    ROOT / "outputs" / "shap_samples_daroberta.jsonl",
+    "deberta":      ROOT / "outputs" / "shap_samples_deberta.jsonl",
 }
 BASIL_MAGNITUDE = ROOT / "outputs" / "basil_shap" / "basil_shap_magnitude.csv"
 
 MODELS = [
     ("biasdetector", "bias-detector"),
     ("daroberta",    "DA-RoBERTa-BABE-FT"),
+    ("deberta",      "DeBERTa-base"),
 ]
 CORPORA = ["BABE", "BASIL"]
 CATEGORIES = ["TP", "FP", "TN", "FN"]
@@ -128,7 +130,7 @@ def main():
     basil = {s: load_basil_means(s) for s, _ in MODELS}
     data = {"BABE": babe, "BASIL": basil}
 
-    fig, axes = plt.subplots(2, 2, figsize=(10, 7), sharex=False, sharey=True)
+    fig, axes = plt.subplots(len(MODELS), 2, figsize=(10, 3.5 * len(MODELS)), sharex=False, sharey=True)
 
     for row_i, (suffix, display) in enumerate(MODELS):
         for col_i, corpus in enumerate(CORPORA):
