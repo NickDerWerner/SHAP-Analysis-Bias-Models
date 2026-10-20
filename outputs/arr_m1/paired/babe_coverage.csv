@@ -1,0 +1,8 @@
+corpus,set,n,unique_ids
+BABE,biasdetector,337,337
+BABE,daroberta,312,312
+BABE,deberta,327,327
+BABE,bd∩dr,127,127
+BABE,bd∩deb,153,153
+BABE,dr∩deb,116,116
+BABE,all3,59,59

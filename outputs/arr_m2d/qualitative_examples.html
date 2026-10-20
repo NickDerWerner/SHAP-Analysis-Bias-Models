@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/><title>M2D Qualitative Examples</title>
+<style>body{font-family:Georgia,serif;max-width:900px;margin:1.5rem auto;line-height:1.4}
+section{border-top:1px solid #ccc;padding:1rem 0}</style></head>
+<body>
+<h1>M2D qualitative examples</h1>
+<p>Illustrative only — not a representative quantitative sample. Seed=7.</p>
+
+<section>
+<h2>high_faith_high_align</h2>
+<p><b>id</b> basil:29ffd053-7684-469b-a600-97000579bd01|2|0 · <b>model</b> biasdetector ·
+<b>cat</b> lex_only · <b>pred</b> TP ·
+<b>P</b> 0.990 · <b>coverage</b> 0.30 ·
+<b>excess</b> 0.4230853495739594 · <b>A_pos ΔP</b> -0.9646463561803102</p>
+<pre style="white-space:pre-wrap;background:#f7f7f5;padding:0.75rem;">GOP Rep. Paul Ryan is heading to Georgetown University for a speech Thursday morning, but not before an old-fashioned, Catholic school knuckle-rapping.</pre>
+<p><b>Gold spans:</b> [lex] “old-fashioned, Catholic school knuckle-rapping” [104:150]</p>
+<p><b>Top |SHAP| words:</b> knuckle-rapping.(+0.453), old-fashioned,(+0.093), Catholic(+0.084), Rep.(-0.070), school(+0.060), Thursday(-0.054), an(-0.045), morning,(-0.031)</p>
+<p><img src="figures/examples/high_faith_high_align_biasdetector.png" alt="high_faith_high_align" style="max-width:100%"/></p>
+</section>
+
+<section>
+<h2>high_faith_poor_align</h2>
+<p><b>id</b> basil:8385a996-1afc-4778-a06d-7070a8f19e27|3|4 · <b>model</b> biasdetector ·
+<b>cat</b> inf_only · <b>pred</b> TP ·
+<b>P</b> 0.985 · <b>coverage</b> 1.00 ·
+<b>excess</b> 0.0 · <b>A_pos ΔP</b> -0.945173654705286</p>
+<pre style="white-space:pre-wrap;background:#f7f7f5;padding:0.75rem;">Her mind is shot - resign!</pre>
+<p><b>Gold spans:</b> [inf] “Her mind is shot - resign!” [0:26]</p>
+<p><b>Top |SHAP| words:</b> resign!(+0.508), mind(+0.171), -(+0.139), shot(+0.022), is(-0.013), Her(-0.008)</p>
+<p><img src="figures/examples/high_faith_poor_align_biasdetector.png" alt="high_faith_poor_align" style="max-width:100%"/></p>
+</section>
+
+<section>
+<h2>good_lexical_align</h2>
+<p><b>id</b> basil:29ffd053-7684-469b-a600-97000579bd01|2|0 · <b>model</b> daroberta ·
+<b>cat</b> lex_only · <b>pred</b> TP ·
+<b>P</b> 0.968 · <b>coverage</b> 0.30 ·
+<b>excess</b> 0.6334422792833163 · <b>A_pos ΔP</b> -0.9269185736775398</p>
+<pre style="white-space:pre-wrap;background:#f7f7f5;padding:0.75rem;">GOP Rep. Paul Ryan is heading to Georgetown University for a speech Thursday morning, but not before an old-fashioned, Catholic school knuckle-rapping.</pre>
+<p><b>Gold spans:</b> [lex] “old-fashioned, Catholic school knuckle-rapping” [104:150]</p>
+<p><b>Top |SHAP| words:</b> knuckle-rapping.(+0.400), old-fashioned,(+0.170), Catholic(+0.116), school(+0.082), but(+0.020), an(+0.019), morning,(-0.013), for(-0.012)</p>
+<p><img src="figures/examples/good_lexical_align_daroberta.png" alt="good_lexical_align" style="max-width:100%"/></p>
+</section>
+
+<section>
+<h2>poor_informational_align</h2>
+<p><b>id</b> basil:8dc7ccfe-5cf0-482f-9101-a7c69881da4d|2|14 · <b>model</b> biasdetector ·
+<b>cat</b> inf_only · <b>pred</b> TP ·
+<b>P</b> 0.521 · <b>coverage</b> 0.85 ·
+<b>excess</b> -0.11193664680056548 · <b>A_pos ΔP</b> -0.4992044195532799</p>
+<pre style="white-space:pre-wrap;background:#f7f7f5;padding:0.75rem;">Ben Labolt tweeted, "@MittRomney just refused to say he supports hospital visitation rights at a federal level for gays and lesbians."</pre>
+<p><b>Gold spans:</b> [inf] “"@MittRomney just refused to say he supports hospital visita” [20:134]</p>
+<p><b>Top |SHAP| words:</b> "@MittRomney(+0.199), just(+0.136), tweeted,(-0.116), refused(+0.087), Labolt(-0.059), Ben(-0.052), he(-0.048), federal(-0.038)</p>
+<p><img src="figures/examples/poor_informational_align_biasdetector.png" alt="poor_informational_align" style="max-width:100%"/></p>
+</section>
+
+<section>
+<h2>model_disagreement_bd</h2>
+<p><b>id</b> basil:2058ec60-5372-4f5f-83a3-da780be3a350|1|11 · <b>model</b> biasdetector ·
+<b>cat</b> lex_only · <b>pred</b> FN ·
+<b>P</b> 0.016 · <b>coverage</b> 0.51 ·
+<b>excess</b> -0.33683403266840695 · <b>A_pos ΔP</b> 0.00556124746799469</p>
+<pre style="white-space:pre-wrap;background:#f7f7f5;padding:0.75rem;">Wal-Mart calls that evidence unrepresentative and unreliable.</pre>
+<p><b>Gold spans:</b> [lex] “unrepresentative and unreliable” [29:60]</p>
+<p><b>Top |SHAP| words:</b> calls(-0.206), Wal-Mart(-0.085), evidence(-0.056), that(+0.053), unreliable.(-0.019), and(-0.011), unrepresentative(+0.001)</p>
+<p><img src="figures/examples/model_disagreement_bd_biasdetector.png" alt="model_disagreement_bd" style="max-width:100%"/></p>
+</section>
+
+<section>
+<h2>model_disagreement_dr</h2>
+<p><b>id</b> basil:2058ec60-5372-4f5f-83a3-da780be3a350|1|11 · <b>model</b> daroberta ·
+<b>cat</b> lex_only · <b>pred</b> FN ·
+<b>P</b> 0.089 · <b>coverage</b> 0.51 ·
+<b>excess</b> 0.15816546278879567 · <b>A_pos ΔP</b> 0.038742080330848694</p>
+<pre style="white-space:pre-wrap;background:#f7f7f5;padding:0.75rem;">Wal-Mart calls that evidence unrepresentative and unreliable.</pre>
+<p><b>Gold spans:</b> [lex] “unrepresentative and unreliable” [29:60]</p>
+<p><b>Top |SHAP| words:</b> unreliable.(+0.232), Wal-Mart(-0.226), calls(-0.108), unrepresentative(-0.046), and(+0.046), evidence(-0.040), that(-0.014)</p>
+<p><img src="figures/examples/model_disagreement_dr_daroberta.png" alt="model_disagreement_dr" style="max-width:100%"/></p>
+</section>
+
+<section>
+<h2>near_full_span_coverage</h2>
+<p><b>id</b> basil:86e6e27d-1440-4879-8b13-0dd2d89f7281|3|6 · <b>model</b> biasdetector ·
+<b>cat</b> both · <b>pred</b> TP ·
+<b>P</b> 0.981 · <b>coverage</b> 1.00 ·
+<b>excess</b> 0.0 · <b>A_pos ΔP</b> -0.22031033039093018</p>
+<pre style="white-space:pre-wrap;background:#f7f7f5;padding:0.75rem;">Trump infamously bragged about grabbing women “by the pussy” in a leaked tape from 2005; since taking office he has referred to certain other nations as “shithole countries” and slung insults at a wide range of political foes.</pre>
+<p><b>Gold spans:</b> [lex] “infamously bragged” [6:24], [inf] “Trump infamously bragged about grabbing women “by the pussy”” [0:226]</p>
+<p><b>Top |SHAP| words:</b> infamously(+0.240), bragged(+0.105), has(-0.096), “shithole(+0.074), 2005;(-0.054), the(-0.042), insults(+0.038), Trump(+0.036)</p>
+<p><img src="figures/examples/near_full_span_coverage_biasdetector.png" alt="near_full_span_coverage" style="max-width:100%"/></p>
+</section>
+
+</body></html>

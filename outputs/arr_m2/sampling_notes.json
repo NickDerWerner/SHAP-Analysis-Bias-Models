@@ -1,0 +1,25 @@
+{
+  "seed": 7,
+  "targets": {
+    "TP": 5,
+    "FP": 5,
+    "TN": 5,
+    "FN": 5
+  },
+  "available": {
+    "TP": 136,
+    "FP": 112,
+    "TN": 3,
+    "FN": 104
+  },
+  "shortfalls": {
+    "TN": {
+      "requested": 5,
+      "available": 3,
+      "taken": 3
+    }
+  },
+  "tn_limitation": "Only 3 shared TN sentences exist in the BD\u2229DR SHAP cache intersection (requested 5). Alternative not executed: regenerate SHAP for additional shared-TN keys from full BASIL predictions (both models pred=0, gold=0). Pilot uses all available shared TNs (n=3) without substituting unpaired or single-model sentences.",
+  "design": "Shared prediction cell for both models on identical BASIL text with cached SHAP in both JSONL files.",
+  "n_pilot_sentences": 18
+}

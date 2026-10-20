@@ -1,0 +1,28 @@
+{
+  "device": "mps",
+  "rss_start_mb": 272.609375,
+  "model_setup_s": {
+    "biasdetector": 12.730820178985596,
+    "daroberta": 33.374939918518066
+  },
+  "inference_s_total": 9.46764850616455,
+  "n_forwards": 576,
+  "peak_rss_mb": 528.109375,
+  "wall_s": 61.51495981216431,
+  "n_pilot_sentences": 18,
+  "n_result_rows": 540,
+  "est_wall_s_200": 151.30185461044312,
+  "est_hours_200": 0.04202829294734531,
+  "est_wall_s_1000": 572.0862326622009,
+  "est_hours_1000": 0.15891284240616693,
+  "scaling_note": "Linear extrapolation from pilot forwards only; ignores thermal throttling, MPS fragmentation, and longer sentences. Treat as \u00b150% uncertain.",
+  "repro_tol": 0.001,
+  "shortfalls": {
+    "TN": {
+      "requested": 5,
+      "available": 3,
+      "taken": 3
+    }
+  },
+  "tn_limitation": "Only 3 shared TN sentences exist in the BD\u2229DR SHAP cache intersection (requested 5). Alternative not executed: regenerate SHAP for additional shared-TN keys from full BASIL predictions (both models pred=0, gold=0). Pilot uses all available shared TNs (n=3) without substituting unpaired or single-model sentences."
+}

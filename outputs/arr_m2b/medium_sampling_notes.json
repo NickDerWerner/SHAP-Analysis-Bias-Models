@@ -1,0 +1,18 @@
+{
+  "seed": 7,
+  "target": 200,
+  "available": {
+    "TP": 136,
+    "FP": 112,
+    "TN": 3,
+    "FN": 104
+  },
+  "taken": {
+    "TP": 85,
+    "FP": 60,
+    "TN": 3,
+    "FN": 52
+  },
+  "n": 200,
+  "tn_note": "Only 3 shared TN in SHAP intersection; taken 3."
+}

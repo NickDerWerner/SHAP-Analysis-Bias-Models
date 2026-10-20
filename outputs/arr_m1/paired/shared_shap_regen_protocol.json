@@ -1,0 +1,12 @@
+{
+  "title": "Shared-sentence SHAP regeneration protocol (NOT EXECUTED)",
+  "motivation": "BABE all3 intersection is small; BASIL all3=60 because DeBERTa only has magnitude strata.",
+  "steps": [
+    "1. Build a shared sentence list S from BABE test intersection of confusion cells of interest (or full test) with seed=7.",
+    "2. For BASIL, extend basil_shap_generate.build_manifest to emit fp_shared / fn_shared for deberta using the same keys as bd/dr.",
+    "3. Run basil_shap_generate.py --models deberta on pending keys only (append-only JSONL; do not overwrite existing).",
+    "4. Re-run paired analysis on the expanded intersection.",
+    "5. Budget: ~15\u201320 s/sentence CPU historically; prefer sequential models on 8GB Mac."
+  ],
+  "do_not_run_in_m1": true
+}

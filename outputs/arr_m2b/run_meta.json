@@ -1,0 +1,67 @@
+{
+  "regression": {
+    "phase": "regression_m2a18",
+    "device": "mps",
+    "n_sentences_requested": 18,
+    "model_setup_s": {
+      "biasdetector": 3.6183509826660156,
+      "daroberta": 2.92349910736084
+    },
+    "inference_s": 9.686921834945679,
+    "n_forwards": 576,
+    "peak_rss_mb": 377.0625,
+    "wall_s": 16.510308980941772,
+    "n_attempted_perturbations": 540,
+    "n_complete_perturbations": 540,
+    "n_excluded_incomplete": 0,
+    "n_excluded_bad_align": 0,
+    "complete_rate": 1.0,
+    "sentence_align_ok_rate": {
+      "biasdetector": 1.0,
+      "daroberta": 1.0
+    }
+  },
+  "gate_pass": true,
+  "compare_n": 30,
+  "medium": {
+    "phase": "medium",
+    "device": "mps",
+    "n_sentences_requested": 200,
+    "model_setup_s": {
+      "biasdetector": 2.1325528621673584,
+      "daroberta": 2.944023847579956
+    },
+    "inference_s": 134.04713988304138,
+    "n_forwards": 8800,
+    "peak_rss_mb": 479.921875,
+    "wall_s": 140.35776734352112,
+    "n_attempted_perturbations": 8400,
+    "n_complete_perturbations": 8400,
+    "n_excluded_incomplete": 0,
+    "n_excluded_bad_align": 0,
+    "complete_rate": 1.0,
+    "sentence_align_ok_rate": {
+      "biasdetector": 1.0,
+      "daroberta": 1.0
+    }
+  },
+  "medium_notes": {
+    "seed": 7,
+    "target": 200,
+    "available": {
+      "TP": 136,
+      "FP": 112,
+      "TN": 3,
+      "FN": 104
+    },
+    "taken": {
+      "TP": 85,
+      "FP": 60,
+      "TN": 3,
+      "FN": 52
+    },
+    "n": 200,
+    "tn_note": "Only 3 shared TN in SHAP intersection; taken 3."
+  },
+  "medium_gate_pass": true
+}

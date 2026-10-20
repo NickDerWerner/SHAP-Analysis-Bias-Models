@@ -1,0 +1,935 @@
+[
+  {
+    "role": "high_faith_high_align",
+    "canonical_id": "basil:29ffd053-7684-469b-a600-97000579bd01|2|0",
+    "model": "biasdetector",
+    "ann_category": "lex_only",
+    "pred_type": "TP",
+    "prob_pos": 0.989981,
+    "gold_char_coverage": 0.304635761589404,
+    "abs_minus_rand": 0.4230853495739594,
+    "abs_mass": 0.63455315662001,
+    "faith_a_pos_delta": -0.9646463561803102,
+    "paired_align_bd": 0.4230853495739594,
+    "paired_align_dr": 0.6334422792833163,
+    "sentence_text": "GOP Rep. Paul Ryan is heading to Georgetown University for a speech Thursday morning, but not before an old-fashioned, Catholic school knuckle-rapping.",
+    "gold_spans": [
+      {
+        "start": 104,
+        "end": 150,
+        "bias": "lex",
+        "txt": "old-fashioned, Catholic school knuckle-rapping"
+      }
+    ],
+    "words": [
+      {
+        "token": "GOP",
+        "start": 0,
+        "end": 3,
+        "shap": -0.011205118304739395
+      },
+      {
+        "token": "Rep.",
+        "start": 4,
+        "end": 8,
+        "shap": -0.06964566993216673
+      },
+      {
+        "token": "Paul",
+        "start": 9,
+        "end": 13,
+        "shap": -0.005192141384423639
+      },
+      {
+        "token": "Ryan",
+        "start": 14,
+        "end": 18,
+        "shap": -0.005780212916971113
+      },
+      {
+        "token": "is",
+        "start": 19,
+        "end": 21,
+        "shap": -0.028683652738646533
+      },
+      {
+        "token": "heading",
+        "start": 22,
+        "end": 29,
+        "shap": 0.012232919120623801
+      },
+      {
+        "token": "to",
+        "start": 30,
+        "end": 32,
+        "shap": -0.006336478968688215
+      },
+      {
+        "token": "Georgetown",
+        "start": 33,
+        "end": 43,
+        "shap": -0.025823930264987912
+      },
+      {
+        "token": "University",
+        "start": 44,
+        "end": 54,
+        "shap": -0.02890871626844343
+      },
+      {
+        "token": "for",
+        "start": 55,
+        "end": 58,
+        "shap": -0.011471166494839754
+      },
+      {
+        "token": "a",
+        "start": 59,
+        "end": 60,
+        "shap": -0.00597576050607201
+      },
+      {
+        "token": "speech",
+        "start": 61,
+        "end": 67,
+        "shap": -0.0028117778576695574
+      },
+      {
+        "token": "Thursday",
+        "start": 68,
+        "end": 76,
+        "shap": -0.05398126643670436
+      },
+      {
+        "token": "morning,",
+        "start": 77,
+        "end": 85,
+        "shap": -0.03147185236090221
+      },
+      {
+        "token": "but",
+        "start": 86,
+        "end": 89,
+        "shap": -0.004069206397980451
+      },
+      {
+        "token": "not",
+        "start": 90,
+        "end": 93,
+        "shap": 0.0026172697776928543
+      },
+      {
+        "token": "before",
+        "start": 94,
+        "end": 100,
+        "shap": -0.00079029796179384
+      },
+      {
+        "token": "an",
+        "start": 101,
+        "end": 103,
+        "shap": -0.04538080536294729
+      },
+      {
+        "token": "old-fashioned,",
+        "start": 104,
+        "end": 118,
+        "shap": 0.09255625752266496
+      },
+      {
+        "token": "Catholic",
+        "start": 119,
+        "end": 127,
+        "shap": 0.08386977907503024
+      },
+      {
+        "token": "school",
+        "start": 128,
+        "end": 134,
+        "shap": 0.05972485645907
+      },
+      {
+        "token": "knuckle-rapping.",
+        "start": 135,
+        "end": 151,
+        "shap": 0.453221847419627
+      }
+    ],
+    "gold_label": 1,
+    "pred": 1
+  },
+  {
+    "role": "high_faith_poor_align",
+    "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|3|4",
+    "model": "biasdetector",
+    "ann_category": "inf_only",
+    "pred_type": "TP",
+    "prob_pos": 0.98526,
+    "gold_char_coverage": 1.0,
+    "abs_minus_rand": 0.0,
+    "abs_mass": 1.0,
+    "faith_a_pos_delta": -0.945173654705286,
+    "paired_align_bd": 0.0,
+    "paired_align_dr": 0.0,
+    "sentence_text": "Her mind is shot - resign!",
+    "gold_spans": [
+      {
+        "start": 0,
+        "end": 26,
+        "bias": "inf",
+        "txt": "Her mind is shot - resign!"
+      }
+    ],
+    "words": [
+      {
+        "token": "Her",
+        "start": 0,
+        "end": 3,
+        "shap": -0.008001812733709812
+      },
+      {
+        "token": "mind",
+        "start": 4,
+        "end": 8,
+        "shap": 0.1710983430966735
+      },
+      {
+        "token": "is",
+        "start": 9,
+        "end": 11,
+        "shap": -0.013022413477301598
+      },
+      {
+        "token": "shot",
+        "start": 12,
+        "end": 16,
+        "shap": 0.021571946912445128
+      },
+      {
+        "token": "-",
+        "start": 17,
+        "end": 18,
+        "shap": 0.1391484042396769
+      },
+      {
+        "token": "resign!",
+        "start": 19,
+        "end": 26,
+        "shap": 0.5079379016533494
+      }
+    ],
+    "gold_label": 1,
+    "pred": 1
+  },
+  {
+    "role": "good_lexical_align",
+    "canonical_id": "basil:29ffd053-7684-469b-a600-97000579bd01|2|0",
+    "model": "daroberta",
+    "ann_category": "lex_only",
+    "pred_type": "TP",
+    "prob_pos": 0.96832,
+    "gold_char_coverage": 0.304635761589404,
+    "abs_minus_rand": 0.6334422792833163,
+    "abs_mass": 0.813191358769566,
+    "faith_a_pos_delta": -0.9269185736775398,
+    "paired_align_bd": 0.4230853495739594,
+    "paired_align_dr": 0.6334422792833163,
+    "sentence_text": "GOP Rep. Paul Ryan is heading to Georgetown University for a speech Thursday morning, but not before an old-fashioned, Catholic school knuckle-rapping.",
+    "gold_spans": [
+      {
+        "start": 104,
+        "end": 150,
+        "bias": "lex",
+        "txt": "old-fashioned, Catholic school knuckle-rapping"
+      }
+    ],
+    "words": [
+      {
+        "token": "GOP",
+        "start": 0,
+        "end": 3,
+        "shap": 0.0019111610131849553
+      },
+      {
+        "token": "Rep.",
+        "start": 4,
+        "end": 8,
+        "shap": -0.007802935915213882
+      },
+      {
+        "token": "Paul",
+        "start": 9,
+        "end": 13,
+        "shap": -0.006164026765070637
+      },
+      {
+        "token": "Ryan",
+        "start": 14,
+        "end": 18,
+        "shap": -0.008444606412119944
+      },
+      {
+        "token": "is",
+        "start": 19,
+        "end": 21,
+        "shap": -0.00572273155386724
+      },
+      {
+        "token": "heading",
+        "start": 22,
+        "end": 29,
+        "shap": -0.001077797931536813
+      },
+      {
+        "token": "to",
+        "start": 30,
+        "end": 32,
+        "shap": -0.00457794192890801
+      },
+      {
+        "token": "Georgetown",
+        "start": 33,
+        "end": 43,
+        "shap": -0.0036389173166004613
+      },
+      {
+        "token": "University",
+        "start": 44,
+        "end": 54,
+        "shap": -0.010530778292484362
+      },
+      {
+        "token": "for",
+        "start": 55,
+        "end": 58,
+        "shap": -0.012055085824720342
+      },
+      {
+        "token": "a",
+        "start": 59,
+        "end": 60,
+        "shap": -0.0024324408424196437
+      },
+      {
+        "token": "speech",
+        "start": 61,
+        "end": 67,
+        "shap": -0.0024324408424196437
+      },
+      {
+        "token": "Thursday",
+        "start": 68,
+        "end": 76,
+        "shap": -0.003934570324525018
+      },
+      {
+        "token": "morning,",
+        "start": 77,
+        "end": 85,
+        "shap": -0.01339768198907704
+      },
+      {
+        "token": "but",
+        "start": 86,
+        "end": 89,
+        "shap": 0.019959857780486347
+      },
+      {
+        "token": "not",
+        "start": 90,
+        "end": 93,
+        "shap": 0.010153109766542911
+      },
+      {
+        "token": "before",
+        "start": 94,
+        "end": 100,
+        "shap": 0.011994306556880474
+      },
+      {
+        "token": "an",
+        "start": 101,
+        "end": 103,
+        "shap": 0.019469189317896964
+      },
+      {
+        "token": "old-fashioned,",
+        "start": 104,
+        "end": 118,
+        "shap": 0.17016136911697685
+      },
+      {
+        "token": "Catholic",
+        "start": 119,
+        "end": 127,
+        "shap": 0.11592621693853289
+      },
+      {
+        "token": "school",
+        "start": 128,
+        "end": 134,
+        "shap": 0.08196581027004868
+      },
+      {
+        "token": "knuckle-rapping.",
+        "start": 135,
+        "end": 151,
+        "shap": 0.4000211439561098
+      }
+    ],
+    "gold_label": 1,
+    "pred": 1
+  },
+  {
+    "role": "poor_informational_align",
+    "canonical_id": "basil:8dc7ccfe-5cf0-482f-9101-a7c69881da4d|2|14",
+    "model": "biasdetector",
+    "ann_category": "inf_only",
+    "pred_type": "TP",
+    "prob_pos": 0.52116,
+    "gold_char_coverage": 0.8507462686567164,
+    "abs_minus_rand": -0.11193664680056548,
+    "abs_mass": 0.754613855542605,
+    "faith_a_pos_delta": -0.4992044195532799,
+    "paired_align_bd": -0.11193664680056548,
+    "paired_align_dr": -0.0654181203737183,
+    "sentence_text": "Ben Labolt tweeted, \"@MittRomney just refused to say he supports hospital visitation rights at a federal level for gays and lesbians.\"",
+    "gold_spans": [
+      {
+        "start": 20,
+        "end": 134,
+        "bias": "inf",
+        "txt": "\"@MittRomney just refused to say he supports hospital visitation rights at a federal level for gays and lesbians.\""
+      }
+    ],
+    "words": [
+      {
+        "token": "Ben",
+        "start": 0,
+        "end": 3,
+        "shap": -0.052451913431286815
+      },
+      {
+        "token": "Labolt",
+        "start": 4,
+        "end": 10,
+        "shap": -0.059471641108393675
+      },
+      {
+        "token": "tweeted,",
+        "start": 11,
+        "end": 19,
+        "shap": -0.1157708290964365
+      },
+      {
+        "token": "\"@MittRomney",
+        "start": 20,
+        "end": 32,
+        "shap": 0.1992413168773055
+      },
+      {
+        "token": "just",
+        "start": 33,
+        "end": 37,
+        "shap": 0.13593711995054036
+      },
+      {
+        "token": "refused",
+        "start": 38,
+        "end": 45,
+        "shap": 0.08664197626058012
+      },
+      {
+        "token": "to",
+        "start": 46,
+        "end": 48,
+        "shap": 0.006187751539982855
+      },
+      {
+        "token": "say",
+        "start": 49,
+        "end": 52,
+        "shap": -0.022444608970545232
+      },
+      {
+        "token": "he",
+        "start": 53,
+        "end": 55,
+        "shap": -0.047896701900754124
+      },
+      {
+        "token": "supports",
+        "start": 56,
+        "end": 64,
+        "shap": -0.010337696701753885
+      },
+      {
+        "token": "hospital",
+        "start": 65,
+        "end": 73,
+        "shap": -0.012014546722639352
+      },
+      {
+        "token": "visitation",
+        "start": 74,
+        "end": 84,
+        "shap": -0.032105074322316796
+      },
+      {
+        "token": "rights",
+        "start": 85,
+        "end": 91,
+        "shap": -0.01578412315575406
+      },
+      {
+        "token": "at",
+        "start": 92,
+        "end": 94,
+        "shap": -0.0035547392326407135
+      },
+      {
+        "token": "a",
+        "start": 95,
+        "end": 96,
+        "shap": -0.004209553764667362
+      },
+      {
+        "token": "federal",
+        "start": 97,
+        "end": 104,
+        "shap": -0.038313140568789095
+      },
+      {
+        "token": "level",
+        "start": 105,
+        "end": 110,
+        "shap": -0.0012903422660504784
+      },
+      {
+        "token": "for",
+        "start": 111,
+        "end": 114,
+        "shap": -0.022869622179617487
+      },
+      {
+        "token": "gays",
+        "start": 115,
+        "end": 119,
+        "shap": -0.025731506194764126
+      },
+      {
+        "token": "and",
+        "start": 120,
+        "end": 123,
+        "shap": 0.005308708583470434
+      },
+      {
+        "token": "lesbians.\"",
+        "start": 124,
+        "end": 134,
+        "shap": -0.030339451584344108
+      }
+    ],
+    "gold_label": 1,
+    "pred": 1
+  },
+  {
+    "role": "model_disagreement_bd",
+    "canonical_id": "basil:2058ec60-5372-4f5f-83a3-da780be3a350|1|11",
+    "model": "biasdetector",
+    "ann_category": "lex_only",
+    "pred_type": "FN",
+    "prob_pos": 0.015836,
+    "gold_char_coverage": 0.5081967213114754,
+    "abs_minus_rand": -0.33683403266840695,
+    "abs_mass": 0.06649704150468841,
+    "faith_a_pos_delta": 0.00556124746799469,
+    "paired_align_bd": -0.33683403266840695,
+    "paired_align_dr": 0.15816546278879567,
+    "sentence_text": "Wal-Mart calls that evidence unrepresentative and unreliable.",
+    "gold_spans": [
+      {
+        "start": 29,
+        "end": 60,
+        "bias": "lex",
+        "txt": "unrepresentative and unreliable"
+      }
+    ],
+    "words": [
+      {
+        "token": "Wal-Mart",
+        "start": 0,
+        "end": 8,
+        "shap": -0.08549859677441418
+      },
+      {
+        "token": "calls",
+        "start": 9,
+        "end": 14,
+        "shap": -0.20559126912849024
+      },
+      {
+        "token": "that",
+        "start": 15,
+        "end": 19,
+        "shap": 0.05338821077020839
+      },
+      {
+        "token": "evidence",
+        "start": 20,
+        "end": 28,
+        "shap": -0.056065113632939756
+      },
+      {
+        "token": "unrepresentative",
+        "start": 29,
+        "end": 45,
+        "shap": 0.0012128605740144849
+      },
+      {
+        "token": "and",
+        "start": 46,
+        "end": 49,
+        "shap": -0.010606280295178294
+      },
+      {
+        "token": "unreliable.",
+        "start": 50,
+        "end": 61,
+        "shap": -0.018516315845772624
+      }
+    ],
+    "gold_label": 1,
+    "pred": 0
+  },
+  {
+    "role": "model_disagreement_dr",
+    "canonical_id": "basil:2058ec60-5372-4f5f-83a3-da780be3a350|1|11",
+    "model": "daroberta",
+    "ann_category": "lex_only",
+    "pred_type": "FN",
+    "prob_pos": 0.088582,
+    "gold_char_coverage": 0.5081967213114754,
+    "abs_minus_rand": 0.15816546278879567,
+    "abs_mass": 0.42496368002882895,
+    "faith_a_pos_delta": 0.038742080330848694,
+    "paired_align_bd": -0.33683403266840695,
+    "paired_align_dr": 0.15816546278879567,
+    "sentence_text": "Wal-Mart calls that evidence unrepresentative and unreliable.",
+    "gold_spans": [
+      {
+        "start": 29,
+        "end": 60,
+        "bias": "lex",
+        "txt": "unrepresentative and unreliable"
+      }
+    ],
+    "words": [
+      {
+        "token": "Wal-Mart",
+        "start": 0,
+        "end": 8,
+        "shap": -0.22579509671777487
+      },
+      {
+        "token": "calls",
+        "start": 9,
+        "end": 14,
+        "shap": -0.10847571137128398
+      },
+      {
+        "token": "that",
+        "start": 15,
+        "end": 19,
+        "shap": -0.014322106668259948
+      },
+      {
+        "token": "evidence",
+        "start": 20,
+        "end": 28,
+        "shap": -0.039661058341152966
+      },
+      {
+        "token": "unrepresentative",
+        "start": 29,
+        "end": 45,
+        "shap": -0.04596433765254915
+      },
+      {
+        "token": "and",
+        "start": 46,
+        "end": 49,
+        "shap": 0.04574430361390114
+      },
+      {
+        "token": "unreliable.",
+        "start": 50,
+        "end": 61,
+        "shap": 0.2318771407008171
+      }
+    ],
+    "gold_label": 1,
+    "pred": 0
+  },
+  {
+    "role": "near_full_span_coverage",
+    "canonical_id": "basil:86e6e27d-1440-4879-8b13-0dd2d89f7281|3|6",
+    "model": "biasdetector",
+    "ann_category": "both",
+    "pred_type": "TP",
+    "prob_pos": 0.98139,
+    "gold_char_coverage": 1.0,
+    "abs_minus_rand": 0.0,
+    "abs_mass": 1.0000000000000004,
+    "faith_a_pos_delta": -0.22031033039093018,
+    "paired_align_bd": 0.0,
+    "paired_align_dr": 1.1102230246251565e-16,
+    "sentence_text": "Trump infamously bragged about grabbing women “by the pussy” in a leaked tape from 2005; since taking office he has referred to certain other nations as “shithole countries” and slung insults at a wide range of political foes.",
+    "gold_spans": [
+      {
+        "start": 6,
+        "end": 24,
+        "bias": "lex",
+        "txt": "infamously bragged"
+      },
+      {
+        "start": 0,
+        "end": 226,
+        "bias": "inf",
+        "txt": "Trump infamously bragged about grabbing women “by the pussy” in a leaked tape from 2005; since taking office he has referred to certain other nations as “shithole countries” and slung insults at a wide range of political foes."
+      }
+    ],
+    "words": [
+      {
+        "token": "Trump",
+        "start": 0,
+        "end": 5,
+        "shap": 0.03596773035824299
+      },
+      {
+        "token": "infamously",
+        "start": 6,
+        "end": 16,
+        "shap": 0.24036621935665606
+      },
+      {
+        "token": "bragged",
+        "start": 17,
+        "end": 24,
+        "shap": 0.10510118817910552
+      },
+      {
+        "token": "about",
+        "start": 25,
+        "end": 30,
+        "shap": -0.007034608395770192
+      },
+      {
+        "token": "grabbing",
+        "start": 31,
+        "end": 39,
+        "shap": 0.006721296114847064
+      },
+      {
+        "token": "women",
+        "start": 40,
+        "end": 45,
+        "shap": 0.005109336925670505
+      },
+      {
+        "token": "“by",
+        "start": 46,
+        "end": 49,
+        "shap": 0.0077161663211882114
+      },
+      {
+        "token": "the",
+        "start": 50,
+        "end": 53,
+        "shap": -0.0424487697891891
+      },
+      {
+        "token": "pussy”",
+        "start": 54,
+        "end": 60,
+        "shap": 0.014137820340692997
+      },
+      {
+        "token": "in",
+        "start": 61,
+        "end": 63,
+        "shap": 0.0
+      },
+      {
+        "token": "a",
+        "start": 64,
+        "end": 65,
+        "shap": 0.0
+      },
+      {
+        "token": "leaked",
+        "start": 66,
+        "end": 72,
+        "shap": -0.0016381023451685905
+      },
+      {
+        "token": "tape",
+        "start": 73,
+        "end": 77,
+        "shap": -0.0016381023451685905
+      },
+      {
+        "token": "from",
+        "start": 78,
+        "end": 82,
+        "shap": -0.0113998600281775
+      },
+      {
+        "token": "2005;",
+        "start": 83,
+        "end": 88,
+        "shap": -0.0538580222055316
+      },
+      {
+        "token": "since",
+        "start": 89,
+        "end": 94,
+        "shap": -0.016671469900757074
+      },
+      {
+        "token": "taking",
+        "start": 95,
+        "end": 101,
+        "shap": -0.010945554822683334
+      },
+      {
+        "token": "office",
+        "start": 102,
+        "end": 108,
+        "shap": -0.02296878583729267
+      },
+      {
+        "token": "he",
+        "start": 109,
+        "end": 111,
+        "shap": 0.0
+      },
+      {
+        "token": "has",
+        "start": 112,
+        "end": 115,
+        "shap": -0.09637962840497494
+      },
+      {
+        "token": "referred",
+        "start": 116,
+        "end": 124,
+        "shap": -0.0003805747255682945
+      },
+      {
+        "token": "to",
+        "start": 125,
+        "end": 127,
+        "shap": -0.0003805747255682945
+      },
+      {
+        "token": "certain",
+        "start": 128,
+        "end": 135,
+        "shap": -0.0003805747255682945
+      },
+      {
+        "token": "other",
+        "start": 136,
+        "end": 141,
+        "shap": -0.0003805747255682945
+      },
+      {
+        "token": "nations",
+        "start": 142,
+        "end": 149,
+        "shap": 0.0262446865439415
+      },
+      {
+        "token": "as",
+        "start": 150,
+        "end": 152,
+        "shap": 0.0
+      },
+      {
+        "token": "“shithole",
+        "start": 153,
+        "end": 162,
+        "shap": 0.07448906428180635
+      },
+      {
+        "token": "countries”",
+        "start": 163,
+        "end": 173,
+        "shap": -0.010392078664153814
+      },
+      {
+        "token": "and",
+        "start": 174,
+        "end": 177,
+        "shap": 0.010003072768449783
+      },
+      {
+        "token": "slung",
+        "start": 178,
+        "end": 183,
+        "shap": 0.011745819449424743
+      },
+      {
+        "token": "insults",
+        "start": 184,
+        "end": 191,
+        "shap": 0.03793163700029254
+      },
+      {
+        "token": "at",
+        "start": 192,
+        "end": 194,
+        "shap": -0.009099956136196852
+      },
+      {
+        "token": "a",
+        "start": 195,
+        "end": 196,
+        "shap": -0.0003496712472821984
+      },
+      {
+        "token": "wide",
+        "start": 197,
+        "end": 201,
+        "shap": -0.0003496712472821984
+      },
+      {
+        "token": "range",
+        "start": 202,
+        "end": 207,
+        "shap": -0.004860361705401114
+      },
+      {
+        "token": "of",
+        "start": 208,
+        "end": 210,
+        "shap": -0.004860361705401114
+      },
+      {
+        "token": "political",
+        "start": 211,
+        "end": 220,
+        "shap": 0.004060066172054836
+      },
+      {
+        "token": "foes.",
+        "start": 221,
+        "end": 226,
+        "shap": 0.02287294130240168
+      }
+    ],
+    "gold_label": 1,
+    "pred": 1
+  }
+]

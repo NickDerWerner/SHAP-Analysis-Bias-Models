@@ -1,0 +1,13 @@
+corpus,model,scheme,n_selected_types,pct_Emotional_count,pct_Other_count,pct_Emotional_weight,pct_Other_weight,pct_Explicit_count,pct_Framing_count,pct_Function_count
+BABE,biasdetector,legacy,906,97.2406,,96.2074,,0.4415,1.2141,1.1038
+BABE,biasdetector,v2,906,3.6424,93.5982,10.4545,85.7529,0.4415,1.2141,1.1038
+BABE,daroberta,legacy,853,97.6553,,96.8643,,0.2345,1.4068,0.7034
+BABE,daroberta,v2,853,2.8136,94.8417,11.3807,85.4836,0.2345,1.4068,0.7034
+BABE,deberta,legacy,857,97.3162,,97.2159,,0.2334,1.7503,0.7001
+BABE,deberta,v2,857,3.5006,93.8156,7.7708,89.4451,0.2334,1.7503,0.7001
+BASIL,biasdetector,legacy,1321,98.3346,,98.5936,,0.2271,0.757,0.6813
+BASIL,biasdetector,v2,1321,1.7411,96.5935,2.3979,96.1957,0.2271,0.757,0.6813
+BASIL,daroberta,legacy,1261,97.9381,,98.4138,,0.2379,1.4274,0.3965
+BASIL,daroberta,v2,1261,2.1412,95.797,3.8866,94.5272,0.2379,1.4274,0.3965
+BASIL,deberta,legacy,761,96.5834,,97.471,,0.3942,1.3141,1.7083
+BASIL,deberta,v2,761,2.2339,94.3495,3.8704,93.6006,0.3942,1.3141,1.7083

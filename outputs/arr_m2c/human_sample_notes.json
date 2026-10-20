@@ -1,0 +1,18 @@
+{
+  "lex_only": {
+    "available": 405,
+    "taken": 30
+  },
+  "inf_only": {
+    "available": 1174,
+    "taken": 30
+  },
+  "both": {
+    "available": 44,
+    "taken": 30
+  },
+  "non_biased": {
+    "available": 6361,
+    "taken": 30
+  }
+}

@@ -1,0 +1,1246 @@
+\documentclass[11pt]{article}
+
+% Change "review" to "final" to generate the final (sometimes called camera-ready) version.
+% Change to "preprint" to generate a non-anonymous version with page numbers.
+\PassOptionsToPackage{table,svgnames,dvipsnames}{xcolor}
+\usepackage[review]{acl}
+
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+% This is also not strictly necessary, and may be commented out.
+% However, it will improve the aesthetics of text in
+% the typewriter font.
+\usepackage{inconsolata}
+
+%Including images in your LaTeX document requires adding
+%additional package(s)
+\usepackage{graphicx}
+
+% If the title and author information does not fit in the area allocated, uncomment the following
+%
+%\setlength\titlebox{<dim>}
+%
+% and set <dim> to something 5cm or larger.
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{svg}
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\includesvg[width=10pt]{orcid}}}
+\usepackage{mwe}
+\usepackage{scrhack} % necessary for listings package
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{lstautogobble}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multirow}
+\input{revision_macros}
+%colour code block
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Explaining News Bias Detection: A Comparative SHAP Analysis of Transformer Model Decision Mechanisms}
+%alt Title: Explaining News Bias Detection: A Cross-Corpus Analysis of Attribution Patterns and Shared Errors
+
+% Author information can be set in various styles:
+% For several authors from the same institution:
+% \author{Author 1 \and ... \and Author n \\
+%         Address line \\ ... \\ Address line}
+% if the names do not fit well on one line use
+%         Author 1 \\ {\bf Author 2} \\ ... \\ {\bf Author n} \\
+% For authors from different institutions:
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \And  ... \And
+%         Author n \\ Address line \\ ... \\ Address line}
+% To start a separate ``row'' of authors use \AND, as in
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \AND
+%         Author 2 \\ Address line \\ ... \\ Address line \And
+%         Author 3 \\ Address line \\ ... \\ Address line}
+
+\author{
+  \textbf{Himel Ghosh\textsuperscript{1}},
+  \textbf{Nick Elias Werner\textsuperscript{1}},
+  \textbf{Gjergji Kasneci \textsuperscript{1}}
+  \\
+  \textsuperscript{1}Technical University of Munich, Germany
+  \\
+  \small{
+    \textbf{Correspondence:} \href{mailto:himel.ghosh@tum.de}{himel.ghosh@tum.de}
+  }
+}
+
+%\author{
+%  \textbf{First Author\textsuperscript{1}},
+%  \textbf{Second Author\textsuperscript{1,2}},
+%  \textbf{Third T. Author\textsuperscript{1}},
+%  \textbf{Fourth Author\textsuperscript{1}},
+%\\
+%  \textbf{Fifth Author\textsuperscript{1,2}},
+%  \textbf{Sixth Author\textsuperscript{1}},
+%  \textbf{Seventh Author\textsuperscript{1}},
+%  \textbf{Eighth Author \textsuperscript{1,2,3,4}},
+%\\
+%  \textbf{Ninth Author\textsuperscript{1}},
+%  \textbf{Tenth Author\textsuperscript{1}},
+%  \textbf{Eleventh E. Author\textsuperscript{1,2,3,4,5}},
+%  \textbf{Twelfth Author\textsuperscript{1}},
+%\\
+%  \textbf{Thirteenth Author\textsuperscript{3}},
+%  \textbf{Fourteenth F. Author\textsuperscript{2,4}},
+%  \textbf{Fifteenth Author\textsuperscript{1}},
+%  \textbf{Sixteenth Author\textsuperscript{1}},
+%\\
+%  \textbf{Seventeenth S. Author\textsuperscript{4,5}},
+%  \textbf{Eighteenth Author\textsuperscript{3,4}},
+%  \textbf{Nineteenth N. Author\textsuperscript{2,5}},
+%  \textbf{Twentieth Author\textsuperscript{1}}
+%\\
+%\\
+%  \textsuperscript{1}Affiliation 1,
+%  \textsuperscript{2}Affiliation 2,
+%  \textsuperscript{3}Affiliation 3,
+%  \textsuperscript{4}Affiliation 4,
+%  \textsuperscript{5}Affiliation 5
+%\\
+%  \small{
+%    \textbf{Correspondence:} \href{mailto:email@domain}{email@domain}
+%  }
+%}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Automated bias detection in news text supports journalistic and media accountability. We present a comparative SHAP-based interpretability study of three transformer-based bias detection 
+models: (1) bias-detector, (2) DA-RoBERTa-BABE-FT, and (3) a BABE-fine-tuned DeBERTa-base spanning two encoder backbone families. We evaluate the models on BABE and BASIL, a stylistically distinct news-bias corpus. All three models attend to overwhelmingly similar lexical content (90--96\% Emotional/Evaluative language across matched-pool comparisons on both corpora) and overlap heavily on shared errors (81\% top-token Jaccard on shared false positives). For sentences containing both biased wording and framing cues, the models’ recall was within 2.4 percentage points of what would be expected if these cues were detected independently. This suggests that the models may rely on two distinct signals rather than biased words alone. The three models differ systematically in attribution magnitude rather than category: 
+DA-RoBERTa-BABE-FT's attribution on correctly identified non-biased content is roughly half of bias-detector's on both corpora; on shared false positives, bias-detector assigns 33\% higher magnitude 
+than DA-RoBERTa-BABE-FT to the same words. DeBERTa-base sits at an intermediate calibration point 
+between the two while attending to the same lexical content, extending this pattern across architecture families. Error overlap between the two RoBERTa-family models exceeds independence predictions by 7.2$\times$ for shared false positives 
+and 1.4$\times$ for shared misses, further indicating same-mechanism 
+detection with calibration-level differences. These findings reframe 
+architectural and training choices in bias detection as primarily 
+affecting calibration rather than the linguistic signals identified, 
+with practical implications for deployment in journalistic contexts.
+\end{abstract}
+\revnote{TODO P0 | Abstract}{Rewrite to ~150–200 words (subject to target venue rule). Present research gap, models/corpora, 2–3 empirically supported findings, one limitation. Remove dense ratios and any untested mechanism/calibration assertion.}
+\textbf{Keywords:} news bias detection; model interpretability;
+SHAP analysis; transformer models; linguistic bias;
+
+
+
+\section{Introduction}
+Detecting bias in news text is crucial to maintaining journalistic 
+standards and helping readers assess media credibility. Natural 
+language processing models trained to identify biased language in 
+news articles promise to support these goals, but understanding how 
+they make decisions is essential for trust and effective deployment 
+\cite{bolukbasi2016mancomputerprogrammerwoman, Caliskan_2017}. As 
+automated bias detection tools enter newsrooms and fact-checking 
+workflows, transparency about their decision-making becomes critical 
+\cite{blodgett-etal-2020-language}.
+
+Bias in news text is multi-faceted: selection bias regarding stories 
+or sources covered, framing bias regarding the presentation of events, 
+lexical bias in evaluative word choice, and structural bias regarding the
+placement and prominence \cite{hamborg2019automated}. 
+
+Unfortunately, automated bias detectors can produce consequential classification errors, but predictions alone do not explain them. Moreover, it is unclear whether different models rely on the same linguistic evidence or whether apparent explanatory agreement is truly informative.
+
+Therefore, in this work, we compare three bias detection models, stratify correct and incorrect predictions, and evaluate word-level attributions.
+
+We identify reproducible patterns of agreement and disagreement while testing whether those patterns survive methodological controls.
+
+Specifically, we focus on sentence-level bias signals, i.e., bias observable in word 
+choice and within-sentence framing, as operationalized by our two 
+evaluation corpora: (1) BABE annotates sentences as biased when they 
+contain loaded language or framing devices; (2) BASIL further 
+distinguishes lexical bias (loaded word choice, e.g., ``lashed out'') 
+from informational bias (selection or framing within prose). 
+Throughout this paper, ``bias'' refers to the union of these two 
+sentence-level signals. We do not address bias arising from source 
+selection, story prominence, or other extra-sentential editorial 
+decisions, which require article- or corpus-level analysis.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{latex/figure1_redesign.pdf}
+    \caption{Shared false positive (gold label: non-biased). Both models 
+attribute most strongly to the same tokens (\textit{``that''}, 
+\textit{``stuck''}) but differ sharply in confidence 
+($p = 0.987$ vs $0.570$). Same evidence, different calibration; 
+quantified in Section~\ref{sec:shap_mag}.}
+    \label{fig:figure1}
+\end{figure}
+
+\revnote{TODO P0 | Shared-example interpretation}{Replace/qualify “stuck in the Cold War” anecdote (gold label debatable; phrase-level interpretation). Add stronger examples from both BABE/BASIL showing token-vs-phrase behavior; separate confidence from explanation overlap.}
+
+Model interpretability helps validate bias detection systems and 
+diagnose failures. While accuracy metrics show overall performance, 
+interpretability reveals which linguistic signals drive predictions, 
+enabling validation against journalistic principles and identification 
+of problematic shortcuts 
+\cite{lipton2017mythosmodelinterpretability, doshivelez2017rigorousscienceinterpretablemachine}. 
+For journalism applications, interpretability is especially 
+important: incorrect flagging can affect credibility, and stakeholders 
+need to understand what constitutes bias from the model's perspective 
+\cite{rudin2019stopexplainingblackbox}.
+
+We apply SHAP (SHapley Additive exPlanations) to compare how 
+bias-detector \cite{ghosh2025}, DA-RoBERTa-BABE-FT 
+\cite{Krieger2022}, and a BABE-fine-tuned DeBERTa-base 
+\cite{he2021deberta} interpret news text on BABE 
+\cite{spinde2021babe} and on BASIL \cite{fan-etal-2019-plain}, a 
+stylistically distinct news-bias corpus that differs from BABE in 
+both distribution and annotation philosophy. By analyzing word-level attributions across 
+all prediction categories on both corpora, we investigate: (1) how 
+the models identify bias in news, (2) what linguistic patterns 
+distinguish correct predictions from errors, and (3) whether 
+architectural differences produce different detection mechanisms or 
+different calibration.
+\revnote{TODO P0 | Introduction}{Clarify research questions: (i) explanation similarity conditional on confidence, (ii) robustness to thresholds, (iii) explanation faithfulness and agreement with BASIL spans. Distinguish attribution generalization from classification generalization.}
+
+Our analysis reveals: (1) a cross-corpus reversal in attribution 
+strength for bias-detector, with false positives exceeding true 
+positives in SHAP magnitude, indicating reliance on strong but 
+misleading cues; (2) under matched-pool feature selection, all three 
+models attend to overwhelmingly similar lexical content on both 
+corpora and the two RoBERTa-family models overlap heavily on shared 
+errors; (3) the three models differ systematically in attribution 
+magnitude rather than category, with DA-RoBERTa-BABE-FT more 
+conservative than bias-detector across categories (63\% fewer false 
+positives on BABE; AUPRC dominance across most BASIL strata) and 
+DeBERTa-base at a statistically distinct intermediate calibration 
+level, jointly supporting a same-mechanism-different-calibration 
+interpretation; and (4) the shared mechanism comprises two largely 
+independent detection signals---recall on positives carrying both 
+lexical and inferential cues matches the prediction from treating 
+them as independent to within 2.4 points.
+
+
+This work contributes: (1) a cross-corpus, three-model comparative 
+interpretability framework using SHAP for bias detection in news; 
+(2) a methodological correction for vocabulary-pool-size confound in 
+top-$K$ feature selection; (3) identification of cross-corpus 
+misalignment between attribution magnitude and prediction correctness 
+in bias-detector; and (4) evidence across three encoder architectures 
+that architectural differences in this model class primarily produce 
+calibration differences rather than different detection mechanisms.\footnote{Code: \url{https://github.com/NickDerWerner/SHAP-Analysis-Bias-Models}}
+\revnote{TODO P0 | Introduction findings/contributions}{Rewrite numbered contributions around validated attribution overlap, shared errors, confidence/threshold robustness, and (if supported) span agreement. Downgrade same-mechanism/different-calibration claims.}
+
+
+
+
+\section{Related Work}
+\subsection{Transformer Models for NLP}
+Transformer architectures \cite{vaswani} and their derivatives such 
+as BERT \cite{devlin-etal-2019-bert}, RoBERTa 
+\cite{liu2019robertarobustlyoptimizedbert}, and DeBERTa 
+\cite{he2021deberta} form the backbone of modern bias detection 
+systems, including the models analyzed in this work.
+
+\subsection{Bias Detection in News}
+Automated bias detection in news text has gained attention with the 
+rise of computational journalism. \citet{spinde2021babe} introduced 
+BABE (Bias Analysis by Experts), a sentence-level dataset for bias 
+detection in news articles using distant supervision from expert 
+annotations. \citet{ghosh2025} developed the bias-detector model, 
+which we analyze here, and \citet{Krieger2022} proposed DA-RoBERTa-BABE-FT, 
+a domain-adaptive pre-training approach for language bias detection 
+in news.
+
+\revnote{TODO P2 | Related work}{Qualify encoder-model scope and add cited decoder-LLM bias-detection work (Lin et al. 2025; Trhlik \& Stenetorp 2024; Mujahid et al. 2025; Menzner \& Leidner 2024); verify bibliographic details.}
+
+\subsection{Interpretability Methods in NLP}
+Interpretability methods for NLP span model-agnostic approaches such 
+as LIME \cite{ribeiro2016whyitrustyou} and SHAP 
+\cite{lundberg2017unifiedapproachinterpretingmodel}, and model-specific 
+approaches based on attention or internal representations. Whether 
+attention weights provide faithful explanations is contested 
+\cite{jain2019attentionexplanation, wiegreffe2019attentionexplanation, 
+serrano2019attentioninterpretable}, and benchmarks such as ERASER 
+\cite{deyoung2020eraserbenchmarkevaluaterationalized} have been 
+developed for evaluating rationalized models. We use SHAP for its 
+theoretical grounding and model-agnostic applicability across 
+architectures.
+
+\subsection{SHAP Applications in NLP}
+SHAP has been widely applied to explain NLP models due to its 
+theoretical grounding and locally accurate attributions. 
+\citet{Mosca2022SHAPBasedEM} provide a comprehensive review of 
+SHAP-based explanation methods for NLP interpretability across tasks.
+
+Recent research highlights the importance of critically
+evaluating post-hoc feature attributions. Haug et
+al.~\citep{haug2021baselines} demonstrate that baseline
+selection can substantially affect attribution quality,
+while Rong et al.~\citep{rong2022road} identify
+confounding effects in perturbation-based evaluation
+and propose a more reliable assessment framework.
+More directly relevant to NLP, Dhaini et
+al.~\citep{dhaini2025evalxnlp} introduce EvalxNLP,
+a framework for benchmarking explanation methods
+in terms of faithfulness, plausibility, and complexity.
+Furthermore, Dhaini et al.~\citep{dhaini2025gender}
+demonstrate that explanation quality can vary
+systematically across demographic subgroups.
+Together, these findings underscore that similarity
+in SHAP attribution patterns alone does not establish
+shared decision mechanisms, motivating complementary
+evaluations of explanation faithfulness, robustness,
+and alignment with human-annotated bias cues.
+
+\subsection{Positioning}
+Prior interpretability work on bias detection has largely examined 
+individual models in isolation, applying attribution methods to 
+characterize a single system's failure modes or feature reliance. 
+To our knowledge, no prior work has performed a comparative SHAP-based 
+analysis across multiple deployed news-bias detectors, nor tested 
+whether such interpretability findings generalize across stylistically 
+distinct corpora. We address this gap 
+by comparing three encoder-based bias detectors spanning RoBERTa and 
+DeBERTa backbone families on BABE and BASIL, identifying a 
+vocabulary-pool-size confound that affects prior top-$K$ feature 
+comparisons and characterizing whether observed differences reflect 
+detection mechanism or calibration.
+
+\revnote{TODO P1 | Related work / positioning}{Discuss post-hoc explanation faithfulness, perturbation evaluation, and phrase-level methods. Explain what this paper adds beyond a descriptive SHAP ranking. Avoid unverified “first” claims.}
+
+\section{Methodology}
+
+\subsection{Dataset and Models}
+
+We evaluate three bias detection models on the BABE 
+(Bias Analysis by Experts) dataset\footnote{We use the \texttt{mediabiasgroup/BABE} release on 
+HuggingFace (\url{https://huggingface.co/datasets/mediabiasgroup/BABE}), 
+which contains 4{,}121 sentences and differs from the SG1/SG2 
+splits reported in \citet{spinde2021babe}.} 
+(Spinde et al., 2021), a sentence-level dataset for 
+bias detection in news articles. BABE contains 4,121 expert-annotated sentences drawn from 15 U.S. news outlets, labeled at the sentence level as biased or non-biased. We evaluate on the 1,000-sentence test split (55.9\% positive prevalence).
+
+To assess cross-corpus generalization, we additionally evaluate all 
+three models on BASIL \cite{fan-etal-2019-plain}, a corpus of 300 
+articles covering 100 news events with 7{,}984 sentences and a 
+positive prevalence of 20\%. BASIL provides span-level annotations categorized 
+as lexical bias (loaded language), informational bias (framing or 
+selection), or both, with each span further marked as appearing within 
+a quotation or in unquoted prose. For sentence-level binary 
+classification consistent with BABE, we treat any sentence containing 
+at least one annotated span as biased and all others as non-biased; 
+quoted spans are retained since their inclusion or framing can itself 
+reflect editorial bias. The two datasets differ in annotation 
+philosophy --- BASIL annotates spans within potentially neutral 
+surrounding text while BABE annotates whole sentences --- and the 
+cross-corpus evaluation accordingly reflects both distribution shift 
+and this annotation difference.
+
+\revnote{TODO P0 | BABE/BASIL harmonization}{Add “Task Harmonization” subsection: BABE sentence labels vs BASIL lexical/informational span labels, union-to-binary rule, quotes, negation and source-level caveats; provide a worked example and per-stratum counts.}
+\revnote{TODO P1 | Data protocol}{Verify train/validation/test membership, topic/article overlap and whether BASIL is strictly external test data; do not calibrate thresholds or develop taxonomy on test labels. Explain prevalence changes.}
+
+\textbf{Models:} We analyze three transformer-based bias detection 
+models: (1) bias-detector\footnote{\url{https://huggingface.co/himel7/bias-detector}} 
+\cite{ghosh2025}, a model specifically designed for detecting bias 
+in news text; (2) DA-RoBERTa-BABE-FT\footnote{\url{https://huggingface.co/mediabiasgroup/DA-RoBERTa-BABE-FT}}, 
+a domain-adaptive RoBERTa model \cite{liu2019robertarobustlyoptimizedbert} 
+fine-tuned on the BABE dataset \cite{Krieger2022}; and (3) 
+DeBERTa-base \cite{he2021deberta}, which we fine-tuned on BABE in this 
+work (macro-F1 0.835, AUPRC 0.948) to test cross-architecture 
+generalization. All three are transformer-based encoders 
+\cite{vaswani, devlin-etal-2019-bert}. We use the test split of BABE 
+and the full BASIL corpus for evaluation.
+
+\textbf{Model selection rationale:} bias-detector and 
+DA-RoBERTa-BABE-FT are the established encoder-based 
+state-of-the-art for sentence-level news bias detection, with public 
+weights and journalism-adjacent deployment. We add a BABE-fine-tuned 
+DeBERTa-base as a third encoder from a different backbone family to 
+test whether our findings generalize beyond the RoBERTa lineage. 
+Applying SHAP to decoder LLMs raises distinct methodological 
+challenges (prediction-extraction strategy, prompt sensitivity, 
+computational cost) that we leave to future work.
+
+\revnote{TODO P1 | Models}{Add model IDs/revisions, training data, fine-tuning hyperparameters, checkpoint-selection method, validation seeds, and model capacity; make DeBERTa inclusion consistent. Scope architecture conclusion to two families.}
+
+\textbf{Preprocessing:} For each model, we use the corresponding 
+tokenizer from the HuggingFace Transformers library. Input sequences 
+are tokenized with a maximum length of 256 tokens, following standard 
+practices for sentence classification tasks. Labels are normalized to 
+binary format (0 for non-biased, 1 for biased) to ensure consistent 
+analysis across models.
+
+\subsection{SHAP-Based Interpretability Framework}
+We use SHAP \cite{lundberg2017unifiedapproachinterpretingmodel}, which 
+assigns each feature an additive attribution based on Shapley values 
+\cite{shapley1953}. We apply the SHAP library's TextExplainer with a 
+Text masker, which handles tokenization and masking for transformer 
+models and computes token-level attributions against a background 
+dataset of test-set sentences. For each model, we construct a 
+prediction function returning softmax probabilities and extract 
+attributions for the positive (biased) class.
+
+\revnote{TODO TODO P0 -- SHAP methodology}{
+  Specify the masker, background/reference
+  distribution, SHAP output space, library
+  version, and explanation parameters.
+  Verify that the description matches
+  the actual implementation.
+}
+
+
+\subsection{Word-Level Attribution Aggregation}
+
+Transformer-based models operate on subword units, while bias analysis is more interpretable at the word level. To bridge this gap, we aggregate token-level SHAP attributions into word-level explanations using a structured aggregation pipeline, illustrated in Figure~\ref{fig:shap_pipeline}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{shap.png}
+    \caption{Word-level SHAP aggregation pipeline. Token-level SHAP values produced by a transformer model are grouped into words based on tokenizer boundaries and text alignment, then aggregated to produce interpretable word-level attributions.}
+    \label{fig:shap_pipeline}
+\end{figure}
+
+Given an input sentence, we first compute token-level SHAP values using the model-specific tokenizer and SHAP TextExplainer. Subword tokens are then grouped into words based on tokenizer boundary markers and original text alignment. For each word, we aggregate the SHAP values of all constituent tokens by summation, preserving the additive property of Shapley values. This produces a single attribution score per word, reflecting its overall contribution to the model’s predicted probability of the biased class.
+
+To ensure linguistic consistency, we apply normalization steps that correct tokenization artifacts and align word boundaries with the original text. These steps prevent spurious attributions arising from subword fragmentation or punctuation handling. The resulting word-level attributions enable consistent comparison across instances and models while retaining faithfulness to the underlying token-level explanations.
+
+\revnote{TODO P0 | Word attribution mapping}{Make exact token-to-word algorithm auditable: offset mapping, punctuation, subword joins, normalization, special tokens, phrase-level handling; validate with manually inspected examples and explain sum aggregation.}
+
+\subsection{Stratified Sampling Strategy} 
+To ensure comprehensive analysis across different prediction types, we 
+employ stratified sampling to select instances for SHAP analysis. For 
+each model, we first evaluate all test instances to obtain predictions 
+and ground truth labels. We then categorize instances into: (1) True 
+Positives (TP): correctly predicted as biased, (2) False Positives 
+(FP): incorrectly predicted as biased, (3) True Negatives (TN): 
+correctly predicted as non-biased, and (4) False Negatives (FN): 
+incorrectly predicted as non-biased.
+
+\textbf{Sampling Procedure:} We sample up to 100 instances from each 
+category (TP, FP, TN, FN) per model to ensure balanced representation. 
+For bias-detector on BABE, this yields 337 instances (100 TP, 37 FP, 
+100 TN, 100 FN); for DA-RoBERTa-BABE-FT, 312 instances (100 TP, 12 
+FP, 100 TN, 100 FN). FP counts reflect all available test-set false 
+positives for each model. FN sampling was not part of the original 
+BABE analysis design, which focused on predicted-positive and 
+predicted-negative-correct categories; we extend it here to enable 
+cross-corpus comparison of attribution on missed positives 
+(Section~\ref{sec:shap_mag}). For BASIL, we apply the same 
+four-category stratification with 100 instances per cell. Sampling is 
+performed with a fixed random seed to ensure reproducibility.
+
+\revnote{TODO P0 | Sampling}{Replace 100-per-cell-only analysis with all feasible instances or confidence-stratified samples; report counts, inclusion probabilities, sampling seeds, representativeness and bootstrap CIs. Avoid treating separate model samples as paired.}
+
+
+\subsection{Analysis Framework}
+For each sampled instance we compute and store word-level SHAP 
+attributions alongside gold and predicted labels and probabilities, 
+aggregated into global word-importance metrics (mean $|$SHAP$|$, 
+occurrence count, mean signed SHAP) and per-category statistics 
+(magnitude distributions, top words, positive vs.\ negative SHAP 
+balance) for TP, FP, TN, and FN.
+
+\textbf{Matched-Pool Feature Selection:} For analyses comparing word 
+category composition between models or prediction partitions 
+(Section~\ref{sec:word_patterns}), we use threshold-based feature 
+selection: words whose pooled mean $|$SHAP$|$ exceeds the 75th 
+percentile of the comparison set are retained. This controls for 
+attribution-vocabulary-size differences that would otherwise confound 
+top-$K$ comparisons; sensitivity analysis is in 
+Appendix~\ref{app:vocab_confound}.
+
+\revnote{TODO P0 | New taxonomy subsection}{Define Emotional/Evaluative, Explicit, Framing/Reporting, Function/Temporal: exhaustive rules, decision order, source lexicon/LLM/manual labels, examples, ambiguous words, and agreement/error analysis. Reassess 90–98\% category claim.}
+
+\revnote{TODO P0 | New similarity metrics}{Define sentence-aligned normalized absolute SHAP vectors (divide by sum), sign-aware comparison as complementary, token alignment, top-k Jaccard and cosine/Jensen-Shannon similarity. Include random/baseline similarity.}
+
+\revnote{TODO P0 | Faithfulness protocol}{Add top-attribution-token/phrase perturbation study (top 10/20/30\%) versus random and low-attribution controls; report probability/logit change, multiple masks, sentence-length controls and confidence intervals.}
+\subsection{Statistical Significance Testing}
+We assess paired-prediction differences between models using 
+McNemar's test \cite{Dietterich} with continuity correction, and 
+distributional differences in per-instance SHAP magnitudes using 
+two-sided Mann-Whitney U tests with rank-biserial effect sizes.
+
+\subsection{Evaluation Metrics}
+We report standard classification metrics: precision, recall, F1 
+score, false positive rate (FPR), and area under the precision-recall 
+curve (AUPRC). Unless otherwise stated, classification decisions are 
+made at a probability threshold of 0.5. Additionally, we analyze 
+SHAP-specific metrics: (1) mean absolute SHAP value per instance 
+category (TP, FP, TN, FN), (2) word-level attribution distributions, 
+and (3) word category composition under matched-pool feature 
+selection. These metrics provide both performance and interpretability 
+perspectives on model behavior.
+\revnote{TODO P0 | Threshold robustness protocol}{Report AUROC alongside AUPRC, ECE/Brier plus reliability diagrams if claiming calibration. Select thresholds from validation only (e.g., F1-optimal or fixed FPR); retain t=0.5 as sensitivity. Add threshold-free gold-label × score-bin analyses.}
+\revnote{TODO P0 | Confidence control protocol}{Predefine how SHAP magnitude is adjusted for confidence: within-model correlation with probability/logit, paired common-sentence confidence matching or regression, bootstrap CIs. Note higher probability does not mathematically force each mean absolute SHAP to be larger.}
+\section{Evaluation Results}
+\subsection{Overall Model Performance}
+Table~\ref{tab:performance} summarizes performance metrics for the 
+three models on BABE and BASIL. On BABE, bias-detector achieves 
+higher F1 while DA-RoBERTa-BABE-FT shows lower FPR and higher 
+precision; DeBERTa-base sits between them on F1 (0.836) and matches 
+DA-RoBERTa's low FPR (0.061). On BASIL, all three show substantially 
+lower F1 at threshold 0.5, partly reflecting annotation-philosophy 
+differences (BABE annotates whole sentences; BASIL converts span 
+annotations to a sentence-level binary task) alongside distribution 
+shift. Threshold-independent AUPRC indicates all three retain 
+discriminative ability (lift 1.79--2.03$\times$ over baseline), with 
+DeBERTa's BASIL operating point at threshold 0.5 less favorable than 
+its ranking ability would suggest---consistent with a calibration 
+rather than mechanism difference. The performance gap motivates the 
+SHAP-level analysis that follows. If the models truly differ in 
+detection mechanism, we expect divergent attribution patterns; if 
+they differ only in calibration, attribution should look similar in 
+shape but differ systematically in magnitude.
+
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccc@{\hskip 6pt}ccc}
+\toprule
+& \multicolumn{3}{c}{BABE} & \multicolumn{3}{c}{BASIL} \\
+\cmidrule(r){2-4}\cmidrule(l){5-7}
+\textbf{Metric} & \textbf{bd} & \textbf{dr} & \textbf{deb} & \textbf{bd} & \textbf{dr} & \textbf{deb}\\
+\midrule
+Precision & 0.924 & 0.970 & 0.940 & 0.463 & 0.488 & 0.471 \\
+Recall    & 0.801 & 0.705 & 0.753 & 0.316 & 0.272 & 0.207 \\
+F1        & 0.858 & 0.817 & 0.836 & 0.376 & 0.349 & 0.288 \\
+FPR       & 0.156 & 0.057 & 0.061 & 0.093 & 0.073 & 0.059 \\
+AUPRC     & 0.953 & 0.957 & 0.948 & 0.391 & 0.412 & 0.364 \\
+\bottomrule
+\end{tabular}
+\caption{Model Performance on BABE and BASIL Test Sets. deb = 
+DeBERTa-base fine-tuned on BABE in this work. F1 is binary F1 at 
+threshold 0.5; AUPRC is threshold-independent.}
+\label{tab:performance}
+\end{table}
+
+\revnote{TODO P1 | Overall performance}{Update Table 1 with AUROC, validation-selected operating point, Brier/ECE (if calibration is a focus), confidence intervals; separate cross-corpus rank discrimination from label-construction differences.}
+
+\subsection{SHAP Magnitude Patterns}
+\label{sec:shap_mag}
+
+Word-level SHAP attribution magnitudes reveal differences in how models 
+interpret linguistic signals. Fig.~\ref{fig:smd_babe} presents 
+per-instance mean $|$SHAP$|$ by prediction category on BABE; 
+Table~\ref{tab:shap_magnitudes} summarizes the medians across both 
+corpora.
+
+\revnote{TODO P0 | Magnitude results}{Re-run Figures 3/4 and Table 2 using confidence-controlled comparisons and validation thresholds. If magnitude gaps vanish, describe them as score-scale effects and remove “three calibration levels.”}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{latex/babe_fig3_with_fn.pdf}
+    \caption{Per-instance mean $|$SHAP$|$ by prediction category on BABE. 
+    Dashed line: mean; orange line: median. BABE FP samples reflect all 
+    available test-set false positives (bd: n=37, dr: n=12); other 
+    categories n=100. DeBERTa-base medians are reported in 
+    Table~\ref{tab:shap_magnitudes} and discussed in the text.}
+    \label{fig:smd_babe}
+\end{figure}
+
+On BABE, bias-detector's false positives exhibit higher attribution magnitude than true positives---a reversal in attribution strength between correct and incorrect positive predictions, driven by more numerous moderate-magnitude signals rather than stronger peaks (Appendix~\ref{app:max_shap}). DA-RoBERTa-BABE-FT 
+shows comparable TP and FP magnitudes. The two models also differ 
+on true negatives: DA-RoBERTa-BABE-FT's median TN attribution is roughly 
+42\% of bias-detector's. False-negative attribution sits at TP level for 
+bias-detector, consistent with its broader over-flagging character; 
+DA-RoBERTa-BABE-FT FN sits clearly between TN and TP, suggesting 
+sub-threshold detection on missed sentences.
+
+To assess whether these patterns generalize, we evaluated SHAP 
+attribution on BASIL, a stylistically and topically distinct 
+news-bias corpus (Fig.~\ref{fig:smd_basil}).
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{basil_fig3_with_fn.pdf}
+    \caption{Per-instance mean $|$SHAP$|$ by prediction category on 
+    BASIL. Dashed line: mean; orange line: median. All categories 
+    sampled at n=100. DeBERTa-base medians are reported in 
+    Table~\ref{tab:shap_magnitudes} and discussed in the text.}
+    \label{fig:smd_basil}
+\end{figure}
+
+The bias-detector reversal persists on BASIL, as does the TN 
+attribution gap (DA-RoBERTa-BABE-FT TN ratio 0.51 vs.\ 0.42 on BABE). 
+DA-RoBERTa-BABE-FT's BABE-specific TP
+$\approx$ FP pattern, however, does not generalize: on BASIL it also shows FP > TP. The original ``alignment'' interpretation does not reflect a robust calibration property of the model and should be revised; the cross-corpus calibration signature is instead the TN gap.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccc@{\hskip 8pt}ccc}
+\toprule
+& \multicolumn{3}{c}{BABE} & \multicolumn{3}{c}{BASIL} \\
+\cmidrule(r){2-4}\cmidrule(l){5-7}
+ & bd & dr & deb & bd & dr & deb \\
+\midrule
+TP & 0.028 & 0.027 & 0.028 & 0.041 & 0.034 & 0.037 \\
+FP & 0.037 & 0.027 & 0.034 & 0.055 & 0.043 & 0.058 \\
+TN & 0.025 & 0.011 & \textbf{0.016} & 0.031 & 0.016 & \textbf{0.023} \\
+FN & 0.030 & 0.016 & 0.023 & 0.032 & 0.021 & 0.025 \\
+\bottomrule
+\end{tabular}
+\caption{Median per-instance mean $|$SHAP$|$ by prediction category 
+across three models. DeBERTa-base sits between bd and dr on the TN 
+calibration axis on both corpora (BABE: 0.025 / 0.016 / 0.011; 
+BASIL: 0.031 / 0.023 / 0.016), forming a smooth three-model 
+calibration spectrum.}
+\label{tab:shap_magnitudes}
+\end{table}
+
+False-negative attribution generalizes asymmetrically. 
+DA-RoBERTa-BABE-FT maintains FN above the TN baseline on both corpora---%
+consistent sub-threshold detection across distributions. Bias-detector 
+shows FN > TN on BABE but FN $\approx$ TN on BASIL: its missed-positive 
+attribution is corpus-dependent in a way DA-RoBERTa-BABE-FT's is not.
+
+Figure~\ref{fig:figure1} illustrates this pattern: on a shared false positive (\textit{``A Cuba policy that is stuck in the Cold War''}), both models attribute most strongly to the same tokens (\textit{``that''}, \textit{``stuck''}), yet bias-detector predicts BIASED at $p = 0.987$ while DA-RoBERTa-BABE-FT predicts BIASED at $p = 0.570$---barely past threshold. Same evidence, different confidence.
+
+Paired analyses on sentences where both models commit the same 
+error reinforce this interpretation. On 100 shared false-positives in 
+BASIL, the two models share 81\% of their top-20 attributed tokens, yet 
+bias-detector assigns 33\% higher magnitude than DA-RoBERTa-BABE-FT to 
+those shared words. On 100 shared false-negatives, Jaccard is 0.72 and 
+bias-detector's magnitude is double DA-RoBERTa-BABE-FT's. The two 
+models attend to substantially the same linguistic signals but attribute 
+systematically different magnitudes---same-mechanism detection with 
+different calibration.
+The TN calibration signature extends to a smooth three-model spectrum 
+when DeBERTa-base is included: median per-instance mean $|$SHAP$|$ on 
+TNs is 0.025 (bd) > 0.016 (DeBERTa) > 0.011 (dr) on BABE, and 
+0.031 > 0.023 > 0.016 on BASIL---consistent ordering across both 
+corpora. FN attribution shows the same three-model ordering on both 
+corpora. Pairwise Mann-Whitney U tests confirm DeBERTa's TN 
+distribution differs significantly from both bd and dr on both 
+corpora ($p < 10^{-4}$ in all four cross-model TN comparisons; 
+Section~\ref{sec:significance}). Three architecturally distinct 
+encoders, spanning RoBERTa and DeBERTa backbone families, thus 
+occupy three calibration levels on the TN axis with comparable 
+discriminative ability (Table~\ref{tab:performance}). Under 
+matched-pool feature selection (Section~\ref{sec:word_patterns}), 
+they attend to the same lexical categories. The calibration-vs-mechanism 
+interpretation therefore extends across architecture families.
+\revnote{TODO P0 | Cross-model explanation similarity}{For the same sentences, compare all 3 models using normalized signed/absolute token attribution patterns, top-k overlap and bootstrap confidence intervals; show both shared-error and all-input analyses.}
+\subsection{Global Bias Indicators}
+\label{sec:global_bias}
+
+We aggregated word-level SHAP attributions across all instances to 
+identify global bias indicators. Fig.~\ref{fig:tbi} presents the top 10 
+words with highest mean absolute SHAP values for each model.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{figure2_top_bias_indicators.png}
+    \caption{Top 10 bias indicators (highest mean $|$SHAP$|$) for bd and 
+    dr on BABE; DeBERTa-base indicators discussed in 
+    Section~\ref{sec:global_bias}.}
+    \label{fig:tbi}
+\end{figure}
+
+\revnote{TODO P1 | Global indicators}{Report token frequency and uncertainty and keep direction (signed SHAP) distinct from magnitude. Include DeBERTa in Figure 5 or qualify figure title; avoid calling words “bias indicators” without gold-span support.}
+
+For bias-detector, top indicators include emotional and evaluative 
+language: ``boasted'', ``bloated'', ``dubious'', ``antisemitic'', and 
+``skeptics''. Many top words are negative descriptors (``bloated'', 
+``dubious'') or explicit bias terms (``antisemitic''), suggesting the 
+model relies heavily on loaded language and explicit bias markers. 
+For DA-RoBERTa-BABE-FT, top indicators emphasize dismissive and moral 
+language: ``heartlessness'', ``flippantly'', ``lashed'', 
+``antisemitic'', and ``dubious''. This model shows a stronger focus 
+on dismissive language patterns (``flippantly'', ``heartlessness'') 
+and emotional descriptors compared to bias-detector. Some overlap exists (``dubious'', 
+``antisemitic'', ``lashed''), suggesting consensus on certain linguistic 
+bias markers.
+
+\subsection{Word-Level Patterns}
+\label{sec:word_patterns}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcrrrr}
+\toprule
+Model & Pred. & $n$ & Em/Ev & Expl. & Fr/Rep & Fu/Tm \\
+\midrule
+\multirow{2}{*}{bd}  & TP & 399 & 96.0 & 0.8 & 1.0 & 2.3 \\
+                     & FP & 231 & 90.5 & 0.4 & 2.2 & 6.9 \\
+\midrule
+\multirow{2}{*}{dr}  & TP & 330 & 96.7 & 0.6 & 2.4 & 0.3 \\
+                     & FP & 39  & 87.2 & 0.0 & 7.7 & 5.1 \\
+\midrule
+\multirow{2}{*}{deb} & TP & 371 & 97.6 & 0.0 & 1.3 & 1.1 \\
+                     & FP & 134 & 91.0 & 0.7 & 0.7 & 7.5 \\
+\bottomrule
+\end{tabular}
+\caption{Matched-pool TP-vs-FP category composition (percentages of 
+threshold-selected words) on BABE. All three models' TPs are 
+dominated by Emotional/Evaluative content (96.0--97.6\%); FPs show 
+modest, model-symmetric shifts toward Function/Temporal words.}
+\label{tab:matched_pool_tpfp}
+\end{table}
+
+Table~\ref{tab:matched_pool_tpfp} reports matched-pool category 
+composition of true positives and false positives for all three 
+models on BABE. Evaluative and emotionally charged language dominates the 
+highest-attribution features under matched-pool selection (threshold 
+$\geq$ p75 of pooled mean $|$SHAP$|$) for all three models.
+Bias-detector's TP and FP compositions are both 
+dominated by Emotional/Evaluative language (96.0\% vs.\ 90.5\%), with 
+a modest rise in Function/Temporal words on FPs (2.3\% vs.\ 6.9\%). 
+The model relies on similar lexical cues regardless of whether its 
+prediction is correct, supporting the over-flagging interpretation from 
+Section~\ref{sec:shap_mag}.
+\revnote{TODO P0 | Category results}{Recompute percentages after taxonomy validation, include raw counts and denominators, compare multiple category schemes/thresholds, label “attribution category” rather than model reasoning; test whether dominance exceeds corpus-frequency baselines.}
+
+DA-RoBERTa-BABE-FT shows the same direction and roughly equal magnitude 
+of TP-to-FP shift toward Function/Temporal words (0.3\% vs.\ 5.1\%, 
+compared to bias-detector's +4.7 pt rise). Under matched feature pools, 
+Emotional/Evaluative still dominates DA-RoBERTa-BABE-FT FPs (87.2\%). 
+The earlier finding that DA-RoBERTa-BABE-FT FPs shift substantially 
+toward function and temporal words reflected a vocabulary-pool-size 
+confound (Appendix~\ref{app:vocab_confound}): under fixed top-$K$ 
+selection, DA-RoBERTa-BABE-FT's smaller FP vocabulary (249 unique 
+types vs.\ bias-detector's 660) was exhausted at lower attribution 
+magnitudes, inflating the apparent function/temporal proportion.
+
+DeBERTa-base shows the same qualitative pattern: TPs are 97.6\% 
+Emotional/Evaluative and FPs 91.0\%, with the largest TP-to-FP shift 
+again going to Function/Temporal words (+6.4 pt). The TP cells across 
+all three models are essentially identical in composition 
+(94.4--97.6\% Emotional/Evaluative), indicating that what the models 
+attend to when correctly flagging biased content does not vary 
+meaningfully with architecture. The three-model matched-pool 
+comparison thus confirms that the calibration spectrum documented in 
+Section~\ref{sec:shap_mag} operates over the same lexical surface 
+across all three encoders.
+
+To examine whether the two RoBERTa-family models attend to similar 
+content when they fail in the same way, we partition FPs into three 
+cells: shared (both models commit FPs on the same sentence), bd-only, 
+and dr-only.
+
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcrrrrr}
+\toprule
+& Cell & $n$ & Em/Ev & Expl. & Fr/Rep & Fu/Tm \\
+\midrule
+\multirow{4}{*}{\rotatebox{90}{BABE}}
+ & Shared (bd) & 5   & 92.9 & 0.0 & 0.0  & 7.1  \\
+ & Shared (dr) & 5   & 89.5 & 0.0 & 0.0  & 10.5 \\
+ & bd-only     & 32  & 89.8 & 0.6 & 2.8  & 6.8  \\
+ & dr-only     & 7   & 75.0 & 0.0 & 15.0 & 10.0 \\
+\midrule
+\multirow{4}{*}{\rotatebox{90}{BASIL}}
+ & Shared (bd) & 100 & 94.4 & 0.3 & 2.5  & 2.8  \\
+ & Shared (dr) & 100 & 96.2 & 0.4 & 1.7  & 1.7  \\
+ & bd-only     & 100 & 94.4 & 0.0 & 1.9  & 3.7  \\
+ & dr-only     & 100 & 91.3 & 0.4 & 2.6  & 5.7  \\
+\bottomrule
+\end{tabular}
+\caption{Three-way FP partition under matched-pool feature selection. 
+Values are percentages of threshold-selected words per category. 
+Emotional/Evaluative dominates every cell on both corpora.}
+\label{tab:fp_partition}
+\end{table}
+
+Emotional/Evaluative dominates all partitions on both corpora 
+(75.0--92.9\% on BABE; 91.3--96.2\% on BASIL); BASIL cells ($n{=}100$ 
+each) confirm the dominance pattern robustly. The bd-only partition 
+is largest on both corpora, consistent with bias-detector's 
+over-flagging generating the bulk of its FPs on sentences 
+DA-RoBERTa-BABE-FT correctly identifies as non-biased. Across both 
+corpora, the two models attend to the same lexical categories whether 
+correct or incorrect; they differ primarily in how readily they 
+exceed the decision threshold---a calibration difference rather than 
+a difference in reasoning over the linguistic surface.
+\revnote{TODO P1 | BASIL human-span alignment}{Measure gold-span attribution mass and token/span ranking AUPRC; separate lexical-only, informational-only and both. State this is human-rationale agreement, not causal faithfulness, and handle short spans/class imbalance.}
+
+\subsection{Statistical Significance Testing}
+\label{sec:significance}
+
+We applied McNemar's test on the BABE test set to assess whether the 
+observed difference in error patterns between the two models is 
+statistically significant. The test yielded $\chi^2 = 5.723$ with 
+$p = 0.0167$, indicating the difference in false positive rates 
+(15.6\% vs.\ 5.7\%) is unlikely to be due to chance.
+
+\revnote{TODO P1 | Statistical inference}{Use paired tests/paired bootstrap where sentences are shared, report uncertainty for key effect sizes, account for multiple comparisons, and integrate results under corresponding finding instead of stand-alone statistical catalogue.}
+
+We additionally test whether the SHAP magnitude differences underlying 
+the Section~\ref{sec:shap_mag} reversal claim are statistically 
+significant. Using two-sided Mann-Whitney U tests on per-instance 
+mean $|$SHAP$|$ distributions, bias-detector's false positives 
+exhibit significantly higher magnitude than its true positives on 
+both corpora (BABE: $U = 1335$, $p = 0.013$; BASIL: $U = 4079$, 
+$p = 0.025$; rank-biserial $|r| = 0.28$ and $0.18$ respectively). 
+DA-RoBERTa-BABE-FT shows no significant TP-vs-FP difference on BABE 
+($U = 627$, $p = 0.80$; the BABE FP set has $n = 12$, limiting 
+power) but a significant FP-greater-than-TP pattern on BASIL 
+($U = 3897$, $p = 0.007$, $|r| = 0.22$). The cross-corpus TN 
+attribution gap that anchors the calibration interpretation is also 
+significant with large effect sizes: bias-detector's TN magnitudes 
+exceed DA-RoBERTa-BABE-FT's on both BABE ($U = 8627$, $p < 10^{-18}$, 
+$|r| = 0.73$) and BASIL ($U = 7719$, $p < 10^{-10}$, $|r| = 0.54$). 
+DeBERTa-base's TN distribution also differs significantly from both 
+bd and dr on both corpora ($p < 10^{-4}$ in all four cross-model 
+TN comparisons), placing it at a statistically distinct intermediate 
+calibration level rather than collapsing onto either of the 
+RoBERTa-family models. These direct tests confirm that the magnitude 
+patterns visible in Figures~\ref{fig:smd_babe} 
+and~\ref{fig:smd_basil} reflect statistically significant 
+distributional differences, not artifacts of summary medians.
+\revnote{TODO P0 | Error overlap analysis}{Repeat shared-FP/FN analysis at validation thresholds and across score bins; report observed/expected counts and uncertainty; note independence null is descriptive, not evidence of identical mechanisms.}
+
+On BASIL's 6{,}361 negative examples, the two RoBERTa-family models 
+share 314 false positives at threshold 0.5---7.3$\times$ more than if 
+their errors were independent (53.0\% shared rate among bias-detector's 
+FPs vs.\ 7.3\% predicted under independence). Including DeBERTa-base, 
+197 FPs are shared by all three models, an 8.2$\times$ excess over 
+the three-way independence prediction. Among the 405 lex-only positives, 
+the two RoBERTa-family models share 221 misses (54.6\% vs.\ 38.6\% 
+under independence; 1.4$\times$ excess). All three models tend to err 
+on the same content.
+
+At threshold 0.3 on BASIL's both-types stratum ($n{=}44$ positives 
+carrying both lexical and inferential bias cues), recall is 0.64 / 
+0.66 for bias-detector and DA-RoBERTa-BABE-FT. Treating the two cue 
+pathways as independent and using the per-stratum lex-only and 
+inf-only recalls (0.47 / 0.34 for bias-detector, 0.49 / 0.37 for 
+DA-RoBERTa-BABE-FT) predicts 0.65 / 0.68 via 
+$P_\text{both} = 1 - (1 - P_\text{lex})(1 - P_\text{inf})$. Observed 
+matches predicted within 2.4 points for both models. For 
+DeBERTa-base on the same stratum, observed recall is 0.432 vs.\ 
+0.480 predicted under independence---a modest sub-additive gap of 
+$-0.048$ points, larger than the bd/dr deviations but in the same 
+direction. The three-model picture is consistent with two 
+approximately-independent detection pathways, with mild and 
+model-dependent interaction effects rather than a single shared 
+lexical shortcut.
+
+ \revnote{TODO P0 | Two-pathway independence claim}{Remove or substantiate “independent detection pathways”: agreement between observed recall and 1-(1-p\_lex)(1-p\_inf) is not proof of independence; n=44 both-types. Use bootstrapped uncertainty and explicit interaction tests or weaken to descriptive pattern.}
+
+\section{Conclusion}
+We conducted a comparative interpretability analysis of three 
+transformer-based bias detectors using SHAP, evaluated on BABE and 
+on BASIL for cross-corpus generalization. Bias-detector assigns 
+stronger internal evidence to false positives than to correct 
+detections, a reversal that persists across both corpora and 
+contributes to systematic over-flagging of neutral journalistic 
+content---a concern for deployment in editorial settings.
+
+DA-RoBERTa-BABE-FT and DeBERTa-base produce fewer false positives 
+than bias-detector on BABE and show lower attribution magnitude 
+across most prediction categories on both corpora, with DeBERTa-base 
+occupying a statistically distinct intermediate position on the TN 
+calibration axis. Under matched-pool feature selection, all three 
+models attend to overwhelmingly similar lexical content (90--98\% 
+Emotional/Evaluative) and the two RoBERTa-family models overlap 
+heavily on shared errors. The three models thus differ in how 
+confidently they convert linguistic signals into predictions---a 
+calibration difference spanning two encoder backbone 
+families---rather than in the linguistic signals themselves.
+
+Our results highlight the importance of interpretability-aware 
+evaluation for journalistic applications. The calibration framing 
+suggests that improving deployed bias detectors may benefit more 
+from calibration-aware training than from architectural changes 
+aimed at altering attribution patterns. Future work should examine 
+whether this distinction generalizes to decoder LLMs, which require 
+methodological adaptations for SHAP-style attribution on generative 
+models.
+
+ \revnote{TODO P0 | Conclusion}{Rewrite around supported findings after sensitivity/faithfulness tests; remove causal “same mechanism” and “primarily calibration” unless independently established with reliability/calibration and controls. State journalistic implications cautiously.}
+
+\section{Limitations}
+
+This study has several limitations. First, our analysis is restricted 
+to two English-language news-bias corpora (BABE and BASIL). Both 
+reflect Western journalistic norms and specific annotation 
+guidelines---BABE annotates whole sentences while BASIL annotates 
+spans within sentences---and the cross-corpus performance gap 
+conflates distribution shift with these annotation-philosophy 
+differences. Generalization to other languages, journalistic 
+traditions, or cultural definitions of bias requires further 
+evaluation. We also note that one originally reported pattern---DA-RoBERTa-BABE-FT's near-equal TP and FP attribution magnitudes on BABE---did not generalize to BASIL and is accordingly revised in our cross-corpus analysis (Section~\ref{sec:shap_mag}).
+
+Second, our analysis focuses on three encoder-based bias detectors 
+spanning RoBERTa and DeBERTa backbone families. Whether the 
+calibration-vs-mechanism distinction extends to decoder LLMs---which 
+require methodological adaptations for SHAP-style attribution---is 
+an open question for future work.
+
+\revnote{TODO P1 | Limitations}{Explain label mismatch, limited encoder families, SHAP mask distribution, sampling and gold-span limitations, uncertainty for both-types n=44. Remove history-of-revision aside at lines 663–668.}
+
+Third, our interpretability analysis relies on SHAP as a post-hoc 
+explanation method. SHAP approximates feature contributions under 
+independence assumptions that may not fully capture complex 
+interactions in transformer architectures; word-level attributions 
+should be interpreted as explanatory signals rather than definitive 
+causal explanations. Our matched-pool feature selection (p75 
+threshold) provides one specific control for vocabulary-size confound 
+in cross-model word-category comparisons; alternative selection 
+rules are explored in Appendix~\ref{app:vocab_confound}.
+
+Finally, while we compare attribution patterns across correct and incorrect predictions, we do not evaluate alternative explanation methods or formally assess explanation faithfulness beyond consistency with model behavior. Future work could extend this analysis by incorporating multiple interpretability techniques, calibration metrics, or human evaluation of explanations to further validate reliability and usability.
+
+\section{Ethical Considerations}
+
+This work analyzes bias detection models and their explanations, but does not propose automated systems as substitutes for human judgment. Bias in journalism is inherently contextual and normatively defined, and model predictions along with their explanations may reflect annotation guidelines, cultural assumptions, or training data biases present in the BABE and BASIL datasets. As such, outputs from these models should not be treated as objective or authoritative assessments of bias.
+
+Our analysis highlights the risk of false positives, which may incorrectly label neutral reporting as biased and potentially undermine journalistic credibility if deployed without oversight. We therefore emphasize that bias detection models should be used as assistive tools within human-in-the-loop workflows, where explanations can support critical inspection rather than automated decision-making.
+
+Finally, while interpretability techniques such as SHAP improve transparency, they do not guarantee correctness or fairness. Explanations should be understood as diagnostic aids for model behavior, not as justifications for deploying models in high-stakes or adversarial settings without careful evaluation and governance.
+\revnote{TODO P2 | Ethics and reproducibility}{Retain human-in-loop warning; cite artifact licenses and add checklist details missing for hyperparameters/licenses. Check code/caches exact reproducibility and consistency with reported results.}
+
+% Bibliography entries for the entire Anthology, followed by custom entries
+%\bibliography{custom,anthology-overleaf-1,anthology-overleaf-2}
+
+% Custom bibliography entries only
+\bibliography{custom}
+
+% \section{Ethics and Broader Impact}
+
+% Automated bias detection systems have the potential to support journalism, media analysis, and public accountability by highlighting subjective or biased language at scale. However, such systems also carry ethical risks, particularly when deployed in sensitive editorial or political contexts. Incorrect bias flagging may undermine journalistic credibility, mischaracterize neutral reporting, or disproportionately affect coverage of contentious topics. Our findings demonstrate that false positives remain a central challenge, underscoring the need for careful evaluation before real-world deployment.
+
+% We position these systems as assistive tools whose outputs should be interpreted alongside human judgment. By focusing on interpretability through SHAP-based analysis, our study aims to improve transparency and enable practitioners to better understand model behavior, identify systematic failure modes, and assess the reliability of predictions. Such transparency is particularly important given the context-dependent nature of bias and the diversity of journalistic norms across cultures and outlets.
+
+% The models evaluated in this study are trained on the BABE dataset, which reflects expert annotations and inherent normative assumptions about bias. As a result, model predictions and their explanations may encode annotation biases or dataset-specific perspectives. Our analysis highlights how architectural and training choices influence not only performance but also the types of linguistic signals models prioritize, which may affect downstream fairness and generalization.
+
+% We emphasize that interpretability techniques, including SHAP, do not eliminate bias or guarantee correct model behavior. Rather, they provide a diagnostic lens for examining model decisions and guiding more responsible development. Future work should consider broader datasets, cross-cultural bias definitions, and human-in-the-loop evaluation frameworks to mitigate potential harms and support ethical deployment of bias detection systems.
+
+
+
+
+\appendix
+\section{Vocabulary-Pool-Size Confound in Top-$K$ Feature Selection}
+\label{app:vocab_confound}
+
+\revnote{TODO P2 | Appendix and presentation}{Keep vocabulary confound analysis, update max-SHAP and BASIL stratification claims after new tests, increase figure font sizes, define abbreviations, and include validation examples from both corpora.}
+
+The original analysis presented in Section~\ref{sec:word_patterns} 
+identified an apparent shift toward function and temporal words in 
+DA-RoBERTa-BABE-FT false positives (13.0\% Function/Temporal at 
+$K{=}100$ vs.\ bias-detector's 4.0\%). This appendix documents the 
+sensitivity analysis showing that the gap collapses or inverts under 
+controls for vocabulary pool size, indicating the original finding was 
+artifactual.
+
+\paragraph{Vocabulary statistics.} The two models produce FP sets of 
+markedly different vocabulary sizes on BABE 
+(Table~\ref{tab:vocab_stats}). DA-RoBERTa-BABE-FT's FP vocabulary is 
+roughly one-third of bias-detector's. Under fixed top-$K$ selection, 
+the smaller pool is exhausted at lower attribution magnitudes, 
+inflating the apparent proportion of marginal categories in the 
+selected words.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+ & bias-detector FP & DA-RoBERTa FP \\
+\midrule
+Unique word types & 660 & 249 \\
+$n$ samples       & 37  & 12  \\
+Vocab ratio (dr/bd) & --- & 0.38 \\
+\bottomrule
+\end{tabular}
+\caption{FP vocabulary statistics on BABE.}
+\label{tab:vocab_stats}
+\end{table}
+
+\paragraph{Sensitivity sweep.} Table~\ref{tab:vocab_sensitivity} reports 
+DA-RoBERTa-BABE-FT FP Function/Temporal proportion under varying 
+selection rules. Three patterns emerge: (i) the 13.0\% figure at 
+$K{=}100$ does not generalize to other $K$ values; (ii) under 
+proportional-$K$ selection (at fixed percentages of each model's 
+vocabulary), DA-RoBERTa-BABE-FT's proportion is comparable to or below 
+bias-detector's; (iii) under threshold-based selection (p75 of pooled 
+mean $|$SHAP$|$), DA-RoBERTa-BABE-FT's proportion is 5.1\% vs.\ 
+bias-detector's 6.9\%.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+Selection rule & F/T (\%) & $n_{\text{selected}}$ \\
+\midrule
+$K{=}25$  & 4.0  & 25  \\
+$K{=}50$  & 8.0  & 50  \\
+$K{=}100$ (original) & \textbf{13.0} & 100 \\
+$K{=}200$ & 15.0 & 200 \\
+$K{=}500$ & 13.7 & 249 (exhausted) \\
+\midrule
+Proportional-$K$, top 5\%  & 0.0  & 12 \\
+Proportional-$K$, top 10\% & 4.0  & 25 \\
+Proportional-$K$, top 20\% & 8.0  & 50 \\
+Proportional-$K$, top 30\% & 10.7 & 75 \\
+\midrule
+Threshold $\geq$ p75 pooled & \textbf{5.1} & 39 \\
+\bottomrule
+\end{tabular}
+\caption{Function/Temporal proportion in DA-RoBERTa-BABE-FT FPs under 
+varying selection rules. For reference, bias-detector's proportion 
+under threshold-based selection is 6.9\%.}
+\label{tab:vocab_sensitivity}
+\end{table}
+
+\paragraph{Bootstrap analysis.} A bootstrap analysis at $K{=}100$ over 
+1{,}000 resamples of DA-RoBERTa-BABE-FT's FP set yields a 95\% 
+confidence interval of [11.0\%, 24.0\%] for the Function/Temporal 
+proportion (mean 17.5\%). While this interval excludes the 
+bias-detector baseline of 4.0\% under matched fixed-$K$ selection, 
+the gap is driven entirely by the vocabulary-pool-size effect rather 
+than by a genuine difference in attribution behavior.
+
+\paragraph{Implication.} The original finding that DA-RoBERTa-BABE-FT 
+errors shift toward function and temporal words relative to 
+bias-detector reflects a vocabulary-pool-size confound rather than a 
+difference in linguistic categorization. The corrected analysis in 
+Section~\ref{sec:word_patterns} uses threshold-based feature selection 
+to remove the confound and demonstrates that both models attend to 
+similar content categories under matched pools, with comparable 
+modest TP-to-FP shifts in both models.
+
+\section{Max $|$SHAP$|$ Analysis}
+\label{app:max_shap}
+
+Section~\ref{sec:shap_mag} characterizes the attribution-magnitude 
+reversal in bias-detector using mean $|$SHAP$|$ per instance. Whether 
+this reversal reflects a few stronger trigger words on false positives 
+or more moderate signals spread across the sentence can be assessed 
+by comparing the per-instance mean to the per-instance maximum.
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcccc}
+\toprule
+Corpus & Model & TP & FP & TN & FN \\
+\midrule
+\multirow{2}{*}{BABE}  & bd & 0.172 & 0.180 & 0.103 & 0.133 \\
+                       & dr & 0.181 & 0.161 & 0.044 & 0.085 \\
+\midrule
+\multirow{2}{*}{BASIL} & bd & 0.220 & 0.242 & 0.106 & 0.135 \\
+                       & dr & 0.194 & 0.231 & 0.058 & 0.094 \\
+\bottomrule
+\end{tabular}
+\caption{Median per-instance max $|$SHAP$|$ by prediction category 
+across BABE and BASIL.}
+\label{tab:max_shap}
+\end{table}
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{llcc}
+\toprule
+Corpus & Model & FP/TP (mean) & FP/TP (max) \\
+\midrule
+\multirow{2}{*}{BABE}  & bd & 1.31 & 1.04 \\
+                       & dr & 0.99 & 0.89 \\
+\midrule
+\multirow{2}{*}{BASIL} & bd & 1.34 & 1.10 \\
+                       & dr & 1.26 & 1.19 \\
+\bottomrule
+\end{tabular}
+\caption{FP-vs-TP ratio of median $|$SHAP$|$ at the per-instance 
+mean and max levels. The max ratio is smaller than the mean ratio in 
+all four model$\times$corpus cells, indicating that the FP-vs-TP 
+magnitude gap reflects breadth of moderate-magnitude attribution 
+rather than stronger peak signals.}
+\label{tab:max_vs_mean_ratios}
+\end{table}
+
+Interpretively, when a false positive and a true positive both carry 
+one strong-ish trigger word, the per-instance max attribution 
+equalizes them. The mean is higher on FPs because the trigger word 
+sits in a sentence where more surrounding words also carry moderate 
+attribution. This is the calibration-not-mechanism reading made 
+quantitative: bias-detector spreads moderate attribution more widely 
+across over-flagged sentences without amplifying any single signal.
+
+Two caveats. First, DA-RoBERTa-BABE-FT's BABE FP set contains only 
+$n=12$ instances, making the BABE max FP/TP ratio of 0.89 a 
+high-variance estimate; the BASIL counterpart ($n=100$, max ratio 
+1.19) provides the more robust cross-corpus reading. Second, BABE 
+max ratios compress more aggressively than BASIL's (bias-detector: 
+1.31 mean $\to$ 1.04 max on BABE vs.\ 1.34 $\to$ 1.10 max on BASIL), 
+consistent with BABE's shorter sentences and tighter SHAP magnitude 
+distributions. The cross-corpus pattern is consistent in direction: 
+max attribution always equalizes more than mean attribution.
+
+The TN attribution gap that anchors the calibration interpretation in 
+the main text persists in max attribution: DA-RoBERTa-BABE-FT's 
+median max $|$SHAP$|$ on TNs is 43\% of bias-detector's on BABE 
+(0.044 vs.\ 0.103) and 55\% on BASIL (0.058 vs.\ 0.106), closely 
+matching the mean ratios (42\% and 51\%, respectively). The 
+cross-corpus calibration signature is robust across both peak and 
+mean attribution metrics. False-negative attribution sits above the 
+TN baseline for both models on both corpora in max as in mean, 
+consistent with sub-threshold detection on missed positives.
+
+\section{AUPRC by Bias-Type Stratum on BASIL}
+\label{app:auprc_strata}
+
+Table~\ref{tab:auprc_strata} reports area under the precision-recall 
+curve (AUPRC) for both models on BASIL across the full evaluation set 
+and five bias-type or quote-handling strata. Baseline equals 
+positive-class prevalence within the stratum (equivalent to the AUPRC 
+of a random classifier); lift equals AUPRC / baseline.
+
+\begin{table*}[t]
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+Stratum & $n$ & BD AUPRC & DR AUPRC & Baseline & BD lift & DR lift \\
+\midrule
+Full           & 7,984 & 0.392 & 0.412 & 0.203 & 1.93$\times$ & 2.03$\times$  \\
+Lex-only       & 6,766 & 0.195 & 0.209 & 0.060 & 3.25$\times$ & 3.50$\times$  \\
+Inf-only       & 7,535 & 0.290 & 0.313 & 0.156 & 1.86$\times$ & 2.01$\times$  \\
+Both-types     & 6,405 & 0.058 & 0.101 & 0.007 & 8.49$\times$ & 14.75$\times$ \\
+Quote-excluded & 7,297 & 0.275 & 0.274 & 0.128 & 2.14$\times$ & 2.14$\times$  \\
+Quote-only     & 7,048 & 0.226 & 0.270 & 0.098 & 2.32$\times$ & 2.77$\times$  \\
+\bottomrule
+\end{tabular}
+\caption{AUPRC by bias-type and quote-handling stratum on BASIL. Each 
+stratum's $n$ is its positive-class count plus all 6,361 negatives in 
+the BASIL evaluation pool.}
+\label{tab:auprc_strata}
+\end{table*}
+
+Both models exhibit above-baseline discrimination on every stratum. 
+The lex-only and inf-only lifts (3.3--3.5$\times$ and 
+1.9--2.0$\times$) support the bias-type independence interpretation in 
+Section~\ref{sec:significance}: each cue family is detectable on its 
+own, and the two detection pathways are approximately statistically 
+independent rather than reflecting a single shared lexical shortcut. 
+The high lift on the both-types stratum (8.5--14.8$\times$) reflects 
+the stratum's small baseline prevalence (0.69\%) rather than 
+uniformly stronger performance; absolute AUPRC there is the lowest of 
+all strata (0.058 / 0.101), consistent with the small positive sample 
+size ($n_\text{both-types positive} = 44$). Quote-excluded and 
+quote-only strata show similar lifts (2.1--2.8$\times$), indicating 
+that quote handling does not materially alter the cross-corpus 
+discrimination picture.
+
+\section{Token-Level SHAP Examples}
+\paragraph{True Positives.}
+
+Refer to Fig. \ref{fig:appendixA} below.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{AppendixA.png}
+    \caption{Examples of Biased Terms detected by both the models for the True Positives.}
+    \label{fig:appendixA}
+\end{figure}
+
+
+
+\paragraph{False Positives.}
+\textbf{Bias-detector:} On its 37 false positives (mean confidence 
+$0.80$), recurring high-attribution tokens include \textit{pandemic}, 
+\textit{illegal}, \textit{not}, \textit{Tuesday}, and \textit{could}. 
+The word \textit{illegal} illustrates the TP/FP invariance discussed 
+in Section~\ref{sec:word_patterns}: the model attributes to it both 
+when correctly flagging biased content (mean $|$SHAP$|$ = 0.349 across 
+true positives) and when incorrectly flagging neutral content (mean 
+$|$SHAP$|$ = 0.140 across false positives). The same lexical cue 
+drives both correct and incorrect predictions; surrounding context 
+distinguishes the gold labels, but the model under-weights it. 
+Several recurring FP tokens (\textit{said}, \textit{Tuesday}, 
+\textit{could}, \textit{not}) carry negative SHAP, indicating they 
+should reduce predicted bias probability, yet the model still 
+predicts biased with high confidence---consistent with the 
+mean-vs-max-SHAP analysis in Appendix~\ref{app:max_shap}, where 
+bias-detector's FP magnitude excess reflects breadth of 
+moderate-magnitude positive attribution rather than stronger peaks.
+
+\textbf{DA-RoBERTa-BABE-FT:} On its 12 false positives (mean confidence 
+$0.67$), top contributors include \textit{gruesome}, 
+\textit{unbelievable}, and the \textit{claims}/\textit{claimed} stem. 
+The stem appears in both true positives (\textit{claimed}, 
+\textit{claiming}, \textit{claim}; mean $|$SHAP$|$ = 0.125) and false 
+positives (mean $|$SHAP$|$ = 0.206), with notably higher attribution 
+on incorrect predictions---a parallel to bias-detector's 
+\textit{illegal} pattern, operating at lower overall confidence 
+consistent with the calibration gap characterized in 
+Section~\ref{sec:shap_mag}.
+\paragraph{True Negatives.} Refer to Fig.~\ref{fig:appendixB} below.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{AppendixB.png}
+    \caption{Examples of Biased Terms detected by both the models for the True Negatives.}
+    \label{fig:appendixB}
+\end{figure}
+
+
+
+
+
+\section{Word-Level Attribution Aggregation in Detail}
+Transformer models operate on subword tokens (e.g., BPE tokens in RoBERTa), but interpretability for bias detection benefits from word-level analysis. We aggregate token-level SHAP values to word-level attributions through a multi-step process.
+
+\textbf{Token-to-Word Mapping:} We identify word boundaries using tokenization markers. RoBERTa-style tokenizers use special markers (e.g., Ġ or $\_$) to indicate tokens that begin new words. We detect these markers and group consecutive subword tokens that belong to the same word. For tokens without explicit markers, we use whitespace information from the original text to determine word boundaries.
+
+\textbf{Word Boundary Detection:} To handle cases where tokens may be incorrectly merged (e.g., "tuesdayquoting" or "nationalismfueled"), we implement heuristic word boundary detection. We split tokens when: (1) a lowercase letter is followed by an uppercase letter (e.g., "tuesdayQuoting" → ["tuesday", "Quoting"]), (2) common word endings (e.g., "day", "ing", "ed", "ly") are followed by lowercase letters that could start new words, or (3) punctuation or hyphens indicate word separation.
+
+\textbf{Attribution Aggregation:} For each word, we sum the SHAP values of all tokens that comprise that word. If a word is split across multiple tokens, the word-level attribution is the sum of all constituent token attributions. This aggregation preserves the additive property of SHAP values while providing interpretable word-level explanations.
+
+\textbf{Normalization:} We apply normalization to handle tokenization artifacts. Merged words (e.g., "dmnboasted" → "boasted") are split, and punctuation artifacts are stripped from word boundaries. This ensures that our word-level analysis reflects actual linguistic patterns rather than tokenization idiosyncrasies.
+
+
+\end{document}
+
+
+

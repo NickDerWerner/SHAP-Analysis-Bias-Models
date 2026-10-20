@@ -1,0 +1,35 @@
+{
+  "biasdetector": {
+    "n_cache": 850,
+    "n_analyzed": 849,
+    "n_positive_aligned": 475,
+    "n_lex_only": 223,
+    "n_inf_only": 229,
+    "n_both": 23,
+    "n_non_biased": 374
+  },
+  "daroberta": {
+    "n_cache": 837,
+    "n_analyzed": 837,
+    "n_positive_aligned": 467,
+    "n_lex_only": 227,
+    "n_inf_only": 214,
+    "n_both": 26,
+    "n_non_biased": 370
+  },
+  "deberta": {
+    "n_cache": 400,
+    "n_analyzed": 400,
+    "n_positive_aligned": 200,
+    "n_lex_only": 55,
+    "n_inf_only": 138,
+    "n_both": 7,
+    "n_non_biased": 200
+  },
+  "paired_positive": {
+    "bd\u2229dr": 255,
+    "bd\u2229deb": 83,
+    "dr\u2229deb": 65,
+    "all3": 42
+  }
+}

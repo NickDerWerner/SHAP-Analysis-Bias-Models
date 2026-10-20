@@ -1,0 +1,199 @@
+ARR May 2026 Reviews on Submission:
+Explaining News Bias Detection: A Comparative SHAP Analysis of Transformer Model Decision Mechanisms
+ 
+Himel Ghosh, Nick Elias Werner 
+26 May 2026 (modified: 29 Sept 2026)ACL ARR 2026 May SubmissionEveryoneRevisionsBibTeXCC BY 4.0
+Keywords: news bias detection; model interpretability; SHAP analysis; transformer models; linguistic bias
+Abstract:
+Automated bias detection in news text supports journalistic analysis and media accountability, but little is known about how these models arrive at decisions or why they fail. We present a comparative interpretability study of three transformer-based bias detection models---bias-detector, DA-RoBERTa-BABE-FT, and a BABE-fine-tuned DeBERTa-base spanning two encoder backbone families---using SHapley Additive exPlanations (SHAP), evaluated on BABE and BASIL, a stylistically distinct news-bias corpus. All three models attend to overwhelmingly similar lexical content (90--96% Emotional/Evaluative language across matched-pool comparisons on both corpora) and overlap heavily on shared errors (81% top-token Jaccard on shared false positives). On positives carrying both lexical and inferential bias cues, recall matches the prediction from treating the two cue families as independent detection signals to within 2.4 points, indicating that the shared mechanism comprises two largely independent sub-signals rather than a single lexical shortcut. The three models differ systematically in attribution magnitude rather than category: DA-RoBERTa-BABE-FT's attribution on correctly identified non-biased content is roughly half of bias-detector's on both corpora, and on shared false positives bias-detector assigns 33% higher magnitude than DA-RoBERTa-BABE-FT to the same words. DeBERTa-base sits at an intermediate calibration point between the two while attending to the same lexical content, extending this pattern across architecture families. Error overlap between the two RoBERTa-family models exceeds independence predictions by 7.2 for shared false positives and 1.4 for shared misses, further indicating same-mechanism detection with calibration-level differences. These findings reframe architectural and training choices in bias detection as primarily affecting calibration rather than the linguistic signals identified, with practical implications for deployment in journalistic contexts.
+Paper Type: Long
+Research Area: Interpretability and Analysis of Models for NLP
+Research Area Keywords: feature attribution, calibration/uncertainty, explanation faithfulness, probing, data shortcuts/artifacts, robustness
+Contribution Types: Model analysis & interpretability, NLP engineering experiment, Publicly available software and/or pre-trained models
+Languages Studied: English
+EMNLP 2026 AI Reviewing Experiment: yes
+Previous URL: /forum?id=gvRFpY146d
+Explanation Of Revisions PDF: pdf
+Justification For Author Changes: The new author added to the list here, has made all the revisions & extra analysis to address the issues raised in the previous review. He/she has added new perspective to analyse the models.
+Reassignment Request Area Chair: No, I want the same area chair from our previous submission (subject to their availability).
+Reassignment Request Reviewers: No, I want the same set of reviewers from our previous submission (subject to their availability)
+Preprint: yes
+Preprint Status: There is a non-anonymous preprint (URL specified in the next question).
+Existing Preprints: https://arxiv.org/abs/2512.23835
+Preferred Venue: EMNLP
+Visa Needs: no
+Consent To Share Data: yes
+Consent To Share Submission Details: On behalf of all authors, we agree to the terms above to share our submission details.
+A1 Limitations Section: This paper has a limitations section.
+A2 Potential Risks: Yes
+B Use Or Create Scientific Artifacts: Yes
+B1 Cite Creators Of Artifacts: Yes
+B2 Discuss The License For Artifacts: No
+B3 Artifact Use Consistent With Intended Use: Yes
+B4 Data Contains Personally Identifying Info Or Offensive Content: N/A
+B5 Documentation Of Artifacts: Yes
+B6 Statistics For Data: Yes
+C Computational Experiments: Yes
+C1 Model Size And Budget: Yes
+C2 Experimental Setup And Hyperparameters: No
+C3 Descriptive Statistics: Yes
+C4 Parameters For Packages: Yes
+D Human Subjects Including Annotators: No
+D1 Instructions Given To Participants: N/A
+D2 Recruitment And Payment: N/A
+D3 Data Consent: N/A
+D4 Ethics Review Board Approval: N/A
+E Ai Assistants In Research Or Writing: No
+E1 Information About Use Of Ai Assistants: N/A
+Author Submission Checklist: yes
+Association For Computational Linguistics - Blind Submission License Agreement: On behalf of all authors, I agree for this and all previous versions of this submission
+Submission Number: 16144
+
+
+
+Meta Review of Submission16144 by Area Chair dgcp
+Meta Reviewby Area Chair dgcp20 Jul 2026, 06:56 (modified: 03 Aug 2026, 16:26)Senior Area Chairs, Area Chairs, Authors, Reviewers Submitted, Program Chairs, Area Chair dgcp, Commitment ReadersRevisions
+Metareview:
+This paper presents a comparative SHAP analysis of three encoder-based news-bias classifiers, two RoBERTa-family models and one DeBERTa-base model, on BABE and BASIL. It compares word-level attribution patterns, attribution magnitudes, and shared prediction errors. The central finding is that the models identify largely similar lexical signals and make overlapping errors, while differing mainly in how strongly or confidently they convert those signals into predictions.
+Compared with the previous submission, the authors substantially expanded the study from two models on one dataset to three models across two corpora, corrected a vocabulary-pool-size confound, added statistical tests and threshold-independent analyses, and revised the main claim from “different mechanisms” to “similar mechanisms, different calibration.”
+Summary Of Reasons To Publish:
+•	The resubmission substantively expands and corrects the original study: The authors added BASIL as a cross-corpus evaluation dataset, introduced DeBERTa-base to test whether the patterns extend beyond the RoBERTa family, added false-negative and error-overlap analyses, and released additional reproducibility artifacts.
+•	The cross-corpus evaluation and corrected analysis strengthen the empirical evidence: BABE and BASIL differ in style and annotation philosophy, making replication across both datasets more convincing. The authors also acknowledged that an earlier result was caused by a vocabulary-pool-size confound and replaced the original fixed top-(K) comparison with matched-pool feature selection.
+•	The analysis uses several appropriate statistical procedures and provides reasonable reproducibility support: The paper includes McNemar tests, Mann–Whitney U tests, effect sizes, bootstrap confidence intervals, and threshold-independent analyses. Code, analysis scripts, the fine-tuned DeBERTa checkpoint, and SHAP caches are reported as released.
+Summary Of Suggested Revisions:
+•	Update and accurately scope the related work and model coverage: The related-work section should include recent decoder-only LLM approaches to media and news-bias detection and should avoid broadly describing encoder models as the backbone of modern bias-detection systems. The authors explicitly retained encoder-only models in this resubmission and deferred decoder LLMs to future work, so the paper should clearly scope its conclusions to fine-tuned encoder classifiers and discuss this limitation.
+•	Clarify and validate the interpretation methodology: The revised paper should define the linguistic-category taxonomy and explain exactly how words are assigned to categories. It should also document the SHAP background set, token-to-word normalization, treatment of phrase-level expressions, BASIL lexical versus informational labels, and the conversion from span-level to sentence-level annotations. Claims such as “same mechanism” or models “attend to” particular words should be phrased cautiously because SHAP explanations are not direct causal evidence of model reasoning.
+•	Demonstrate that the core conclusions are not artifacts of confidence or threshold choices: The authors should clarify what SHAP magnitude contributes beyond raw output probability, since higher-confidence predictions can naturally produce larger attribution magnitudes. The TP/FP/TN/FN analyses should also be tested with model-specific validation thresholds or threshold-independent groupings rather than relying only on a common (0.5) threshold across differently calibrated models.
+•	Substantively address the current-round reviews and complete the promised clarity revisions: The detailed response to MqgQ was accidentally submitted as an Author–Editor Confidential Comment, so the reviewer could not evaluate it. The responses visible to xw7D and k62P largely acknowledged the concerns and promised future changes, but did not directly resolve the main methodological issues. These concerns should therefore be treated as unresolved and explicitly addressed in the revision. The final manuscript should also shorten the overlength abstract, improve figure readability, add concrete examples from both corpora, define abbreviations, and reduce the density of the results presentation.
+Overall Assessment: 3 = Findings: I think this paper could be accepted to the Findings of the ACL.
+Reported Issues: No
+Publication Ethics Policy Compliance: I used a privacy-preserving tool exclusively for the use case(s) approved by PEC policy, such as language edits
+
+Official Review of Submission16144 by Reviewer MqgQ
+Official Reviewby Reviewer MqgQ09 Jul 2026, 15:15 (modified: 03 Aug 2026, 16:26)Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Authors, Reviewer MqgQ, Commitment ReadersRevisions
+Paper Summary:
+This paper focuses on interpreting the decisions of several encoder-based models for bias detection in news texts. The interpretation is done using SHAP, a well-known interpretation framework. Two datasets are used in the analysis, BABE and BASIL. The analysis mainly focuses on word attribution, showing which lexical choices lead the models to assign bias labels. The paper’s findings suggest that, in bias detection, architectural and training choices mainly affect model calibration, that is, how confidently models turn linguistic cues into predictions, rather than substantially changing the linguistic signals they identify.
+Overall, the paper addresses an interesting and timely topic by focusing on the interpretability of bias detection models. I appreciate the improvements made over the previous submission. However, I still have several concerns that I would like the authors to clarify in the rebuttal.
+Summary Of Strengths:
+The paper tackles an important challenge in automated bias detection by moving beyond performance scores and examining how different models identify biased language. Through a SHAP-based comparison of three models, it provides an interpretable account of the linguistic cues that drive their predictions. The analysis seems useful because it highlights how architectural and training choices may influence the reliability of bias detection systems, especially in how models convert linguistic evidence into predictions.
+The authors add a new model and a new dataset compared to the previous submission, which somewhat increases the generalizability of the findings.
+Summary Of Weaknesses:
+The paper still needs some improvements in writing, as some parts were not fully clear to me. Besides, I have the following comments:
+•	For the BASIL dataset, bias is categorized as lexical and informational. While lexical bias seems in line with the target bias category in BABE, informational bias looks somewhat different. I am not sure whether the authors use both categories or only lexical bias, and what their justification is.
+•	Also, regarding the annotation level in the two datasets, I am not sure I fully understand how the difference between span-level and sentence-level annotations is handled.
+•	I am also not sure what kind of generalization is examined here: performance generalization, attribution generalization, or both. For example, the authors write: “DeBERTa-base (He et al., 2021), which we fine-tuned on BABE in this work (macro-F1 0.835, AUPRC 0.948) to test cross-architecture generalization.” This should be clarified.
+•	For the sampling procedure in line 308, I wonder why the authors do not use all instances in addition to sampling. For the 100 sampled instances, random sampling is reasonable, but it may still select mostly easy or hard cases. Considering prediction confidence during sampling might be a good idea.
+•	Grouping tokens into words and aggregating SHAP values by summation seems reasonable to me. However, I wonder how phrase-level attributions are handled. I think this could also provide useful insights, especially for multi-word bias expressions.
+Comments Suggestions And Typos:
+•	The abstract is very long and seems to exceed the word limit. Please shorten it.
+•	The figures in the appendix would benefit from visual improvements.
+•	Adding concrete examples from both datasets to illustrate the main findings would be useful.
+Confidence: 4 = Quite sure. I tried to check the important points carefully. It's unlikely, though conceivable, that I missed something that should affect my ratings.
+Soundness: 3 = Acceptable: This study provides sufficient support for its main claims. Some minor points may need extra support or details.
+Excitement: 3.5
+Overall Assessment: 3 = Findings: I think this paper could be accepted to the Findings of the ACL.
+Ethical Concerns:
+There are no concerns with this submission
+Needs Ethics Review: No
+Reproducibility: 4 = They could mostly reproduce the results, but there may be some variation because of sample variance or minor variations in their interpretation of the protocol or method.
+Datasets: 1 = No usable datasets submitted.
+Software: 3 = Potentially useful: Someone might find the new software useful for their work.
+Knowledge Of Or Educated Guess At Author Identity: No
+Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Knowledge Of Paper Source: N/A, I do not know anything about the paper from outside sources
+Impact Of Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Reviewer Certification: I certify that the review I entered accurately reflects my assessment of the work. If you used any type of automated tool to help you craft your review, I hereby certify that its use was restricted to improving grammar and style, and the substance of the review is either my own work or the work of an acknowledged secondary reviewer.
+Publication Ethics Policy Compliance: I used a privacy-preserving tool exclusively for the use case(s) approved by PEC policy, such as language edits
+
+Official Review of Submission16144 by Reviewer xw7D
+Official Reviewby Reviewer xw7D02 Jul 2026, 21:18 (modified: 03 Aug 2026, 16:26)Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Authors, Reviewer xw7D, Commitment ReadersRevisions
+Paper Summary:
+This paper presents an interpretability study of three transformer-based news bias detection models, focusing on sentence-level bias arising from word choice and within-sentence framing. Using SHAP to analyze word-level attributions, the authors find that all three models attend to similar linguistic content and make similar errors, suggesting they rely on largely the same underlying detection mechanism. The models are found to differ in attribution magnitude rather than in the category of features they attend to, leading the authors to conclude that architectural and training differences mainly produce differences in calibration (how confidently models convert signals into predictions), rather than genuinely different detection mechanisms.
+Summary Of Strengths:
+Many findings are backed by suitable, well-principled statistical tests (e.g. McNemar's test for paired prediction differences, Mann-Whitney U tests with effect sizes for magnitude comparisons).
+The introduction and related work sections are well written, and are easy to follow; they give a useful and well-organized introduction into the paper's motivation and context.
+Summary Of Weaknesses:
+1.	The related work section mentions only encoder-based bias detectors, and omits research using more recent, decoder-only LLMs as bias detectors (see references below). Therefore the claim that transformer encoders "form the backbone of modern bias detection systems" (L140) is probably not an accurate characterization.
+References:
+•	Lin et al., COLING 2025. "Investigating Bias in LLM-Based Bias Detection: Disparities between LLMs and Human Perception" . Uses LLMs to examine media bias prediction and how model-internal bias affects detection (more focused on political bias rather than specifically news articles).
+•	Trhlík & Stenetorp, EMNLP 2024. “Quantifying Generative Media Bias with a Corpus of Real-world and Generated News Articles”: uses LLMs to detect political bias in real and generated news text, including evaluating LLMs as classifiers in a journalistic setting.
+•	Mujahid et al., ACL 2025. “Profiling News Media for Factuality and Bias Using LLMs and the Fact-Checking Methodology of Human Experts”. Uses LLMs to profile news for political bias and factuality.
+•	Menzner & Leidner, NLDB 2024. “Improved Models for Media Bias Detection and Subcategorization”. Uses LLMs to detect and sub-classify bias in news articles.
+2.	The paper assumes SHAP's word-level scores faithfully reflect what drives a prediction; but never tests whether SHAP's attributions are indeed reliable, so it is not clear whether SHAP scores reflect the model's "reasoning". In the paper's own example, "stuck in the Cold War", the bias signal probably comes from the phrase as a whole, not individual words; but SHAP splits credit across words under an independence approximation. It's even unclear why "that" gets so high attribution, undermining the claim that SHAP faithfully reflects the model's reasoning. (the example is also weak: "stuck in the Cold War" is itself arguably "loaded language", so labeling it a clear false positive is debatable). The authors do acknowledge this in Limitations (L677: SHAP relies on independence assumptions that "may not fully capture complex interactions" and attributions are "explanatory signals rather than definitive causal explanations"), but the main text implies mechanisms ("attends to", "same mechanism") that are in conflict with this clarification.
+3.	A model that outputs a higher probability will necessarily show higher SHAP magnitudes, regardless of whether it reasons differently. This makes the magnitude analysis (Section 4.2, Table 2, Figures 3/4) redundant. Some key findings (the "reversal" finding, L621-622: "Bias-detector assigns stronger internal evidence to false positives than to correct detections"; and the calibration finding, L637-641: "differ in how confidently they convert linguistic signals into predictions... rather than in the linguistic signals themselves") mainly restate something expected: differently-trained models will have different calibration, and therefore the SHAP magnitudes will differ. This isn't surprising, and I don't see how SHAP adds insight here. The deployment-risk claim (L620-626) doesn't need SHAP either: e.g. a confidence of p=0.987 on a false positive (L434, Figure 1) already shows the model is very sure about a wrong answer, which is visible from the model's probability output alone. I don't see how SHAP is necessary to reach these conclusions.
+4.	The paper fixes classification decisions at p=0.5 for defining TP/FP/TN/FN throughout the analysis (L352). This assumes 0.5 is a meaningful boundary across models; but the paper's findings actually show that models are differently calibrated (L637-641). So a shared threshold won't produce comparable groups: for two models with the same real performance (e.g., same AUPRC), a borderline sentence might be an FP for a more "confident" model, while the same signal in a more conservative model stays below threshold and never enters the analysis. The TP/FP/TN/FN-based comparisons depend on an arbitrary threshold choice fixed for all models. It is not clear that the core findings hold if, for example, one used thresholds that are calibrated to each model on a validation set. The paper does not report any analysis of this kind, and therefore the findings may be an artifact of the arbitrary 0.5 threshold choice. The paper does show awareness that thresholds matter; e.g. it reports AUPRC and even switches to 0.3 for a specific test (L598), but this is not considered in the main analysis.
+5.	Some methodological details are missing, which makes it hard to evaluate the validity of the findings. For example:
+•	I cannot find a section that explains what "Emotional/Evaluative," "Explicit," "Framing/Reporting," and "Function/Temporal" actually mean as categories, and whether these labels were assigned manually, by a lexicon or word list, or by an automated classifier, or whether context was taken into account.
+•	L287 ("we apply normalization steps that correct tokenization artifacts and align word boundaries with the original text") lacks details on what these steps are.
+•	L264 ("computes token-level attributions against a background dataset of test-set sentences"): which background dataset is used? And how?
+Comments Suggestions And Typos:
+1.	"The calibration framing suggests that improving deployed bias detectors may benefit more from calibration-aware training than from architectural changes aimed at altering attribution patterns." This is true for any classification task. When a decision must be made (here biased vs. non-biased), the calibration of scores is important; and it is expected that classifiers trained on different data and under different conditions can have different calibration. What is the novel insight here?
+2.	"SHAP library's TextExplainer with a Text masker (L262)": no citation.
+3.	Word-level aggregation: is this strategy inspired by prior work? Cite it if so.
+4.	Why only 100 samples per category (TP, FP, TN, FN)?
+5.	Why AUPRC instead of AUROC, which is more commonly used, interpretable, and principled? AUROC directly shows whether the ranking of samples by their predicted probability is good, independent of any classification threshold.
+6.	The orange line in Figures 3 and 4 is hard to see. Consider using a regular line for the median, and a dot or cross for the mean.
+7.	Font is really small in almost every figure compared to the font size of the text, making it hard to analyze them.
+8.	Is Table 2 with medians needed? Medians are already shown in Figures 3 and 4. Maybe just boxplots are enough?
+9.	"Three architecturally distinct encoders, spanning RoBERTa and DeBERTa backbone families, thus occupy three calibration levels on the TN axis with comparable discriminative ability": the wording looks odd. What does it mean to "occupy three calibration levels"?
+10.	"The earlier finding that DA-RoBERTa-BABE-FT FPs shift substantially toward function and temporal words reflected a vocabulary-pool-size confound." (L510-512) Since there is no previous analysis for the reader to refer to, this is confusing. Maybe it is better to say "in the appendix we show that when using top-k selection..."
+11.	"Statistical Significance Testing" gets a very long section. Maybe simple sentences supporting each finding in their corresponding section might be enough: e.g., "The false positive rates of models X and Y are significantly different (p=..., McNemar test)." (L554) I also found it hard to follow in Sec. 4.5 why only some testing is done on some comparisons and not others, e.g., FPRs compared for "two models" (not specified which ones) only on BABE. This section also uses new terminology not introduced previously (lex-only, inf-only) whic makes it hard to follow.
+12.	What is an "inferential bias cue"? Is it used as a synonym for "informational"? Use consistent terminology to help the reader.
+13.	"We also note that one originally reported pattern—DA-RoBERTa-BABE-FT's near-equal TP and FP attribution magnitudes on BABE—did not generalize to BASIL and is accordingly revised in our cross-corpus analysis." (L663) Why is this framed as a limitation if it is actually taken into account?
+Confidence: 3 = Pretty sure, but there's a chance I missed something. Although I have a good feel for this area in general, I did not carefully check the paper's details, e.g., the math or experimental design.
+Soundness: 2.5
+Excitement: 2 = Potentially Interesting: this paper does not resonate with me, but it might with others in the *ACL community.
+Overall Assessment: 2 = Resubmit next cycle: I think this paper needs substantial revisions that can be completed by the next ARR cycle.
+Ethical Concerns:
+There are no concerns with this submission
+Needs Ethics Review: No
+Reproducibility: 1 = They would not be able to reproduce the results here no matter how hard they tried.
+Datasets: 3 = Potentially useful: Someone might find the new datasets useful for their work.
+Software: 3 = Potentially useful: Someone might find the new software useful for their work.
+Knowledge Of Or Educated Guess At Author Identity: No
+Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Knowledge Of Paper Source: N/A, I do not know anything about the paper from outside sources
+Impact Of Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Reviewer Certification: I certify that the review I entered accurately reflects my assessment of the work. If you used any type of automated tool to help you craft your review, I hereby certify that its use was restricted to improving grammar and style, and the substance of the review is either my own work or the work of an acknowledged secondary reviewer.
+Publication Ethics Policy Compliance: I used the Revas tool to check for review issues (https://revas.mbzuai.ac.ae)
+
+Official Review of Submission16144 by Reviewer k62P
+Official Reviewby Reviewer k62P02 Jul 2026, 11:38 (modified: 03 Aug 2026, 16:26)Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Authors, Reviewer k62P, Commitment ReadersRevisions
+Paper Summary:
+The paper is a SHAP-based comparative study of three transformer bias detectors: bias-detector (Ghosh et al., 2025) and DA-RoBERTa-BABE-FT (Krieger et al., 2022), both RoBERTa-family, plus a DeBERTa-base the authors fine-tune themselves to add a second backbone. Token-level SHAP is aggregated to word level, and the models are compared across two corpora that differ in distribution and annotation style: BABE and BASIL.
+Summary Of Strengths:
+1.	Testing on both BABE and BASIL is a real strength. The two corpora differ in distribution and in annotation philosophy (whole sentences vs spans), so showing that a pattern replicates across both is more convincing.
+2.	Reproducibility is handled well: code is released, sampling uses a fixed seed, model sources are cited, and preprocessing choices (256-token cap, label normalization, quote handling) are spelled out.
+3.	The statistics go beyond point estimates. McNemar for paired errors, Mann-Whitney U with rank-biserial effect sizes, bootstrap CIs, and effect sizes reported alongside p-values.
+Summary Of Weaknesses:
+1.	The word-category taxonomy is never defined, and the whole "shared mechanism" story depends on it. The 90-96% "Emotional/Evaluative" figure, and the Explicit bias / Framing/Reporting / Function/Temporal buckets in Tables 3 and 4, are the backbone of the argument, yet nothing in the methodology says how a word gets assigned to a category. Is it a fixed lexicon? Manual coding? An LLM classifier? Any agreement measure?
+2.	The scope is narrow and the impact is limited. Three models, two datasets, and two of the three models come from the same RoBERTa lineage — so the "cross-architecture" claim leans almost entirely on one DeBERTa model the authors trained, which is also unevenly included (dropped from some FP comparisons).
+3.	The writing is very dense. The abstract is a wall of ratios (7.2x, 1.4x, 33%, 42%, 2.4 points, 63%...) with little to hold onto, and the results sections stack pairwise comparisons faster than a reader can build a picture.
+Comments Suggestions And Typos:
+•	The category abbreviations in Tables 3-4 (Em/Ev, Expl., Fr/Rep, Fu/Tm) are never spelled out. Expand them at first use.
+Confidence: 3 = Pretty sure, but there's a chance I missed something. Although I have a good feel for this area in general, I did not carefully check the paper's details, e.g., the math or experimental design.
+Soundness: 3 = Acceptable: This study provides sufficient support for its main claims. Some minor points may need extra support or details.
+Excitement: 3 = Interesting: I might mention some points of this paper to others and/or attend its presentation in a conference if there's time.
+Overall Assessment: 3 = Findings: I think this paper could be accepted to the Findings of the ACL.
+Ethical Concerns:
+There are no concerns with this submission
+Needs Ethics Review: No
+Reproducibility: 4 = They could mostly reproduce the results, but there may be some variation because of sample variance or minor variations in their interpretation of the protocol or method.
+Datasets: 2 = Documentary: The new datasets will be useful to study or replicate the reported research, although for other purposes they may have limited interest or limited usability. (Still a positive rating)
+Software: 2 = Documentary: The new software will be useful to study or replicate the reported research, although for other purposes it may have limited interest or limited usability. (Still a positive rating)
+Knowledge Of Or Educated Guess At Author Identity: No
+Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Knowledge Of Paper Source: N/A, I do not know anything about the paper from outside sources
+Impact Of Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Reviewer Certification: I certify that the review I entered accurately reflects my assessment of the work. If you used any type of automated tool to help you craft your review, I hereby certify that its use was restricted to improving grammar and style, and the substance of the review is either my own work or the work of an acknowledged secondary reviewer.
+Publication Ethics Policy Compliance: I used a privacy-preserving tool exclusively for the use case(s) approved by PEC policy, such as language edits
+
+
+Prof. Gjergji Kasneci (Supervisor of this Project)
+Here are some points that should be considered:
+ 
+I would run a faithfulness analysis to show that the words highlighted by SHAP actually influence each model’s predictions (this should be straightforward). Because if they do not influence the classification, the rest of the study is not that informative.
+I would also manually label some samples (randomly based on the two bias categories) to see if the SHAP explanations can identify linguistic evidence that we humans also consider biased (also straightforward).
+Is the observed overlap of the three models expected simply because they process the same sentences? What would be a good experiment that disentangles the tokens from the semantic evidence? (This one is challenging because it might need synthetic rephrasing of the evidence.) Similarly, are the differences observed between the models mainly due to sensitivity to specific linguistic cues or due to model-related differences? This is not decisive, but can be super informative for interested readers.
+ 
+In the current version, it is not yet clear how you constructed the four categories (i.e., Em/Ev, Expl., Fr/Rep, Fu/Tm). Why is the Emotional category so much larger than the others? Does it make sense to introduce a ‘dummy’ category (where we assign the terms that cannot be assigned to any category)? Please note that for a high-quality paper, the evaluation procedure should really be crisp and clear, so that other researchers can easily reproduce it.

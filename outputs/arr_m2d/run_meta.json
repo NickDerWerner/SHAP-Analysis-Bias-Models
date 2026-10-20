@@ -1,0 +1,6 @@
+{
+  "seed": 7,
+  "tests": "11 passed (tests/test_arr_m2d.py)",
+  "human_agreement": "not_computed_awaiting_real_annotations",
+  "key_finding": "lex_vs_inf_gap_does_not_survive_coverage_matching_for_BD_DR"
+}

@@ -1,0 +1,13 @@
+corpus,model,pred_type,n,n_in_all3_same_cell
+BABE,biasdetector,TP,100,7
+BABE,daroberta,TP,100,7
+BABE,deberta,TP,100,7
+BABE,biasdetector,FP,37,3
+BABE,daroberta,FP,12,3
+BABE,deberta,FP,27,3
+BABE,biasdetector,TN,100,4
+BABE,daroberta,TN,100,4
+BABE,deberta,TN,100,4
+BABE,biasdetector,FN,100,26
+BABE,daroberta,FN,100,26
+BABE,deberta,FN,100,26

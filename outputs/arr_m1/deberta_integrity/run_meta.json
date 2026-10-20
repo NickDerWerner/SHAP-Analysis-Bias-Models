@@ -1,0 +1,71 @@
+{
+  "summaries": [
+    {
+      "name": "babe_deberta",
+      "path": "outputs/shap_samples_deberta.jsonl",
+      "n_records": 327,
+      "mean_charspan_drop_frac": 0.22290909965772074,
+      "median_charspan_drop_frac": 0.14922907939371385,
+      "p90_charspan_drop_frac": 0.2743279844063488,
+      "max_additive_residual": 7.870223570072277e-16,
+      "align_ok_charspan": 327,
+      "align_ok_additive": 327,
+      "stored_matches_charspan": 327,
+      "interpretation": "Whitespace mass under charspan is attribution assigned to space characters when token SHAP is spread across the token string; it is not deletion of non-space token content. Additive method keeps full token SHAP on word surfaces.",
+      "derived_additive_path": "outputs/arr_m1/deberta_integrity/babe_deberta_word_attribs_additive.jsonl"
+    },
+    {
+      "name": "babe_deberta_bak",
+      "path": "outputs/shap_samples_deberta.jsonl.bak",
+      "n_records": 327,
+      "mean_charspan_drop_frac": 0.22290909965772074,
+      "median_charspan_drop_frac": 0.14922907939371385,
+      "p90_charspan_drop_frac": 0.2743279844063488,
+      "max_additive_residual": 7.870223570072277e-16,
+      "align_ok_charspan": 327,
+      "align_ok_additive": 327,
+      "stored_matches_charspan": 0,
+      "interpretation": "Whitespace mass under charspan is attribution assigned to space characters when token SHAP is spread across the token string; it is not deletion of non-space token content. Additive method keeps full token SHAP on word surfaces."
+    },
+    {
+      "name": "basil_deberta",
+      "path": "outputs/basil_shap/samples_deberta.jsonl",
+      "n_records": 400,
+      "mean_charspan_drop_frac": 0.39346595195870215,
+      "median_charspan_drop_frac": 0.14867856759316075,
+      "p90_charspan_drop_frac": 0.2778589889932812,
+      "max_additive_residual": 9.992007221626409e-16,
+      "align_ok_charspan": 400,
+      "align_ok_additive": 400,
+      "stored_matches_charspan": 400,
+      "interpretation": "Whitespace mass under charspan is attribution assigned to space characters when token SHAP is spread across the token string; it is not deletion of non-space token content. Additive method keeps full token SHAP on word surfaces.",
+      "derived_additive_path": "outputs/arr_m1/deberta_integrity/basil_deberta_word_attribs_additive.jsonl"
+    },
+    {
+      "name": "babe_bd",
+      "path": "outputs/shap_samples.jsonl",
+      "n_records": 337,
+      "mean_charspan_drop_frac": 0.24649251725448276,
+      "median_charspan_drop_frac": 0.17406401453675216,
+      "p90_charspan_drop_frac": 0.3882282701901743,
+      "max_additive_residual": 8.968520370800093e-16,
+      "align_ok_charspan": 337,
+      "align_ok_additive": 337,
+      "stored_matches_charspan": 0,
+      "interpretation": "Whitespace mass under charspan is attribution assigned to space characters when token SHAP is spread across the token string; it is not deletion of non-space token content. Additive method keeps full token SHAP on word surfaces."
+    },
+    {
+      "name": "babe_dr",
+      "path": "outputs/shap_samples_daroberta.jsonl",
+      "n_records": 312,
+      "mean_charspan_drop_frac": 0.30402947633382565,
+      "median_charspan_drop_frac": 0.19940196709475494,
+      "p90_charspan_drop_frac": 0.44986575546024665,
+      "max_additive_residual": 9.992007221626409e-16,
+      "align_ok_charspan": 312,
+      "align_ok_additive": 312,
+      "stored_matches_charspan": 0,
+      "interpretation": "Whitespace mass under charspan is attribution assigned to space characters when token SHAP is spread across the token string; it is not deletion of non-space token content. Additive method keeps full token SHAP on word surfaces."
+    }
+  ]
+}

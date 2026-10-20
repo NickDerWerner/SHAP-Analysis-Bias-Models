@@ -1,0 +1,84 @@
+{
+  "babe": {
+    "n_all3": 59,
+    "same_cell": {
+      "TP": 7,
+      "FP": 3,
+      "TN": 4,
+      "FN": 26
+    },
+    "similarity": [
+      {
+        "corpus": "BABE",
+        "pair": "bd_dr",
+        "n_paired_sentences": 59,
+        "median_jaccard20": 0.625,
+        "mean_jaccard20": 0.6550151383818448,
+        "median_cosine_abs": 0.7827162052552084,
+        "mean_cosine_abs": 0.761067856558529
+      },
+      {
+        "corpus": "BABE",
+        "pair": "bd_deb",
+        "n_paired_sentences": 59,
+        "median_jaccard20": 0.5384615384615384,
+        "mean_jaccard20": 0.5797516829252489,
+        "median_cosine_abs": 0.6657420259670084,
+        "mean_cosine_abs": 0.6651901712103467
+      },
+      {
+        "corpus": "BABE",
+        "pair": "dr_deb",
+        "n_paired_sentences": 59,
+        "median_jaccard20": 0.5,
+        "mean_jaccard20": 0.5395882534693617,
+        "median_cosine_abs": 0.6270327732136409,
+        "mean_cosine_abs": 0.6109263280835734
+      }
+    ]
+  },
+  "basil": {
+    "n_bd_dr": 371,
+    "n_all3": 60,
+    "n_shared_fp": 112,
+    "n_shared_fn": 104,
+    "pair_summary": [
+      {
+        "corpus": "BASIL",
+        "subset": "bd\u2229dr_all",
+        "n": 371,
+        "median_jaccard20": 0.7619047619047619,
+        "median_cosine_abs": 0.8198950972030554,
+        "median_mean_abs_bd": 0.04100655129980743,
+        "median_mean_abs_dr": 0.03163421912540798
+      },
+      {
+        "corpus": "BASIL",
+        "subset": "shared_FP",
+        "n": 112,
+        "median_jaccard20": 0.8181818181818182,
+        "median_cosine_abs": 0.8554642240903104,
+        "median_mean_abs_bd": 0.050138932439343385,
+        "median_mean_abs_dr": 0.038767117658216096
+      },
+      {
+        "corpus": "BASIL",
+        "subset": "shared_FN",
+        "n": 104,
+        "median_jaccard20": 0.7272727272727273,
+        "median_cosine_abs": 0.7809751758735823,
+        "median_mean_abs_bd": 0.03436096634420677,
+        "median_mean_abs_dr": 0.01726035037326316
+      },
+      {
+        "corpus": "BASIL",
+        "subset": "all3",
+        "n": 60,
+        "median_jaccard20": "",
+        "median_cosine_abs": "",
+        "median_mean_abs_bd": "",
+        "median_mean_abs_dr": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+corpus,set,n,unique_ids
+BASIL,biasdetector,850,850
+BASIL,daroberta,837,837
+BASIL,deberta,400,400
+BASIL,bd∩dr,371,371
+BASIL,all3,60,60

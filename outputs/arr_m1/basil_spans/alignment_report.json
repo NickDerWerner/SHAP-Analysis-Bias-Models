@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "launchnlp": {
+      "path": "/Users/rick/DoksOhneidrive/BASIL_launchnlp",
+      "commit": "4fdbc4f68d5ddae648990063cb6dd11424d96222",
+      "commit_short": "4fdbc4f",
+      "describe": "4fdbc4f Update annotation_changes.txt",
+      "remote": "https://github.com/launchnlp/BASIL.git",
+      "license_file_present": "False"
+    },
+    "emnlp19": {
+      "path": "/Users/rick/DoksOhneidrive/BASIL_emnlp19",
+      "commit": "4a8865347588648ae14e63344c9686d2b0a4930e",
+      "commit_short": "4a88653",
+      "describe": "4a88653 Link to updated BASIL dataset repo in the README",
+      "remote": "https://github.com/marshallwhiteorg/emnlp19-media-bias.git",
+      "license_file_present": "False"
+    },
+    "license_note": "Neither clone contains a LICENSE file at repo root. Do not redistribute BASIL contents from this project without confirming terms with the dataset authors / paper. For analysis, keep data outside git-tracked outputs or under documented non-redistribution policy.",
+    "selected_version": "launchnlp/BASIL",
+    "selection_reason": "Higher exact sentence+label match vs basil_sentences.csv (7984 vs 7867). Also matches preprocess_basil.py path layout."
+  },
+  "compare_launchnlp": {
+    "n_repo_sentences": 7984,
+    "n_csv_sentences": 7984,
+    "n_common_keys": 7984,
+    "n_only_repo": 0,
+    "n_only_csv": 0,
+    "exact_match": 7984,
+    "text_mismatch": 0,
+    "label_mismatch_among_common": 0,
+    "recoverable_alnum_text_mismatch": 0,
+    "unrecoverable_key_mismatch": 0
+  },
+  "compare_emnlp19": {
+    "n_repo_sentences": 7984,
+    "n_csv_sentences": 7984,
+    "n_common_keys": 7984,
+    "n_only_repo": 0,
+    "n_only_csv": 0,
+    "exact_match": 7867,
+    "text_mismatch": 0,
+    "label_mismatch_among_common": 117,
+    "recoverable_alnum_text_mismatch": 0,
+    "unrecoverable_key_mismatch": 0
+  },
+  "selected_compare": {
+    "n_repo_sentences": 7984,
+    "n_csv_sentences": 7984,
+    "n_common_keys": 7984,
+    "n_only_repo": 0,
+    "n_only_csv": 0,
+    "exact_match": 7984,
+    "text_mismatch": 0,
+    "label_mismatch_among_common": 0,
+    "recoverable_alnum_text_mismatch": 0,
+    "unrecoverable_key_mismatch": 0
+  },
+  "examples_selected": {
+    "text_mismatch": [],
+    "label_mismatch": [],
+    "only_csv": [],
+    "only_repo": []
+  },
+  "span_stats": {
+    "n_spans": 1723,
+    "offset_match_txt": 1723,
+    "offset_mismatch": 0,
+    "bias_type_counts": {
+      "lex": 478,
+      "inf": 1245
+    }
+  },
+  "usable_for_human_alignment": true
+}

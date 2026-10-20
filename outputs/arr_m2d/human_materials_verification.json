@@ -1,0 +1,108 @@
+{
+  "n_sample": 120,
+  "notes": {
+    "lex_only": {
+      "available": 405,
+      "taken": 30
+    },
+    "inf_only": {
+      "available": 1174,
+      "taken": 30
+    },
+    "both": {
+      "available": 44,
+      "taken": 30
+    },
+    "non_biased": {
+      "available": 6361,
+      "taken": 30
+    }
+  },
+  "checks": [
+    {
+      "check": "stratification_30x4",
+      "pass": true,
+      "detail": {
+        "lex_only": 30,
+        "non_biased": 30,
+        "both": 30,
+        "inf_only": 30
+      }
+    },
+    {
+      "check": "gold_char_offsets",
+      "pass": true,
+      "detail": {
+        "ok": 124,
+        "bad": 0
+      }
+    },
+    {
+      "check": "blind_csv_no_model_or_gold",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "html_no_gold_leakage",
+      "pass": true,
+      "detail": {
+        "has_gold_token": false
+      }
+    },
+    {
+      "check": "html_no_shap",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "check": "html_has_context_option",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "check": "html_has_none_type",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "check": "shuffled_not_blocked_by_category",
+      "pass": true,
+      "detail": {
+        "max_run": 4,
+        "first12": [
+          "lex_only",
+          "non_biased",
+          "lex_only",
+          "lex_only",
+          "both",
+          "lex_only",
+          "inf_only",
+          "both",
+          "both",
+          "lex_only",
+          "inf_only",
+          "lex_only"
+        ]
+      }
+    },
+    {
+      "check": "metadata_no_labels",
+      "pass": true,
+      "detail": "canonical_id/source/year retained for provenance; no bias labels in blind files"
+    },
+    {
+      "check": "annotator_id_field_in_pack",
+      "pass": true,
+      "detail": "Patched pack interface requires annotator ID before export"
+    },
+    {
+      "check": "pack_excludes_gold_sample",
+      "pass": true,
+      "detail": [
+        "annotation_interface.html",
+        "README_ANNOTATORS.txt",
+        "items_BLIND.csv"
+      ]
+    }
+  ]
+}

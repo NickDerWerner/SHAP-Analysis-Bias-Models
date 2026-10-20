@@ -1,0 +1,5 @@
+corpus,same_pred_type_all3,n,note
+BABE,TP,7,Insufficient for robust 3-model effects if n<30
+BABE,FP,3,Insufficient for robust 3-model effects if n<30
+BABE,TN,4,Insufficient for robust 3-model effects if n<30
+BABE,FN,26,Insufficient for robust 3-model effects if n<30
