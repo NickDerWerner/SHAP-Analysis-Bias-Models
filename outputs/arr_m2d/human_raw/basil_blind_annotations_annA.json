@@ -1,0 +1,1959 @@
+[
+  {
+    "annotator_id": "annA",
+    "item_id": "H000",
+    "canonical_id": "basil:38f7cbb7-5d6a-4c89-bcbd-8e164144172a|2|2",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H001",
+    "canonical_id": "basil:0c78e748-efbf-417c-a8c1-beeb6480147f|2|1",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 207,
+        "end": 216,
+        "text": "hot water"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H002",
+    "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|3|4",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 78,
+        "end": 104,
+        "text": "desperate political attack"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H003",
+    "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|3|2",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 33,
+        "end": 93,
+        "text": "as much on his personal turmoil as his policies and politics"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H004",
+    "canonical_id": "basil:e71d149d-0426-43f0-87e8-8c611dad7205|3|7",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "unsure",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H005",
+    "canonical_id": "basil:472158a1-4e39-4214-8397-904e66f2b4c5|3|0",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H006",
+    "canonical_id": "basil:87609973-bd58-42a5-96e2-ee5aa47433f5|2|3",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 61,
+        "end": 88,
+        "text": "regular drumbeat of attacks"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H007",
+    "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|42",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 8,
+        "end": 32,
+        "text": "incredibly disheartening"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H008",
+    "canonical_id": "basil:aab91277-8d56-4844-a581-45630f873f49|3|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 16,
+        "end": 25,
+        "text": "eccentric"
+      },
+      {
+        "start": 57,
+        "end": 106,
+        "text": "with a tattoo of Richard Nixon’s face on his back"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H009",
+    "canonical_id": "basil:68748e7f-cf6e-4ac7-8504-454c0876880d|1|13",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 64,
+        "end": 82,
+        "text": "scathing criticism"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H010",
+    "canonical_id": "basil:0ffb34cd-c367-4d90-aca7-7fcac3ed8f3d|3|17",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 39,
+        "end": 77,
+        "text": "forcing inmates to wear pink underwear"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H011",
+    "canonical_id": "basil:b4dbeda7-a1f3-4711-ae77-db23809d1ed2|3|1",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 62,
+        "end": 136,
+        "text": " large Jewish populations attempts to stoke anxiety over American policies"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H012",
+    "canonical_id": "basil:76810849-0335-4ad3-9eaf-f0d9c5baceb6|3|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 66,
+        "end": 80,
+        "text": "bombastic call"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H013",
+    "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|3|6",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 11,
+        "end": 49,
+        "text": "support for Ms. Pelosi has run so deep"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H014",
+    "canonical_id": "basil:58ed2376-35a0-453a-a08e-5cd87e3bdea5|2|7",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 41,
+        "end": 51,
+        "text": "especially"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H015",
+    "canonical_id": "basil:eadabee7-3db9-43c4-a485-3e8b1882cd3c|2|10",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 62,
+        "end": 73,
+        "text": "God willing"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H016",
+    "canonical_id": "basil:dd1e6e3b-f36c-4064-8ef9-940984e9afa2|2|1",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H017",
+    "canonical_id": "basil:01c59743-7082-44fc-8414-3c04126f470f|1|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 173,
+        "end": 182,
+        "text": "bombshell"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H018",
+    "canonical_id": "basil:550b80db-bdd5-442b-8f70-c8e9f3203a13|2|13",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 160,
+        "end": 180,
+        "text": "misogynistic attacks"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H019",
+    "canonical_id": "basil:2153fb3e-6b09-410c-bfea-d095c49a54ba|2|10",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 116,
+        "end": 124,
+        "text": "drumbeat"
+      },
+      {
+        "start": 149,
+        "end": 168,
+        "text": "do-nothing Congress"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H020",
+    "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|2|15",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H021",
+    "canonical_id": "basil:96b7046f-f584-422f-a626-6f86a26dfd8b|3|3",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 140,
+        "end": 171,
+        "text": "country’s most famous offspring"
+      },
+      {
+        "start": 12,
+        "end": 50,
+        "text": "now a footnote in Mr. Fincher’s career"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H022",
+    "canonical_id": "basil:eb17fa36-89f2-4d0b-8133-7bb4682228e1|2|18",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H023",
+    "canonical_id": "basil:a28a0329-0887-42dc-bd3d-3bb4f8926757|1|11",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H024",
+    "canonical_id": "basil:1f99798f-2b60-4ecb-b5f4-4aa7991e8ace|1|25",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 0,
+        "end": 10,
+        "text": "Regardless"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H025",
+    "canonical_id": "basil:86e6e27d-1440-4879-8b13-0dd2d89f7281|3|6",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 6,
+        "end": 16,
+        "text": "infamously"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H026",
+    "canonical_id": "basil:08bb9bee-c167-4c17-9c6d-4a1259231eb7|3|0",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H027",
+    "canonical_id": "basil:1e41e98b-9ac1-441d-b2c2-19d8f730c74a|2|12",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 176,
+        "end": 195,
+        "text": "aggressively pushed"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H028",
+    "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|2|12",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H029",
+    "canonical_id": "basil:2058ec60-5372-4f5f-83a3-da780be3a350|3|22",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H030",
+    "canonical_id": "basil:550b80db-bdd5-442b-8f70-c8e9f3203a13|2|6",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H031",
+    "canonical_id": "basil:eb17fa36-89f2-4d0b-8133-7bb4682228e1|3|2",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H032",
+    "canonical_id": "basil:70c75d68-bf65-46a6-a822-15c23d77a275|1|60",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H033",
+    "canonical_id": "basil:59f2f47c-5da0-4fbc-be6e-4f15d45d82e2|2|8",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 104,
+        "end": 132,
+        "text": "political hacks and henchman"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H034",
+    "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|1|21",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H035",
+    "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|3|0",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H036",
+    "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|1|10",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 4,
+        "end": 16,
+        "text": "disappointed"
+      },
+      {
+        "start": 42,
+        "end": 52,
+        "text": "better off"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H037",
+    "canonical_id": "basil:72fa9b13-4e59-4716-8df9-4c3580e7dddf|1|26",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 12,
+        "end": 29,
+        "text": "explosive reports"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H038",
+    "canonical_id": "basil:a4f1d515-d7d9-4319-b2e0-4d56e9d45554|1|7",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H039",
+    "canonical_id": "basil:87609973-bd58-42a5-96e2-ee5aa47433f5|3|2",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 112,
+        "end": 123,
+        "text": "lashing out"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H040",
+    "canonical_id": "basil:33521e65-12da-4521-b132-7b606243b0e4|2|6",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H041",
+    "canonical_id": "basil:aab91277-8d56-4844-a581-45630f873f49|1|24",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 90,
+        "end": 123,
+        "text": "has a tattoo of Nixon on his back"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H042",
+    "canonical_id": "basil:2b9468af-4ab0-4f25-85f4-c3ef93d72006|1|20",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H043",
+    "canonical_id": "basil:29ffd053-7684-469b-a600-97000579bd01|1|0",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 282,
+        "end": 302,
+        "text": "which hurts the poor"
+      },
+      {
+        "start": 164,
+        "end": 213,
+        "text": "called Representative Paul Ryan (R-Wisc.) to task"
+      },
+      {
+        "start": 222,
+        "end": 256,
+        "text": "misuse of Catholic social teaching"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H044",
+    "canonical_id": "basil:c9e4d35f-aeae-462b-a8bf-e08d09a93b6e|1|14",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 96,
+        "end": 107,
+        "text": "false story"
+      },
+      {
+        "start": 153,
+        "end": 170,
+        "text": "hysterical desire"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H045",
+    "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|1|5",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 5,
+        "end": 24,
+        "text": "rejected the notion"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H046",
+    "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|1|3",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 41,
+        "end": 46,
+        "text": "testy"
+      },
+      {
+        "start": 78,
+        "end": 84,
+        "text": "dodged"
+      },
+      {
+        "start": 62,
+        "end": 84,
+        "text": "at which he had dodged"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H047",
+    "canonical_id": "basil:ee05c9b3-529c-4268-ad72-19bd34f7197e|1|14",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H048",
+    "canonical_id": "basil:542cd22c-ea80-4669-995b-6ac6a33823f7|1|15",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H049",
+    "canonical_id": "basil:a28a0329-0887-42dc-bd3d-3bb4f8926757|2|14",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H050",
+    "canonical_id": "basil:97b1305c-13ca-4b74-a56a-f459bd79dfaf|2|26",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H051",
+    "canonical_id": "basil:7a97de89-1433-46f7-bcc2-f80b041cb9a0|1|21",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 0,
+        "end": 75,
+        "text": "But this isn’t the first time LePage’s comments have gotten him in trouble."
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H052",
+    "canonical_id": "basil:9879bbc0-eab3-482f-bf6b-a4b519393986|3|35",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 117,
+        "end": 127,
+        "text": "complained"
+      },
+      {
+        "start": 5,
+        "end": 19,
+        "text": "rare criticism"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H053",
+    "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|2|3",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H054",
+    "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|2|26",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 65,
+        "end": 86,
+        "text": "unnecessary subsidies"
+      },
+      {
+        "start": 123,
+        "end": 139,
+        "text": "waste and fraud "
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H055",
+    "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|35",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H056",
+    "canonical_id": "basil:ad409798-ee94-4436-92c5-92669193be14|2|16",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H057",
+    "canonical_id": "basil:2742e9c1-2943-496f-8b23-faf5332e1612|3|23",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H058",
+    "canonical_id": "basil:47a209b0-fc26-4a0a-a1fe-e4310d1d2419|3|39",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 35,
+        "end": 48,
+        "text": "controversial"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H059",
+    "canonical_id": "basil:47a209b0-fc26-4a0a-a1fe-e4310d1d2419|2|30",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H060",
+    "canonical_id": "basil:6e502405-bc90-4416-a787-3122918aa648|2|0",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H061",
+    "canonical_id": "basil:29ffd053-7684-469b-a600-97000579bd01|2|8",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 12,
+        "end": 23,
+        "text": "acknowledge"
+      },
+      {
+        "start": 42,
+        "end": 48,
+        "text": "indeed"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H062",
+    "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|3|3",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H063",
+    "canonical_id": "basil:2a3fde8a-082a-4d8f-9567-f7e8366c0200|2|13",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H064",
+    "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|1|19",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 189,
+        "end": 218,
+        "text": "a frequent contributor to the"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H065",
+    "canonical_id": "basil:11c9f251-35c8-4452-b052-df9be61464c6|2|9",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 67,
+        "end": 77,
+        "text": "reportedly"
+      },
+      {
+        "start": 130,
+        "end": 141,
+        "text": "internecine"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H066",
+    "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|3|18",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 53,
+        "end": 64,
+        "text": "complaining"
+      },
+      {
+        "start": 249,
+        "end": 256,
+        "text": "musings"
+      },
+      {
+        "start": 0,
+        "end": 64,
+        "text": "Instead, Trump spent the first hour and a half of it complaining"
+      },
+      {
+        "start": 279,
+        "end": 350,
+        "text": "utility of wheels and his desire for Russia to invade Afghanistan again"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H067",
+    "canonical_id": "basil:8dc7ccfe-5cf0-482f-9101-a7c69881da4d|3|7",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H068",
+    "canonical_id": "basil:2f3e86b6-8443-47bd-9cd3-491c90a59fe9|1|15",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 56,
+        "end": 75,
+        "text": "hardened opposition"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H069",
+    "canonical_id": "basil:e71d149d-0426-43f0-87e8-8c611dad7205|3|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 130,
+        "end": 142,
+        "text": "long-awaited"
+      },
+      {
+        "start": 54,
+        "end": 68,
+        "text": "wasted no time"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H070",
+    "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|1|6",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 29,
+        "end": 65,
+        "text": "those remarks are well over the line"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H071",
+    "canonical_id": "basil:d4a4bc34-e48b-4485-86b2-f1daf4d464dd|3|4",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H072",
+    "canonical_id": "basil:4f473faf-f928-4cfd-8bed-00578be9db9a|3|18",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H073",
+    "canonical_id": "basil:c6a0e65c-4f8b-41de-8200-cd700f683c64|1|18",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 130,
+        "end": 148,
+        "text": "historic cowardice"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H074",
+    "canonical_id": "basil:7a97de89-1433-46f7-bcc2-f80b041cb9a0|2|21",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H075",
+    "canonical_id": "basil:2b9468af-4ab0-4f25-85f4-c3ef93d72006|3|1",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 71,
+        "end": 100,
+        "text": "Republican-controlled chamber"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H076",
+    "canonical_id": "basil:72fa9b13-4e59-4716-8df9-4c3580e7dddf|1|13",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 10,
+        "end": 26,
+        "text": "literally dozens"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H077",
+    "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|1|7",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 3,
+        "end": 10,
+        "text": "claimed"
+      },
+      {
+        "start": 35,
+        "end": 64,
+        "text": "bragging about sexual assault"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H078",
+    "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|2|30",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 48,
+        "end": 69,
+        "text": "No one does it better"
+      },
+      {
+        "start": 71,
+        "end": 94,
+        "text": "No one even comes close"
+      },
+      {
+        "start": 0,
+        "end": 46,
+        "text": "No one is a better tactician than Nancy Pelosi"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H079",
+    "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|1|19",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 14,
+        "end": 31,
+        "text": "walking backwards"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H080",
+    "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|3|9",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 4,
+        "end": 16,
+        "text": "doubled down"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H081",
+    "canonical_id": "basil:0ffb34cd-c367-4d90-aca7-7fcac3ed8f3d|3|1",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H082",
+    "canonical_id": "basil:2058ec60-5372-4f5f-83a3-da780be3a350|3|34",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H083",
+    "canonical_id": "basil:eadabee7-3db9-43c4-a485-3e8b1882cd3c|1|3",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H084",
+    "canonical_id": "basil:472158a1-4e39-4214-8397-904e66f2b4c5|1|28",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H085",
+    "canonical_id": "basil:7a97de89-1433-46f7-bcc2-f80b041cb9a0|3|15",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H086",
+    "canonical_id": "basil:1ed4f378-b9d4-43b8-8d50-53d0cc063332|2|37",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 78,
+        "end": 82,
+        "text": "crow"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H087",
+    "canonical_id": "basil:c9e4d35f-aeae-462b-a8bf-e08d09a93b6e|3|14",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H088",
+    "canonical_id": "basil:b4dbeda7-a1f3-4711-ae77-db23809d1ed2|1|15",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 51,
+        "end": 62,
+        "text": "attack line"
+      },
+      {
+        "start": 83,
+        "end": 91,
+        "text": "accusing"
+      },
+      {
+        "start": 124,
+        "end": 133,
+        "text": "so-called"
+      },
+      {
+        "start": 83,
+        "end": 186,
+        "text": "accusing the president of embarking on a so-called “apology tour” at the expense of American security. "
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H089",
+    "canonical_id": "basil:b764f81f-6d08-4d7c-b1a8-8961bed0a455|3|27",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H090",
+    "canonical_id": "basil:7f9c83f7-3efa-4c7a-adef-3ebdeda96042|1|40",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H091",
+    "canonical_id": "basil:72fa9b13-4e59-4716-8df9-4c3580e7dddf|1|25",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 72,
+        "end": 87,
+        "text": "a stunning move"
+      },
+      {
+        "start": 102,
+        "end": 179,
+        "text": "amid the FBI’s ongoing investigation into the Trump campaign’s ties to Russia"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H092",
+    "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|2|1",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 12,
+        "end": 43,
+        "text": "the hero of the political right"
+      },
+      {
+        "start": 108,
+        "end": 127,
+        "text": "ripped the roof off"
+      },
+      {
+        "start": 163,
+        "end": 184,
+        "text": "sweeping denunciation"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H093",
+    "canonical_id": "basil:b764f81f-6d08-4d7c-b1a8-8961bed0a455|2|21",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 22,
+        "end": 29,
+        "text": "accused"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H094",
+    "canonical_id": "basil:70c75d68-bf65-46a6-a822-15c23d77a275|3|5",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 52,
+        "end": 76,
+        "text": "gut existing asylum laws"
+      },
+      {
+        "start": 200,
+        "end": 245,
+        "text": "gut the concept of temporary protected status"
+      },
+      {
+        "start": 339,
+        "end": 354,
+        "text": "dead on arrival"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H095",
+    "canonical_id": "basil:f688c56d-7fae-42ef-b7f7-7db207b58d27|1|1",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H096",
+    "canonical_id": "basil:d16050b3-979f-4834-90db-b8823691b87e|1|1",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 4,
+        "end": 8,
+        "text": "gory"
+      },
+      {
+        "start": 91,
+        "end": 122,
+        "text": "known for his shocking pictures"
+      },
+      {
+        "start": 76,
+        "end": 81,
+        "text": "famed"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H097",
+    "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|2|3",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H098",
+    "canonical_id": "basil:cad4bba5-cf97-45cb-8059-ebeb47dcec7a|3|2",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 31,
+        "end": 37,
+        "text": "chided"
+      },
+      {
+        "start": 88,
+        "end": 96,
+        "text": "accusing"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H099",
+    "canonical_id": "basil:4f473faf-f928-4cfd-8bed-00578be9db9a|2|18",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H100",
+    "canonical_id": "basil:ed8c136f-8d44-4c83-ad05-0dcfc3a0c54a|1|26",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H101",
+    "canonical_id": "basil:7f9c83f7-3efa-4c7a-adef-3ebdeda96042|1|28",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 42,
+        "end": 50,
+        "text": "assailed"
+      },
+      {
+        "start": 100,
+        "end": 117,
+        "text": "ironclad dealings"
+      },
+      {
+        "start": 167,
+        "end": 202,
+        "text": "openly hostile to the United States"
+      },
+      {
+        "start": 0,
+        "end": 34,
+        "text": "As he often has in Senate hearings"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H102",
+    "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|3|5",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H103",
+    "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|16",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H104",
+    "canonical_id": "basil:cad4bba5-cf97-45cb-8059-ebeb47dcec7a|3|26",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 45,
+        "end": 74,
+        "text": "threatens to muddy the waters"
+      },
+      {
+        "start": 4,
+        "end": 18,
+        "text": "campaign-style"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H105",
+    "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|23",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 149,
+        "end": 197,
+        "text": "a roster of other groups lined up to do the same"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H106",
+    "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|1|15",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H107",
+    "canonical_id": "basil:59f2f47c-5da0-4fbc-be6e-4f15d45d82e2|2|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 34,
+        "end": 44,
+        "text": "lashed out"
+      },
+      {
+        "start": 62,
+        "end": 70,
+        "text": "accusing"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H108",
+    "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|45",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 24,
+        "end": 45,
+        "text": "claiming inaccurately"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H109",
+    "canonical_id": "basil:542cd22c-ea80-4669-995b-6ac6a33823f7|1|23",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H110",
+    "canonical_id": "basil:d4a4bc34-e48b-4485-86b2-f1daf4d464dd|2|4",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 35,
+        "end": 59,
+        "text": "many outrageous comments"
+      },
+      {
+        "start": 138,
+        "end": 145,
+        "text": "insists"
+      },
+      {
+        "start": 152,
+        "end": 158,
+        "text": "coerce"
+      },
+      {
+        "start": 22,
+        "end": 59,
+        "text": "who has made many outrageous comments"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H111",
+    "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|2|17",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H112",
+    "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|3|14",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 92,
+        "end": 100,
+        "text": "insisted"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H113",
+    "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|1|37",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H114",
+    "canonical_id": "basil:58f414e5-a122-49f5-819e-512d91069da5|2|14",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 26,
+        "end": 32,
+        "text": "softly"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H115",
+    "canonical_id": "basil:b7021938-ff8d-42ea-adec-5704c0b65237|3|15",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 36,
+        "end": 48,
+        "text": "doubled down"
+      },
+      {
+        "start": 23,
+        "end": 34,
+        "text": "his critics"
+      },
+      {
+        "start": 109,
+        "end": 143,
+        "text": "which indicted more than 30 people"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H116",
+    "canonical_id": "basil:1ed4f378-b9d4-43b8-8d50-53d0cc063332|1|14",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H117",
+    "canonical_id": "basil:472158a1-4e39-4214-8397-904e66f2b4c5|1|0",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 34,
+        "end": 38,
+        "text": "rage"
+      },
+      {
+        "start": 158,
+        "end": 192,
+        "text": "hinting that he was not quite sane"
+      },
+      {
+        "start": 125,
+        "end": 153,
+        "text": "labeling him a public menace"
+      },
+      {
+        "start": 195,
+        "end": 279,
+        "text": "it would be easy to think that the two billionaires had a rift going back many years"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H118",
+    "canonical_id": "basil:aab91277-8d56-4844-a581-45630f873f49|1|27",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 4,
+        "end": 18,
+        "text": "brash behavior"
+      },
+      {
+        "start": 126,
+        "end": 191,
+        "text": "like the character in a whodunit whom readers immediately dismiss"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annA",
+    "item_id": "H119",
+    "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|1",
+    "bias_present": "yes",
+    "bias_type": "",
+    "spans": [
+      {
+        "start": 41,
+        "end": 66,
+        "text": "grinding two-month battle"
+      },
+      {
+        "start": 115,
+        "end": 123,
+        "text": "asserted"
+      },
+      {
+        "start": 0,
+        "end": 38,
+        "text": "Trying to regain momentum after losing"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  }
+]

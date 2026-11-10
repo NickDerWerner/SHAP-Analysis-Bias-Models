@@ -1,0 +1,1687 @@
+[
+  {
+    "annotator_id": "annB",
+    "item_id": "H000",
+    "canonical_id": "basil:38f7cbb7-5d6a-4c89-bcbd-8e164144172a|2|2",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 46,
+        "end": 53,
+        "text": "dangled"
+      },
+      {
+        "start": 0,
+        "end": 12,
+        "text": "Batting down"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H001",
+    "canonical_id": "basil:0c78e748-efbf-417c-a8c1-beeb6480147f|2|1",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 111,
+        "end": 117,
+        "text": "wading"
+      },
+      {
+        "start": 204,
+        "end": 217,
+        "text": "in hot water."
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H002",
+    "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|3|4",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 51,
+        "end": 67,
+        "text": "completely false"
+      },
+      {
+        "start": 78,
+        "end": 87,
+        "text": "desperate"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H003",
+    "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|3|2",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 5,
+        "end": 12,
+        "text": "winding"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H004",
+    "canonical_id": "basil:e71d149d-0426-43f0-87e8-8c611dad7205|3|7",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H005",
+    "canonical_id": "basil:472158a1-4e39-4214-8397-904e66f2b4c5|3|0",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 116,
+        "end": 120,
+        "text": "sane"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H006",
+    "canonical_id": "basil:87609973-bd58-42a5-96e2-ee5aa47433f5|2|3",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H007",
+    "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|42",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H008",
+    "canonical_id": "basil:aab91277-8d56-4844-a581-45630f873f49|3|0",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 16,
+        "end": 25,
+        "text": "eccentric"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": "Bias informational angle: with a tattoo of Richard Nixon’s face on his back."
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H009",
+    "canonical_id": "basil:68748e7f-cf6e-4ac7-8504-454c0876880d|1|13",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H010",
+    "canonical_id": "basil:0ffb34cd-c367-4d90-aca7-7fcac3ed8f3d|3|17",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H011",
+    "canonical_id": "basil:b4dbeda7-a1f3-4711-ae77-db23809d1ed2|3|1",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 100,
+        "end": 113,
+        "text": "stoke anxiety"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H012",
+    "canonical_id": "basil:76810849-0335-4ad3-9eaf-f0d9c5baceb6|3|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 66,
+        "end": 75,
+        "text": "bombastic"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H013",
+    "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|3|6",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H014",
+    "canonical_id": "basil:58ed2376-35a0-453a-a08e-5cd87e3bdea5|2|7",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H015",
+    "canonical_id": "basil:eadabee7-3db9-43c4-a485-3e8b1882cd3c|2|10",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 62,
+        "end": 73,
+        "text": "God willing"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H016",
+    "canonical_id": "basil:dd1e6e3b-f36c-4064-8ef9-940984e9afa2|2|1",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 174,
+        "end": 179,
+        "text": "trove"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H017",
+    "canonical_id": "basil:01c59743-7082-44fc-8414-3c04126f470f|1|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 173,
+        "end": 182,
+        "text": "bombshell"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H018",
+    "canonical_id": "basil:550b80db-bdd5-442b-8f70-c8e9f3203a13|2|13",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 160,
+        "end": 180,
+        "text": "misogynistic attacks"
+      },
+      {
+        "start": 78,
+        "end": 96,
+        "text": "almost every issue"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H019",
+    "canonical_id": "basil:2153fb3e-6b09-410c-bfea-d095c49a54ba|2|10",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 115,
+        "end": 124,
+        "text": " drumbeat"
+      },
+      {
+        "start": 147,
+        "end": 168,
+        "text": "a do-nothing Congress"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H020",
+    "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|2|15",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H021",
+    "canonical_id": "basil:96b7046f-f584-422f-a626-6f86a26dfd8b|3|3",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 66,
+        "end": 81,
+        "text": "cautionary tale"
+      },
+      {
+        "start": 150,
+        "end": 161,
+        "text": "most famous"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H022",
+    "canonical_id": "basil:eb17fa36-89f2-4d0b-8133-7bb4682228e1|2|18",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 101,
+        "end": 116,
+        "text": "as if they were"
+      },
+      {
+        "start": 145,
+        "end": 154,
+        "text": "falsified"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H023",
+    "canonical_id": "basil:a28a0329-0887-42dc-bd3d-3bb4f8926757|1|11",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H024",
+    "canonical_id": "basil:1f99798f-2b60-4ecb-b5f4-4aa7991e8ace|1|25",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 55,
+        "end": 73,
+        "text": "“live” explosives "
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H025",
+    "canonical_id": "basil:86e6e27d-1440-4879-8b13-0dd2d89f7281|3|6",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 47,
+        "end": 59,
+        "text": "by the pussy"
+      },
+      {
+        "start": 154,
+        "end": 173,
+        "text": "shithole countries”"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H026",
+    "canonical_id": "basil:08bb9bee-c167-4c17-9c6d-4a1259231eb7|3|0",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H027",
+    "canonical_id": "basil:1e41e98b-9ac1-441d-b2c2-19d8f730c74a|2|12",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 76,
+        "end": 89,
+        "text": "biggest wimp "
+      },
+      {
+        "start": 176,
+        "end": 196,
+        "text": "aggressively pushed "
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H028",
+    "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|2|12",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 17,
+        "end": 28,
+        "text": "destructive"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H029",
+    "canonical_id": "basil:2058ec60-5372-4f5f-83a3-da780be3a350|3|22",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H030",
+    "canonical_id": "basil:550b80db-bdd5-442b-8f70-c8e9f3203a13|2|6",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H031",
+    "canonical_id": "basil:eb17fa36-89f2-4d0b-8133-7bb4682228e1|3|2",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H032",
+    "canonical_id": "basil:70c75d68-bf65-46a6-a822-15c23d77a275|1|60",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H033",
+    "canonical_id": "basil:59f2f47c-5da0-4fbc-be6e-4f15d45d82e2|2|8",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 124,
+        "end": 132,
+        "text": "henchman"
+      },
+      {
+        "start": 148,
+        "end": 155,
+        "text": "pretend"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H034",
+    "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|1|21",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H035",
+    "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|3|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 227,
+        "end": 232,
+        "text": "faker"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": "Marking bias for the reason that media chose to use quotation to stress on a particular argument."
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H036",
+    "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|1|10",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H037",
+    "canonical_id": "basil:72fa9b13-4e59-4716-8df9-4c3580e7dddf|1|26",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 12,
+        "end": 21,
+        "text": "explosive"
+      },
+      {
+        "start": 91,
+        "end": 101,
+        "text": "interfered"
+      }
+    ],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H038",
+    "canonical_id": "basil:a4f1d515-d7d9-4319-b2e0-4d56e9d45554|1|7",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H039",
+    "canonical_id": "basil:87609973-bd58-42a5-96e2-ee5aa47433f5|3|2",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 112,
+        "end": 123,
+        "text": "lashing out"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H040",
+    "canonical_id": "basil:33521e65-12da-4521-b132-7b606243b0e4|2|6",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H041",
+    "canonical_id": "basil:aab91277-8d56-4844-a581-45630f873f49|1|24",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 17,
+        "end": 33,
+        "text": "dirty trickster,"
+      },
+      {
+        "start": 2,
+        "end": 16,
+        "text": "self-described"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H042",
+    "canonical_id": "basil:2b9468af-4ab0-4f25-85f4-c3ef93d72006|1|20",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H043",
+    "canonical_id": "basil:29ffd053-7684-469b-a600-97000579bd01|1|0",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 282,
+        "end": 302,
+        "text": "which hurts the poor"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H044",
+    "canonical_id": "basil:c9e4d35f-aeae-462b-a8bf-e08d09a93b6e|1|14",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 153,
+        "end": 171,
+        "text": "hysterical desire "
+      },
+      {
+        "start": 174,
+        "end": 181,
+        "text": "destroy"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H045",
+    "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|1|5",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H046",
+    "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|1|3",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 41,
+        "end": 46,
+        "text": "testy"
+      },
+      {
+        "start": 78,
+        "end": 84,
+        "text": "dodged"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H047",
+    "canonical_id": "basil:ee05c9b3-529c-4268-ad72-19bd34f7197e|1|14",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 72,
+        "end": 84,
+        "text": "lot of heart"
+      }
+    ],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H048",
+    "canonical_id": "basil:542cd22c-ea80-4669-995b-6ac6a33823f7|1|15",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H049",
+    "canonical_id": "basil:a28a0329-0887-42dc-bd3d-3bb4f8926757|2|14",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H050",
+    "canonical_id": "basil:97b1305c-13ca-4b74-a56a-f459bd79dfaf|2|26",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 21,
+        "end": 28,
+        "text": "bigoted"
+      },
+      {
+        "start": 33,
+        "end": 42,
+        "text": "malicious"
+      },
+      {
+        "start": 59,
+        "end": 73,
+        "text": "far more harm "
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H051",
+    "canonical_id": "basil:7a97de89-1433-46f7-bcc2-f80b041cb9a0|1|21",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H052",
+    "canonical_id": "basil:9879bbc0-eab3-482f-bf6b-a4b519393986|3|35",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 161,
+        "end": 178,
+        "text": "failed to conduct"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H053",
+    "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|2|3",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 4,
+        "end": 9,
+        "text": "stole"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H054",
+    "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|2|26",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H055",
+    "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|35",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H056",
+    "canonical_id": "basil:ad409798-ee94-4436-92c5-92669193be14|2|16",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 166,
+        "end": 175,
+        "text": "fake news"
+      },
+      {
+        "start": 206,
+        "end": 210,
+        "text": "sick"
+      }
+    ],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H057",
+    "canonical_id": "basil:2742e9c1-2943-496f-8b23-faf5332e1612|3|23",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H058",
+    "canonical_id": "basil:47a209b0-fc26-4a0a-a1fe-e4310d1d2419|3|39",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 134,
+        "end": 153,
+        "text": "ocean of dark money"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H059",
+    "canonical_id": "basil:47a209b0-fc26-4a0a-a1fe-e4310d1d2419|2|30",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H060",
+    "canonical_id": "basil:6e502405-bc90-4416-a787-3122918aa648|2|0",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H061",
+    "canonical_id": "basil:29ffd053-7684-469b-a600-97000579bd01|2|8",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 114,
+        "end": 123,
+        "text": "free pass"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H062",
+    "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|3|3",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H063",
+    "canonical_id": "basil:2a3fde8a-082a-4d8f-9567-f7e8366c0200|2|13",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H064",
+    "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|1|19",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H065",
+    "canonical_id": "basil:11c9f251-35c8-4452-b052-df9be61464c6|2|9",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 130,
+        "end": 141,
+        "text": "internecine"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H066",
+    "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|3|18",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H067",
+    "canonical_id": "basil:8dc7ccfe-5cf0-482f-9101-a7c69881da4d|3|7",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H068",
+    "canonical_id": "basil:2f3e86b6-8443-47bd-9cd3-491c90a59fe9|1|15",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H069",
+    "canonical_id": "basil:e71d149d-0426-43f0-87e8-8c611dad7205|3|0",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H070",
+    "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|1|6",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H071",
+    "canonical_id": "basil:d4a4bc34-e48b-4485-86b2-f1daf4d464dd|3|4",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H072",
+    "canonical_id": "basil:4f473faf-f928-4cfd-8bed-00578be9db9a|3|18",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H073",
+    "canonical_id": "basil:c6a0e65c-4f8b-41de-8200-cd700f683c64|1|18",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 139,
+        "end": 148,
+        "text": "cowardice"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H074",
+    "canonical_id": "basil:7a97de89-1433-46f7-bcc2-f80b041cb9a0|2|21",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H075",
+    "canonical_id": "basil:2b9468af-4ab0-4f25-85f4-c3ef93d72006|3|1",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H076",
+    "canonical_id": "basil:72fa9b13-4e59-4716-8df9-4c3580e7dddf|1|13",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H077",
+    "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|1|7",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H078",
+    "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|2|30",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 71,
+        "end": 94,
+        "text": "No one even comes close"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H079",
+    "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|1|19",
+    "bias_present": "",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "high",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H080",
+    "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|3|9",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [
+      {
+        "start": 52,
+        "end": 57,
+        "text": "faker"
+      }
+    ],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H081",
+    "canonical_id": "basil:0ffb34cd-c367-4d90-aca7-7fcac3ed8f3d|3|1",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 18,
+        "end": 32,
+        "text": "most expansive"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H082",
+    "canonical_id": "basil:2058ec60-5372-4f5f-83a3-da780be3a350|3|34",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H083",
+    "canonical_id": "basil:eadabee7-3db9-43c4-a485-3e8b1882cd3c|1|3",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H084",
+    "canonical_id": "basil:472158a1-4e39-4214-8397-904e66f2b4c5|1|28",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H085",
+    "canonical_id": "basil:7a97de89-1433-46f7-bcc2-f80b041cb9a0|3|15",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H086",
+    "canonical_id": "basil:1ed4f378-b9d4-43b8-8d50-53d0cc063332|2|37",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H087",
+    "canonical_id": "basil:c9e4d35f-aeae-462b-a8bf-e08d09a93b6e|3|14",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H088",
+    "canonical_id": "basil:b4dbeda7-a1f3-4711-ae77-db23809d1ed2|1|15",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 124,
+        "end": 148,
+        "text": "so-called “apology tour”"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H089",
+    "canonical_id": "basil:b764f81f-6d08-4d7c-b1a8-8961bed0a455|3|27",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H090",
+    "canonical_id": "basil:7f9c83f7-3efa-4c7a-adef-3ebdeda96042|1|40",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H091",
+    "canonical_id": "basil:72fa9b13-4e59-4716-8df9-4c3580e7dddf|1|25",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 74,
+        "end": 87,
+        "text": "stunning move"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H092",
+    "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|2|1",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 115,
+        "end": 127,
+        "text": "the roof off"
+      },
+      {
+        "start": 163,
+        "end": 184,
+        "text": "sweeping denunciation"
+      }
+    ],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H093",
+    "canonical_id": "basil:b764f81f-6d08-4d7c-b1a8-8961bed0a455|2|21",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H094",
+    "canonical_id": "basil:70c75d68-bf65-46a6-a822-15c23d77a275|3|5",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 339,
+        "end": 354,
+        "text": "dead on arrival"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H095",
+    "canonical_id": "basil:f688c56d-7fae-42ef-b7f7-7db207b58d27|1|1",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H096",
+    "canonical_id": "basil:d16050b3-979f-4834-90db-b8823691b87e|1|1",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H097",
+    "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|2|3",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H098",
+    "canonical_id": "basil:cad4bba5-cf97-45cb-8059-ebeb47dcec7a|3|2",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 31,
+        "end": 37,
+        "text": "chided"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H099",
+    "canonical_id": "basil:4f473faf-f928-4cfd-8bed-00578be9db9a|2|18",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "unsure",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H100",
+    "canonical_id": "basil:ed8c136f-8d44-4c83-ad05-0dcfc3a0c54a|1|26",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H101",
+    "canonical_id": "basil:7f9c83f7-3efa-4c7a-adef-3ebdeda96042|1|28",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H102",
+    "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|3|5",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H103",
+    "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|16",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H104",
+    "canonical_id": "basil:cad4bba5-cf97-45cb-8059-ebeb47dcec7a|3|26",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "low",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H105",
+    "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|23",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H106",
+    "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|1|15",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H107",
+    "canonical_id": "basil:59f2f47c-5da0-4fbc-be6e-4f15d45d82e2|2|0",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H108",
+    "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|45",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H109",
+    "canonical_id": "basil:542cd22c-ea80-4669-995b-6ac6a33823f7|1|23",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H110",
+    "canonical_id": "basil:d4a4bc34-e48b-4485-86b2-f1daf4d464dd|2|4",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 40,
+        "end": 50,
+        "text": "outrageous"
+      },
+      {
+        "start": 152,
+        "end": 158,
+        "text": "coerce"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H111",
+    "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|2|17",
+    "bias_present": "no",
+    "bias_type": "none",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H112",
+    "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|3|14",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H113",
+    "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|1|37",
+    "bias_present": "",
+    "bias_type": "",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "med",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H114",
+    "canonical_id": "basil:58f414e5-a122-49f5-819e-512d91069da5|2|14",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H115",
+    "canonical_id": "basil:b7021938-ff8d-42ea-adec-5704c0b65237|3|15",
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H116",
+    "canonical_id": "basil:1ed4f378-b9d4-43b8-8d50-53d0cc063332|1|14",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H117",
+    "canonical_id": "basil:472158a1-4e39-4214-8397-904e66f2b4c5|1|0",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H118",
+    "canonical_id": "basil:aab91277-8d56-4844-a581-45630f873f49|1|27",
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  },
+  {
+    "annotator_id": "annB",
+    "item_id": "H119",
+    "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|1",
+    "bias_present": "yes",
+    "bias_type": "both",
+    "spans": [],
+    "needs_context": "yes",
+    "uncertainty": "",
+    "comments": ""
+  }
+]
