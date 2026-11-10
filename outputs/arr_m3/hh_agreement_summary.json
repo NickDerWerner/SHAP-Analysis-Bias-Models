@@ -1,0 +1,230 @@
+{
+  "bias_present": {
+    "field": "bias_present",
+    "n_paired_complete": 96,
+    "raw_agreement": 0.6979166666666666,
+    "raw_ci95_lo": 0.6041666666666666,
+    "raw_ci95_hi": 0.7916666666666666,
+    "cohen_kappa": 0.3501400560224091,
+    "labels": [
+      "yes",
+      "no"
+    ],
+    "confusion": [
+      {
+        "row": "yes",
+        "col": "yes",
+        "count": 50
+      },
+      {
+        "row": "yes",
+        "col": "no",
+        "count": 4
+      },
+      {
+        "row": "no",
+        "col": "yes",
+        "count": 25
+      },
+      {
+        "row": "no",
+        "col": "no",
+        "count": 17
+      }
+    ],
+    "missing_handling": "exclude pairs where either annotator has empty label"
+  },
+  "bias_type": {
+    "field": "bias_type",
+    "n_paired_complete": 96,
+    "raw_agreement": 0.3541666666666667,
+    "raw_ci95_lo": 0.2604166666666667,
+    "raw_ci95_hi": 0.4583333333333333,
+    "cohen_kappa": 0.14433582518688895,
+    "labels": [
+      "lexical",
+      "informational",
+      "both",
+      "none"
+    ],
+    "confusion": [
+      {
+        "row": "lexical",
+        "col": "lexical",
+        "count": 12
+      },
+      {
+        "row": "lexical",
+        "col": "informational",
+        "count": 9
+      },
+      {
+        "row": "lexical",
+        "col": "both",
+        "count": 4
+      },
+      {
+        "row": "lexical",
+        "col": "none",
+        "count": 5
+      },
+      {
+        "row": "informational",
+        "col": "lexical",
+        "count": 2
+      },
+      {
+        "row": "informational",
+        "col": "informational",
+        "count": 3
+      },
+      {
+        "row": "informational",
+        "col": "both",
+        "count": 3
+      },
+      {
+        "row": "informational",
+        "col": "none",
+        "count": 0
+      },
+      {
+        "row": "both",
+        "col": "lexical",
+        "count": 7
+      },
+      {
+        "row": "both",
+        "col": "informational",
+        "count": 7
+      },
+      {
+        "row": "both",
+        "col": "both",
+        "count": 2
+      },
+      {
+        "row": "both",
+        "col": "none",
+        "count": 0
+      },
+      {
+        "row": "none",
+        "col": "lexical",
+        "count": 7
+      },
+      {
+        "row": "none",
+        "col": "informational",
+        "count": 11
+      },
+      {
+        "row": "none",
+        "col": "both",
+        "count": 7
+      },
+      {
+        "row": "none",
+        "col": "none",
+        "count": 17
+      }
+    ],
+    "missing_handling": "exclude pairs where either annotator has empty label"
+  },
+  "needs_context": {
+    "field": "needs_context",
+    "n_paired_complete": 23,
+    "raw_agreement": 0.4782608695652174,
+    "raw_ci95_lo": 0.2608695652173913,
+    "raw_ci95_hi": 0.6956521739130435,
+    "cohen_kappa": 0.1533742331288344,
+    "labels": [
+      "yes",
+      "no",
+      "unsure"
+    ],
+    "confusion": [
+      {
+        "row": "yes",
+        "col": "yes",
+        "count": 6
+      },
+      {
+        "row": "yes",
+        "col": "no",
+        "count": 1
+      },
+      {
+        "row": "yes",
+        "col": "unsure",
+        "count": 0
+      },
+      {
+        "row": "no",
+        "col": "yes",
+        "count": 9
+      },
+      {
+        "row": "no",
+        "col": "no",
+        "count": 5
+      },
+      {
+        "row": "no",
+        "col": "unsure",
+        "count": 1
+      },
+      {
+        "row": "unsure",
+        "col": "yes",
+        "count": 1
+      },
+      {
+        "row": "unsure",
+        "col": "no",
+        "count": 0
+      },
+      {
+        "row": "unsure",
+        "col": "unsure",
+        "count": 0
+      }
+    ],
+    "missing_handling": "exclude pairs where either annotator has empty label"
+  },
+  "spans": {
+    "policy": "Both empty \u21d2 F1/IoU=1.0 (agree on no evidence). One empty vs non-empty \u21d2 F1/IoU=0. Included in means.",
+    "char_soft_f1": {
+      "mean": 0.47285187312616916,
+      "ci95_lo": 0.38832067190419345,
+      "ci95_hi": 0.5535506056266182,
+      "n": 120
+    },
+    "char_iou": {
+      "mean": 0.44544614487212836,
+      "ci95_lo": 0.3634031830813086,
+      "ci95_hi": 0.5275761510395722
+    },
+    "token_f1": {
+      "mean": 0.46760154061624654,
+      "ci95_lo": 0.38402894491129785,
+      "ci95_hi": 0.5481337535014006
+    },
+    "both_agree_lexical_span_f1": {
+      "n": 12,
+      "mean_ci": [
+        0.46371327550708547,
+        0.25490196078431376,
+        0.672454217536071
+      ]
+    },
+    "both_agree_informational_span_f1": {
+      "n": 3,
+      "mean_ci": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

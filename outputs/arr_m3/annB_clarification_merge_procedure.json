@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "original_immutable_path": "outputs/arr_m2d/human_raw/basil_blind_annotations_annB.json",
+  "clarification_responses_path_template": "outputs/arr_m3/annB_clarification_responses_{VERSION}.json",
+  "merged_derived_path_template": "outputs/arr_m3/annB_merged_for_analysis_{VERSION}.json",
+  "rules": [
+    "Never overwrite basil_blind_annotations_annB.json",
+    "Store clarifications in a separate responses file keyed by clarification_id / item_id",
+    "Merged analysis file is derived: original fields + clarified_* overlays only where clarified",
+    "Report agreement pre-clarification (complete-case and missing-as-excluded) vs post-clarification",
+    "Do not impute cannot_determine as yes/no for primary \u03ba; report separately"
+  ]
+}

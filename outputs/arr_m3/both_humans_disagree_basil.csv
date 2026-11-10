@@ -1,0 +1,49 @@
+item_id,kind,GOLD,gold_type,type_a,type_b,text,gold_bin,a,b
+H000,both_disagree_type,lex_only,lexical,none,both,"Batting down allegations that the White House dangled the secretary of Navy position in front of Sestak, the report said that Sestak was offered executive branc",,,
+H001,both_disagree_binary,non_biased,,informational,lexical,"The president’s comments, made to reporters as he left Washington for a policy announcement in Utah, saw Trump wading deeper into the Flynn investigation even a",no,yes,yes
+H001,both_disagree_type,non_biased,none,informational,lexical,"The president’s comments, made to reporters as he left Washington for a policy announcement in Utah, saw Trump wading deeper into the Flynn investigation even a",,,
+H004,both_disagree_type,both,both,none,informational,"Several candidates, in calling for the swift release of the report, also sought to gather new supporters and their email addresses by putting out “petitions” ca",,,
+H005,both_disagree_type,lex_only,lexical,none,both,"PHILADELPHIA ― Americans should vote for Hillary Clinton because, unlike Republican nominee Donald Trump, she is a “sane, competent person,” Michael Bloomberg, ",,,
+H006,both_disagree_type,inf_only,informational,lexical,none,"Almost 14 months after the election, Mr. Trump has kept up a regular drumbeat of attacks on Mrs. Clinton.",,,
+H007,both_disagree_type,both,both,lexical,informational,“It was incredibly disheartening that they don’t want to know the facts when making policy.”,,,
+H011,both_disagree_type,lex_only,lexical,informational,both,"And a new advertisement that will run in areas of Florida with large Jewish populations attempts to stoke anxiety over American policies in the region, using a ",,,
+H015,both_disagree_binary,non_biased,,lexical,both,"""Anybody who thinks that whoever the next president is -- and God willing, in my view, it will be Secretary Clinton.""",no,yes,yes
+H015,both_disagree_type,non_biased,none,lexical,both,"""Anybody who thinks that whoever the next president is -- and God willing, in my view, it will be Secretary Clinton.""",,,
+H018,both_disagree_type,both,both,lexical,informational,"O'Neill said that the main reason her group, which disagrees with Bachmann on almost every issue, would stand up for and defend Bachmann against ""these kind of ",,,
+H021,both_disagree_type,inf_only,informational,both,both,"Ms. Lauten, now a footnote in Mr. Fincher’s career, is the latest cautionary tale about the dangers of social media sniping directed at the country’s most famou",,,
+H024,both_disagree_binary,non_biased,,lexical,lexical,"Regardless, investigators were treating the devices as “live” explosives New York City Police Commissioner James O’Neill said.",no,yes,yes
+H024,both_disagree_type,non_biased,none,lexical,lexical,"Regardless, investigators were treating the devices as “live” explosives New York City Police Commissioner James O’Neill said.",,,
+H027,both_disagree_type,both,both,lexical,informational,"“Good news for George Herbert Walker Bush: As of today, he is no longer the biggest wimp ever to serve as President of the United States,” the commentator Ann C",,,
+H035,both_disagree_type,both,both,none,lexical,Supreme Court Justice Ruth Bader Ginsburg faced a growing and bipartisan backlash Wednesday -- including a call from Donald Trump to resign -- as she doubled do,,,
+H037,both_disagree_type,both,both,lexical,lexical,A series of explosive reports over the last week have heightened the appearance that Trump interfered with the investigation.,,,
+H039,both_disagree_type,both,both,lexical,lexical,"Trump, returning to Washington after spending the holidays at his Florida resort, posted an early-morning tweet lashing out at former Clinton aide Huma Abedin, ",,,
+H044,both_disagree_type,both,both,lexical,lexical,Trump lawyer Rudy Giuliani on Friday also praised Mueller’s office for “correcting the Buzzfeed false story” and asked the press to take heed that their hysteri,,,
+H047,both_disagree_type,inf_only,informational,none,lexical,"“He really just didn’t have very much money, but what he did have was a lot of heart,” she said of Mr. Brat.",,,
+H050,both_disagree_type,inf_only,informational,none,lexical,"All that's left is a bigoted and malicious shell that does far more harm than good for people who need a break,"" he wrote.",,,
+H054,both_disagree_binary,non_biased,,lexical,informational,"""President Obama achieved a third as much savings by eliminating unnecessary subsidies to insurances companies and getting waste and fraud out of the system in ",no,yes,yes
+H054,both_disagree_type,non_biased,none,lexical,informational,"""President Obama achieved a third as much savings by eliminating unnecessary subsidies to insurances companies and getting waste and fraud out of the system in ",,,
+H055,both_disagree_type,inf_only,informational,none,both,"“It didn’t sound too important to me,” he said.",,,
+H061,both_disagree_binary,non_biased,,lexical,lexical,The writers acknowledge that the teaching indeed calls for local-level solutions to problems but say it is “not a free pass to dismantle government” and require,no,yes,yes
+H061,both_disagree_type,non_biased,none,lexical,lexical,The writers acknowledge that the teaching indeed calls for local-level solutions to problems but say it is “not a free pass to dismantle government” and require,,,
+H071,both_disagree_type,lex_only,lexical,none,informational,"""I would like to know who those Hispanics are, because they are followers of a false prophet,"" Fox said.",,,
+H081,both_disagree_type,inf_only,informational,none,both,"Mr. Perry, in his most expansive comments about illegal immigration since last week’s Republican presidential debate, was not suggesting any rounding up of ille",,,
+H083,both_disagree_binary,both,,none,none,"Her historic campaign inspired millions and is an extension of her lifelong fight for middle-class families and children,"" White House Press Secretary Josh Earn",yes,no,no
+H083,both_disagree_type,both,both,none,none,"Her historic campaign inspired millions and is an extension of her lifelong fight for middle-class families and children,"" White House Press Secretary Josh Earn",,,
+H085,both_disagree_binary,inf_only,,none,none,"“Every day, Paul LePage gives Maine people more evidence that he is unfit for office,” State House Majority Leader Jeff McCabe (D) and Assistant House Majority ",yes,no,no
+H085,both_disagree_type,inf_only,informational,none,none,"“Every day, Paul LePage gives Maine people more evidence that he is unfit for office,” State House Majority Leader Jeff McCabe (D) and Assistant House Majority ",,,
+H087,both_disagree_binary,inf_only,,none,none,Feinstein is a ranking member of the Senate Judiciary Committee.,yes,no,no
+H087,both_disagree_type,inf_only,informational,none,none,Feinstein is a ranking member of the Senate Judiciary Committee.,,,
+H088,both_disagree_type,lex_only,lexical,both,both,"In July, the group released an ad pushing the same attack line employed by Romney, accusing the president of embarking on a so-called “apology tour” at the expe",,,
+H091,both_disagree_type,both,both,informational,lexical,"The need for a new FBI director came after Trump fired Comey last week, a stunning move that occurred amid the FBI’s ongoing investigation into the Trump campai",,,
+H095,both_disagree_binary,both,,none,none,"“So-called Birthright Citizenship, which costs our Country billions of dollars and is very unfair to our citizens, will be ended one way or the other,” he tweet",yes,no,no
+H095,both_disagree_type,both,both,none,none,"“So-called Birthright Citizenship, which costs our Country billions of dollars and is very unfair to our citizens, will be ended one way or the other,” he tweet",,,
+H098,both_disagree_type,both,both,lexical,lexical,"It came after Boehner publicly chided Obama on Friday for the lack of progress to date, accusing the president of having ""wasted another week.""",,,
+H099,both_disagree_binary,inf_only,,none,none,"Aside from Indiana, 15 other states have introduced legislation in 2015 to craft or alter their religious freedom laws.",yes,no,no
+H099,both_disagree_type,inf_only,informational,none,none,"Aside from Indiana, 15 other states have introduced legislation in 2015 to craft or alter their religious freedom laws.",,,
+H111,both_disagree_binary,inf_only,,none,none,"""This is plainly a power grab by a disappointed President, who has gone outside the bounds of the law to try to get what he failed to achieve in the constitutio",yes,no,no
+H111,both_disagree_type,inf_only,informational,none,none,"""This is plainly a power grab by a disappointed President, who has gone outside the bounds of the law to try to get what he failed to achieve in the constitutio",,,
+H112,both_disagree_binary,non_biased,,lexical,informational,"Asked by Schieffer about his claims that prenatal testing leads to more abortions, Santorum insisted that this was ""a fact.""",no,yes,yes
+H112,both_disagree_type,non_biased,none,lexical,informational,"Asked by Schieffer about his claims that prenatal testing leads to more abortions, Santorum insisted that this was ""a fact.""",,,
+H114,both_disagree_binary,non_biased,,lexical,informational,"“I have to stay,” he said softly.",no,yes,yes
+H114,both_disagree_type,non_biased,none,lexical,informational,"“I have to stay,” he said softly.",,,
+H116,both_disagree_type,lex_only,lexical,none,informational,"Democracy for America, the political action committee founded by former Democratic presidential candidate Howard Dean, also said: ""If you want to know why we lo",,,

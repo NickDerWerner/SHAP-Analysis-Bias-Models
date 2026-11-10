@@ -1,0 +1,3545 @@
+{
+  "artifact": "annB_clarification_items",
+  "version": "v1",
+  "created_utc": "2026-11-10T14:36:12Z",
+  "source_file": "outputs/arr_m2d/human_raw/basil_blind_annotations_annB.json",
+  "source_sha256": "d55a758fc858c095323aefbbdbabb59f047935ff1d8ae8a4870b36e08db52a1c",
+  "source_unmodified": true,
+  "annotator_target": "annB",
+  "blinding": [
+    "no_annotator_A",
+    "no_BASIL_gold",
+    "no_SHAP",
+    "no_model_predictions",
+    "no_disagreement_indicators"
+  ],
+  "summary": {
+    "n_missing_bias_present": 24,
+    "n_yes_without_spans": 31,
+    "n_overlap": 0,
+    "n_clarification_items": 55,
+    "missing_bias_present_ids": [
+      "H013",
+      "H026",
+      "H029",
+      "H034",
+      "H036",
+      "H042",
+      "H045",
+      "H049",
+      "H051",
+      "H059",
+      "H064",
+      "H068",
+      "H069",
+      "H070",
+      "H072",
+      "H076",
+      "H079",
+      "H080",
+      "H086",
+      "H100",
+      "H102",
+      "H104",
+      "H106",
+      "H113"
+    ],
+    "yes_without_spans_ids": [
+      "H004",
+      "H007",
+      "H010",
+      "H020",
+      "H030",
+      "H032",
+      "H054",
+      "H055",
+      "H062",
+      "H063",
+      "H066",
+      "H071",
+      "H075",
+      "H077",
+      "H089",
+      "H090",
+      "H096",
+      "H097",
+      "H101",
+      "H103",
+      "H105",
+      "H107",
+      "H108",
+      "H109",
+      "H112",
+      "H114",
+      "H115",
+      "H116",
+      "H117",
+      "H118",
+      "H119"
+    ],
+    "overlap_ids": []
+  },
+  "items": [
+    {
+      "clarification_id": "CLAR-B-H004",
+      "item_id": "H004",
+      "canonical_id": "basil:e71d149d-0426-43f0-87e8-8c611dad7205|3|7",
+      "sentence_text": "Several candidates, in calling for the swift release of the report, also sought to gather new supporters and their email addresses by putting out “petitions” calling for complete transparency from the Justice Department.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "low",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H007",
+      "item_id": "H007",
+      "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|42",
+      "sentence_text": "“It was incredibly disheartening that they don’t want to know the facts when making policy.”",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H010",
+      "item_id": "H010",
+      "canonical_id": "basil:0ffb34cd-c367-4d90-aca7-7fcac3ed8f3d|3|17",
+      "sentence_text": "Mr. Arpaio, who gained wide notice for forcing inmates to wear pink underwear and housing them in tents, is popular in his state, where he has repeatedly won re-election by a sizable margin.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H013",
+      "item_id": "H013",
+      "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|3|6",
+      "sentence_text": "For years, support for Ms. Pelosi has run so deep that few would even consider challenging her.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H020",
+      "item_id": "H020",
+      "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|2|15",
+      "sentence_text": "At one point, Weiner referred to a reporter in the scrum as a \"jackass.\"",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "lexical",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H026",
+      "item_id": "H026",
+      "canonical_id": "basil:08bb9bee-c167-4c17-9c6d-4a1259231eb7|3|0",
+      "sentence_text": "Presumptive GOP presidential nominee Mitt Romney on Tuesday joined a chorus of Republicans calling for Rep. Todd Akin (R-Mo.) to drop out of the U.S. Senate race in Missouri.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "med",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H029",
+      "item_id": "H029",
+      "canonical_id": "basil:2058ec60-5372-4f5f-83a3-da780be3a350|3|22",
+      "sentence_text": "Boutrous said the class-action nature of the case deprives the company of its legal rights because it is being forced to defend the treatment of female employees regardless of the jobs they hold or where they work.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "med",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H030",
+      "item_id": "H030",
+      "canonical_id": "basil:550b80db-bdd5-442b-8f70-c8e9f3203a13|2|6",
+      "sentence_text": "They didn’t even do this to Howard Dean when he had his famous scream,\" she said.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H032",
+      "item_id": "H032",
+      "canonical_id": "basil:70c75d68-bf65-46a6-a822-15c23d77a275|1|60",
+      "sentence_text": "McCarthy tweeted: \"President Trump has put forward a serious and reasonable offer to reform parts of our broken immigration system and reopen government.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "both",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H034",
+      "item_id": "H034",
+      "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|1|21",
+      "sentence_text": "If AARP is open to reducing benefits, it would be a major boost for Social Security reformers who say the program is too generous and therefore unaffordable.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "med",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H036",
+      "item_id": "H036",
+      "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|1|10",
+      "sentence_text": "I’m disappointed, but I think the party’s better off because of this.”",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H042",
+      "item_id": "H042",
+      "canonical_id": "basil:2b9468af-4ab0-4f25-85f4-c3ef93d72006|1|20",
+      "sentence_text": "“Therefore, I will go to Washington to address the American Congress, because the American Congress is likely to be the final brake before the agreement between the major powers and Iran,” he said as he toured a military base in southern Israel.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "low",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H045",
+      "item_id": "H045",
+      "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|1|5",
+      "sentence_text": "Beck rejected the notion that the Republican Party should expand its tent to include progressives.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H049",
+      "item_id": "H049",
+      "canonical_id": "basil:a28a0329-0887-42dc-bd3d-3bb4f8926757|2|14",
+      "sentence_text": "According to Peter Keating at Vanity Fair, $1.1 million is the estimated cost of GOP plans to read the document on the House floor. ",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "med",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H051",
+      "item_id": "H051",
+      "canonical_id": "basil:7a97de89-1433-46f7-bcc2-f80b041cb9a0|1|21",
+      "sentence_text": "But this isn’t the first time LePage’s comments have gotten him in trouble.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H054",
+      "item_id": "H054",
+      "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|2|26",
+      "sentence_text": "\"President Obama achieved a third as much savings by eliminating unnecessary subsidies to insurances companies and getting waste and fraud out of the system in order to improve seniors' benefits -- saving them $600 a year on prescription drugs and providing them with access to preventive care.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H055",
+      "item_id": "H055",
+      "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|35",
+      "sentence_text": "“It didn’t sound too important to me,” he said.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "both",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H059",
+      "item_id": "H059",
+      "canonical_id": "basil:47a209b0-fc26-4a0a-a1fe-e4310d1d2419|2|30",
+      "sentence_text": "“I’m not going to talk about Gorsuch.”",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H062",
+      "item_id": "H062",
+      "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|3|3",
+      "sentence_text": "The Post interviewed more than 30 people in reporting its account.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "no",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H063",
+      "item_id": "H063",
+      "canonical_id": "basil:2a3fde8a-082a-4d8f-9567-f7e8366c0200|2|13",
+      "sentence_text": "“The decision to fire Special Agent Strzok is not only a departure from typical bureau practice, but also contradicts Director Wray’s testimony to Congress and his assurances that the F.B.I. intended to follow its regular process in this and all personnel matters,” Mr. Goelman said.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "unsure",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H064",
+      "item_id": "H064",
+      "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|1|19",
+      "sentence_text": "“I’m not aware [that] any justice before has ever commented on the merits or demerits of a presidential candidate,” said Ed Whelan, the president of the Ethics and Public Policy Center and a frequent contributor to the conservative National Review Online, where he has chronicled this episode and what he deems Ginsburg’s “remarkable record of indiscretions.”",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H066",
+      "item_id": "H066",
+      "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|3|18",
+      "sentence_text": "Instead, Trump spent the first hour and a half of it complaining about a variety of issues, such as former Defense Secretary James Mattis’ performance and the late Sen. John McCain’s vote against Trump’s repeal of Obamacare, as well as offering his musings on such things as the utility of wheels and his desire for Russia to invade Afghanistan again.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H068",
+      "item_id": "H068",
+      "canonical_id": "basil:2f3e86b6-8443-47bd-9cd3-491c90a59fe9|1|15",
+      "sentence_text": "The vote broke down on party lines, with Republicans in hardened opposition.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "med",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H069",
+      "item_id": "H069",
+      "canonical_id": "basil:e71d149d-0426-43f0-87e8-8c611dad7205|3|0",
+      "sentence_text": "CHARLESTON, S.C. — Democratic presidential candidates wasted no time Friday evening demanding the immediate public release of the long-awaited report from Robert S. Mueller III, with several saying that Americans deserved to know any findings about President Trump, Russia and the 2016 election in order to form judgments about Mr. Trump and the 2020 race.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "low",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H070",
+      "item_id": "H070",
+      "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|1|6",
+      "sentence_text": "“I can’t help but think that those remarks are well over the line.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H071",
+      "item_id": "H071",
+      "canonical_id": "basil:d4a4bc34-e48b-4485-86b2-f1daf4d464dd|3|4",
+      "sentence_text": "\"I would like to know who those Hispanics are, because they are followers of a false prophet,\" Fox said.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H072",
+      "item_id": "H072",
+      "canonical_id": "basil:4f473faf-f928-4cfd-8bed-00578be9db9a|3|18",
+      "sentence_text": "I believe in the Golden Rule that you should 'do unto others as you would have them do unto you,'\" Pence wrote in a Wall Street Journal op-ed.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "med",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H075",
+      "item_id": "H075",
+      "canonical_id": "basil:2b9468af-4ab0-4f25-85f4-c3ef93d72006|3|1",
+      "sentence_text": "Netanyahu was invited by House Speaker John Boehner, the leader of the Republican-controlled chamber, without him first conferring with the White House or State Department.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H076",
+      "item_id": "H076",
+      "canonical_id": "basil:72fa9b13-4e59-4716-8df9-4c3580e7dddf|1|13",
+      "sentence_text": "There are literally dozens of people who would get a unanimous vote.”",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H077",
+      "item_id": "H077",
+      "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|1|7",
+      "sentence_text": "He claimed that a 2005 tape of him bragging about sexual assault, which was released last fall, was “locker room talk.”",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H079",
+      "item_id": "H079",
+      "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|1|19",
+      "sentence_text": "\"But they are walking backwards now.\"",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "none",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "high",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H080",
+      "item_id": "H080",
+      "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|3|9",
+      "sentence_text": "She doubled down late Monday, telling CNN: “He is a faker.”",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [
+          {
+            "start": 52,
+            "end": 57,
+            "text": "faker"
+          }
+        ],
+        "needs_context": "",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H086",
+      "item_id": "H086",
+      "canonical_id": "basil:1ed4f378-b9d4-43b8-8d50-53d0cc063332|2|37",
+      "sentence_text": "Of the 10 Democrats who gathered outside the Senate chamber after the vote to crow about their bipartisan agreement, six are on the ballot this year.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H089",
+      "item_id": "H089",
+      "canonical_id": "basil:b764f81f-6d08-4d7c-b1a8-8961bed0a455|3|27",
+      "sentence_text": "\"We support this action by the attorneys general of Oklahoma and Nebraska because Colorado's decisions regarding marijuana are not without consequences to neighboring states, and indeed all Americans,\" Sabet said.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H090",
+      "item_id": "H090",
+      "canonical_id": "basil:7f9c83f7-3efa-4c7a-adef-3ebdeda96042|1|40",
+      "sentence_text": "\"Iran has always had a secret component to its nuclear program,\" he said.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H096",
+      "item_id": "H096",
+      "canonical_id": "basil:d16050b3-979f-4834-90db-b8823691b87e|1|1",
+      "sentence_text": "The gory photo first published in TMZ from Griffin's photo session with the famed Shields, known for his shocking pictures.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H097",
+      "item_id": "H097",
+      "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|2|3",
+      "sentence_text": "Mr. Rother said the group’s stance on possible cuts, which was first reported in The Wall Street Journal in Friday’s editions, should be seen less as a major change in position than as a reflection of the political and financial realities facing the Social Security system and the country as a whole.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H100",
+      "item_id": "H100",
+      "canonical_id": "basil:ed8c136f-8d44-4c83-ad05-0dcfc3a0c54a|1|26",
+      "sentence_text": "Yvette Townsend-Saunders called the meeting “wonderful” and said she was thankful that Holder had come to the town.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "low",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H101",
+      "item_id": "H101",
+      "canonical_id": "basil:7f9c83f7-3efa-4c7a-adef-3ebdeda96042|1|28",
+      "sentence_text": "As he often has in Senate hearings, Rubio assailed Obama for stressing dialogues and diplomacy over ironclad dealings with heads of foreign governments that have been openly hostile to the United States, and which continue to exercise oppression against political dissidents.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H102",
+      "item_id": "H102",
+      "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|3|5",
+      "sentence_text": "He added: “President Obama is actually damaging Medicare for current seniors.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H103",
+      "item_id": "H103",
+      "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|16",
+      "sentence_text": "At one point, he said Ms. Pelosi should back it because she was “a good Catholic” and Vatican City is surrounded by a wall, according to one of the officials familiar with the discussion.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H104",
+      "item_id": "H104",
+      "canonical_id": "basil:cad4bba5-cf97-45cb-8059-ebeb47dcec7a|3|26",
+      "sentence_text": "His campaign-style visit to Detroit, though, threatens to muddy the waters on talks.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "low",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H105",
+      "item_id": "H105",
+      "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|23",
+      "sentence_text": "California and New York likewise announced that they will sue over what Gov. Gavin Newsom of California called the president’s “vanity project,” and a roster of other groups lined up to do the same.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "no",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H106",
+      "item_id": "H106",
+      "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|1|15",
+      "sentence_text": "“You know, we’ve been married less than a year.”",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H107",
+      "item_id": "H107",
+      "canonical_id": "basil:59f2f47c-5da0-4fbc-be6e-4f15d45d82e2|2|0",
+      "sentence_text": "Sen. Ted Cruz (R-Texas) on Friday lashed out at Donald Trump, accusing the billionaire of enlisting \"his friends at the National Enquirer and his political henchmen to do his bidding.\"",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "lexical",
+        "spans": [],
+        "needs_context": "",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H108",
+      "item_id": "H108",
+      "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|45",
+      "sentence_text": "“Walls work,” he added, claiming inaccurately that former President Barack Obama has one “around his compound” in Washington.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H109",
+      "item_id": "H109",
+      "canonical_id": "basil:542cd22c-ea80-4669-995b-6ac6a33823f7|1|23",
+      "sentence_text": "“It’s great that public outrage has forced Trump to reconsider this despicable decision,” said Tanya Sanerib, a senior lawyer with the Center for Biological Diversity, “but it takes more than a tweet to stop trophy hunters from slaughtering elephants and lions.”",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "both",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H112",
+      "item_id": "H112",
+      "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|3|14",
+      "sentence_text": "Asked by Schieffer about his claims that prenatal testing leads to more abortions, Santorum insisted that this was \"a fact.\"",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H113",
+      "item_id": "H113",
+      "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|1|37",
+      "sentence_text": "The government would contribute a fixed amount of money on behalf of each beneficiary, and future beneficiaries could use the money to buy private insurance or to help pay for coverage under the traditional Medicare program.",
+      "issue_flags": [
+        "missing_bias_present"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "",
+        "bias_type": "",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "med",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_bias_present",
+          "prompt": "Is linguistic bias present in this sentence as displayed?",
+          "options": [
+            "yes",
+            "no",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_bias_type",
+          "prompt": "If you can determine a type, what is it? (Use none if no bias; cannot_determine if unsure.)",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure"
+          ]
+        },
+        {
+          "field": "clarify_uncertainty",
+          "prompt": "Your uncertainty about this judgment:",
+          "options": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H114",
+      "item_id": "H114",
+      "canonical_id": "basil:58f414e5-a122-49f5-819e-512d91069da5|2|14",
+      "sentence_text": "“I have to stay,” he said softly.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H115",
+      "item_id": "H115",
+      "canonical_id": "basil:b7021938-ff8d-42ea-adec-5704c0b65237|3|15",
+      "sentence_text": "Schiff, in response to his critics, doubled down on his questions about the special counsel’s investigation, which indicted more than 30 people ― including several close to Trump.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "lexical",
+        "spans": [],
+        "needs_context": "",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H116",
+      "item_id": "H116",
+      "canonical_id": "basil:1ed4f378-b9d4-43b8-8d50-53d0cc063332|1|14",
+      "sentence_text": "Democracy for America, the political action committee founded by former Democratic presidential candidate Howard Dean, also said: \"If you want to know why we lost in 2016 and why a Democratic wave in 2018 is far from guaranteed … look no further than this weak and profoundly disappointing cave from Senate Democrats.”",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H117",
+      "item_id": "H117",
+      "canonical_id": "basil:472158a1-4e39-4214-8397-904e66f2b4c5|1|0",
+      "sentence_text": "Listening to Michael R. Bloomberg rage about Donald J. Trump in his speech at the Democratic National Convention this week — labeling him a public menace and hinting that he was not quite sane — it would be easy to think that the two billionaires had a rift going back many years.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H118",
+      "item_id": "H118",
+      "canonical_id": "basil:aab91277-8d56-4844-a581-45630f873f49|1|27",
+      "sentence_text": "His brash behavior made him less of a subject of news media scrutiny than other current and former aides to President Trump — like the character in a whodunit whom readers immediately dismiss as too obvious to have committed the crime.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "informational",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    },
+    {
+      "clarification_id": "CLAR-B-H119",
+      "item_id": "H119",
+      "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|1",
+      "sentence_text": "Trying to regain momentum after losing a grinding two-month battle with lawmakers over funding the wall, Mr. Trump asserted that the flow of drugs, criminals and illegal immigrants from Mexico constituted a profound threat to national security that justified unilateral action.",
+      "issue_flags": [
+        "yes_without_spans"
+      ],
+      "original_annB_response": {
+        "annotator_id": "annB",
+        "bias_present": "yes",
+        "bias_type": "both",
+        "spans": [],
+        "needs_context": "yes",
+        "uncertainty": "",
+        "comments": ""
+      },
+      "fields_requiring_clarification": [
+        {
+          "field": "clarify_span_situation",
+          "prompt": "You previously marked bias as present but listed no evidence spans. Which best describes the situation?",
+          "options": [
+            "will_add_sentence_local_spans",
+            "no_identifiable_sentence_local_evidence",
+            "needs_article_context_only",
+            "cannot_determine",
+            "change_bias_present_to_no"
+          ]
+        },
+        {
+          "field": "clarify_spans",
+          "prompt": "If adding sentence-local evidence, provide spans as {start,end,text} into the exact sentence (or leave empty).",
+          "options": null
+        },
+        {
+          "field": "clarify_bias_type_confirm",
+          "prompt": "Confirm or update bias type (cannot_determine allowed):",
+          "options": [
+            "lexical",
+            "informational",
+            "both",
+            "none",
+            "cannot_determine",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_needs_context",
+          "prompt": "Do you need additional article context to judge confidently?",
+          "options": [
+            "yes",
+            "no",
+            "unsure",
+            "keep_original"
+          ]
+        },
+        {
+          "field": "clarify_comments",
+          "prompt": "Optional brief comment (do not paste model/SHAP/other-annotator info):",
+          "options": null
+        }
+      ],
+      "clarification_responses": {},
+      "instructions": "Answer only from the sentence text and your original response shown above. Do not consult another annotator, BASIL gold labels, SHAP, or model predictions. You may select cannot_determine or no_identifiable_sentence_local_evidence. Do not invent spans you cannot justify from the sentence."
+    }
+  ]
+}
