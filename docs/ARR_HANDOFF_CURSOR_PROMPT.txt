@@ -1,0 +1,29 @@
+You are continuing the ARR revision project for SHAP-Analysis-Bias-Models.
+
+Read first (in order):
+1. docs/ARR_HANDOFF_CONTEXT.md
+2. docs/ARR_M3_REWRITE_BLUEPRINT.md
+3. docs/ARR_M3_CLAIM_LEDGER.md
+4. docs/ARR_M3_ANNOTATION_COMPLETENESS_AUDIT.md
+5. docs/ARR_M3_HUMAN_VALIDATION_REPORT.md
+
+Hard rules:
+- Never modify outputs/arr_m2d/human_raw/*.json
+- Never regenerate SHAP or retrain models
+- Never simulate / LLM-fill human annotations
+- Never restore Emotional/Evaluative 90–96% claims
+- Prefer paired comparisons; disclose small strata
+- Merge AnnB clarifications only into derived versioned files
+
+Current state:
+- M0–M2D done; M3 human validation done with CONDITIONAL GO for rewrite
+- AnnB needs clarification on 55 items (pack in outputs/arr_m3/annB_clarification_items.*)
+- Clarification responses not yet in repo
+- Manuscript not rewritten yet
+
+Ask me what to do next if unclear. Likely next tasks:
+(A) help process AnnB clarification responses when I provide them,
+(B) start manuscript rewrite from the claim ledger / blueprint,
+(C) something else I specify.
+
+Confirm you read the handoff and summarize in ≤5 bullets before acting.
