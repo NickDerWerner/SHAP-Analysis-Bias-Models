@@ -18,7 +18,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -40,7 +40,7 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -62,7 +62,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -70,16 +70,10 @@
     "item_id": "H003",
     "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|3|2",
     "bias_present": "yes",
-    "bias_type": "lexical",
-    "spans": [
-      {
-        "start": 5,
-        "end": 12,
-        "text": "winding"
-      }
-    ],
+    "bias_type": "informational",
+    "spans": [],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -88,7 +82,13 @@
     "canonical_id": "basil:e71d149d-0426-43f0-87e8-8c611dad7205|3|7",
     "bias_present": "yes",
     "bias_type": "informational",
-    "spans": [],
+    "spans": [
+      {
+        "start": 146,
+        "end": 157,
+        "text": "“petitions”"
+      }
+    ],
     "needs_context": "yes",
     "uncertainty": "low",
     "comments": ""
@@ -107,18 +107,18 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H006",
     "canonical_id": "basil:87609973-bd58-42a5-96e2-ee5aa47433f5|2|3",
-    "bias_present": "no",
-    "bias_type": "none",
+    "bias_present": "yes",
+    "bias_type": "informational",
     "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "no",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -145,8 +145,8 @@
         "text": "eccentric"
       }
     ],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "no",
+    "uncertainty": "low",
     "comments": "Bias informational angle: with a tattoo of Richard Nixon’s face on his back."
   },
   {
@@ -156,8 +156,8 @@
     "bias_present": "no",
     "bias_type": "none",
     "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "no",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -168,7 +168,7 @@
     "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -185,7 +185,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -202,15 +202,15 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H013",
     "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|3|6",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "high",
@@ -232,16 +232,10 @@
     "item_id": "H015",
     "canonical_id": "basil:eadabee7-3db9-43c4-a485-3e8b1882cd3c|2|10",
     "bias_present": "yes",
-    "bias_type": "both",
-    "spans": [
-      {
-        "start": 62,
-        "end": 73,
-        "text": "God willing"
-      }
-    ],
+    "bias_type": "informational",
+    "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -258,7 +252,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -275,7 +269,7 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -297,7 +291,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -319,7 +313,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -328,9 +322,15 @@
     "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|2|15",
     "bias_present": "yes",
     "bias_type": "lexical",
-    "spans": [],
+    "spans": [
+      {
+        "start": 63,
+        "end": 70,
+        "text": "jackass"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -352,7 +352,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -373,8 +373,8 @@
         "text": "falsified"
       }
     ],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -384,8 +384,8 @@
     "bias_present": "no",
     "bias_type": "none",
     "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "unsure",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -401,8 +401,8 @@
         "text": "“live” explosives "
       }
     ],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -424,18 +424,18 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H026",
     "canonical_id": "basil:08bb9bee-c167-4c17-9c6d-4a1259231eb7|3|0",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "lexical",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "med",
+    "uncertainty": "high",
     "comments": ""
   },
   {
@@ -473,16 +473,16 @@
         "text": "destructive"
       }
     ],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "med",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H029",
     "canonical_id": "basil:2058ec60-5372-4f5f-83a3-da780be3a350|3|22",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "med",
@@ -494,9 +494,15 @@
     "canonical_id": "basil:550b80db-bdd5-442b-8f70-c8e9f3203a13|2|6",
     "bias_present": "yes",
     "bias_type": "informational",
-    "spans": [],
+    "spans": [
+      {
+        "start": 0,
+        "end": 24,
+        "text": "They didn’t even do this"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -506,8 +512,8 @@
     "bias_present": "no",
     "bias_type": "none",
     "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "unsure",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -518,7 +524,7 @@
     "bias_type": "both",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -540,15 +546,15 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H034",
     "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|1|21",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "med",
@@ -568,15 +574,15 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": "Marking bias for the reason that media chose to use quotation to stress on a particular argument."
   },
   {
     "annotator_id": "annB",
     "item_id": "H036",
     "canonical_id": "basil:79bf99c6-6fca-4ce4-8ae1-8771de026142|1|10",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "high",
@@ -601,7 +607,7 @@
       }
     ],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -629,7 +635,7 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -640,7 +646,7 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -662,18 +668,18 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H042",
     "canonical_id": "basil:2b9468af-4ab0-4f25-85f4-c3ef93d72006|1|20",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "low",
+    "uncertainty": "high",
     "comments": ""
   },
   {
@@ -690,7 +696,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -706,21 +712,26 @@
         "text": "hysterical desire "
       },
       {
+        "start": 201,
+        "end": 213,
+        "text": "gone too far"
+      },
+      {
         "start": 174,
         "end": 181,
         "text": "destroy"
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H045",
     "canonical_id": "basil:6f95dcb9-e960-45ac-8c0e-91b85724c909|1|5",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "high",
@@ -745,7 +756,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -762,7 +773,7 @@
       }
     ],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -772,7 +783,7 @@
     "bias_present": "no",
     "bias_type": "none",
     "spans": [],
-    "needs_context": "",
+    "needs_context": "yes",
     "uncertainty": "med",
     "comments": ""
   },
@@ -780,9 +791,15 @@
     "annotator_id": "annB",
     "item_id": "H049",
     "canonical_id": "basil:a28a0329-0887-42dc-bd3d-3bb4f8926757|2|14",
-    "bias_present": "",
-    "bias_type": "",
-    "spans": [],
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 63,
+        "end": 111,
+        "text": "estimated cost of GOP plans to read the document"
+      }
+    ],
     "needs_context": "yes",
     "uncertainty": "med",
     "comments": ""
@@ -811,18 +828,18 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H051",
     "canonical_id": "basil:7a97de89-1433-46f7-bcc2-f80b041cb9a0|1|21",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "high",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -839,7 +856,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -855,8 +872,8 @@
         "text": "stole"
       }
     ],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -867,7 +884,7 @@
     "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -875,11 +892,11 @@
     "item_id": "H055",
     "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|35",
     "bias_present": "yes",
-    "bias_type": "both",
+    "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
-    "comments": ""
+    "uncertainty": "med",
+    "comments": "Noting a bias because information is reported verbatim even though the person was not stating a factual information. "
   },
   {
     "annotator_id": "annB",
@@ -900,7 +917,7 @@
       }
     ],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -928,15 +945,15 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H059",
     "canonical_id": "basil:47a209b0-fc26-4a0a-a1fe-e4310d1d2419|2|30",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "high",
@@ -949,8 +966,8 @@
     "bias_present": "no",
     "bias_type": "none",
     "spans": [],
-    "needs_context": "no",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -967,7 +984,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -977,27 +994,27 @@
     "bias_present": "yes",
     "bias_type": "informational",
     "spans": [],
-    "needs_context": "no",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H063",
     "canonical_id": "basil:2a3fde8a-082a-4d8f-9567-f7e8366c0200|2|13",
-    "bias_present": "yes",
-    "bias_type": "informational",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "high",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H064",
     "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|1|19",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "high",
@@ -1017,7 +1034,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1025,10 +1042,16 @@
     "item_id": "H066",
     "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|3|18",
     "bias_present": "yes",
-    "bias_type": "informational",
-    "spans": [],
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 236,
+        "end": 256,
+        "text": "offering his musings"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1039,15 +1062,15 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H068",
     "canonical_id": "basil:2f3e86b6-8443-47bd-9cd3-491c90a59fe9|1|15",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "med",
@@ -1057,19 +1080,19 @@
     "annotator_id": "annB",
     "item_id": "H069",
     "canonical_id": "basil:e71d149d-0426-43f0-87e8-8c611dad7205|3|0",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "low",
+    "uncertainty": "high",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H070",
     "canonical_id": "basil:65cb14cb-2d27-41e5-a2be-6fd6314f4363|1|6",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "high",
@@ -1083,15 +1106,15 @@
     "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "high",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H072",
     "canonical_id": "basil:4f473faf-f928-4cfd-8bed-00578be9db9a|3|18",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "med",
@@ -1111,7 +1134,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1122,7 +1145,7 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1132,16 +1155,16 @@
     "bias_present": "yes",
     "bias_type": "informational",
     "spans": [],
-    "needs_context": "yes",
-    "uncertainty": "",
+    "needs_context": "unsure",
+    "uncertainty": "med",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H076",
     "canonical_id": "basil:72fa9b13-4e59-4716-8df9-4c3580e7dddf|1|13",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "high",
@@ -1152,10 +1175,21 @@
     "item_id": "H077",
     "canonical_id": "basil:be026bd1-52b1-4789-bfd3-3632af17b054|1|7",
     "bias_present": "yes",
-    "bias_type": "informational",
-    "spans": [],
+    "bias_type": "both",
+    "spans": [
+      {
+        "start": 35,
+        "end": 64,
+        "text": "bragging about sexual assault"
+      },
+      {
+        "start": 100,
+        "end": 119,
+        "text": "“locker room talk.”"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1172,14 +1206,14 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
-    "comments": ""
+    "uncertainty": "med",
+    "comments": "Superlative stress on Pelosi's skills."
   },
   {
     "annotator_id": "annB",
     "item_id": "H079",
     "canonical_id": "basil:576116e5-2b18-4d35-be73-36f5863c9468|1|19",
-    "bias_present": "",
+    "bias_present": "no",
     "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
@@ -1190,8 +1224,8 @@
     "annotator_id": "annB",
     "item_id": "H080",
     "canonical_id": "basil:8385a996-1afc-4778-a06d-7070a8f19e27|3|9",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "yes",
+    "bias_type": "lexical",
     "spans": [
       {
         "start": 52,
@@ -1199,8 +1233,8 @@
         "text": "faker"
       }
     ],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1217,7 +1251,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1227,8 +1261,8 @@
     "bias_present": "no",
     "bias_type": "none",
     "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1239,7 +1273,7 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1250,7 +1284,7 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1261,18 +1295,24 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H086",
     "canonical_id": "basil:1ed4f378-b9d4-43b8-8d50-53d0cc063332|2|37",
-    "bias_present": "",
-    "bias_type": "",
-    "spans": [],
+    "bias_present": "yes",
+    "bias_type": "lexical",
+    "spans": [
+      {
+        "start": 75,
+        "end": 88,
+        "text": "to crow about"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1283,7 +1323,7 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1300,7 +1340,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1311,18 +1351,18 @@
     "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H090",
     "canonical_id": "basil:7f9c83f7-3efa-4c7a-adef-3ebdeda96042|1|40",
-    "bias_present": "yes",
-    "bias_type": "informational",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "high",
     "comments": ""
   },
   {
@@ -1339,7 +1379,7 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1361,18 +1401,29 @@
       }
     ],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H093",
     "canonical_id": "basil:b764f81f-6d08-4d7c-b1a8-8961bed0a455|2|21",
-    "bias_present": "no",
-    "bias_type": "none",
-    "spans": [],
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 50,
+        "end": 60,
+        "text": "huge holes"
+      },
+      {
+        "start": 80,
+        "end": 92,
+        "text": "that allowed"
+      }
+    ],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1389,7 +1440,7 @@
       }
     ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1399,7 +1450,7 @@
     "bias_present": "no",
     "bias_type": "none",
     "spans": [],
-    "needs_context": "",
+    "needs_context": "no",
     "uncertainty": "low",
     "comments": ""
   },
@@ -1409,9 +1460,20 @@
     "canonical_id": "basil:d16050b3-979f-4834-90db-b8823691b87e|1|1",
     "bias_present": "yes",
     "bias_type": "informational",
-    "spans": [],
+    "spans": [
+      {
+        "start": 4,
+        "end": 8,
+        "text": "gory"
+      },
+      {
+        "start": 91,
+        "end": 100,
+        "text": "known for"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1422,7 +1484,7 @@
     "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1439,7 +1501,7 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1450,18 +1512,18 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "unsure",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H100",
     "canonical_id": "basil:ed8c136f-8d44-4c83-ad05-0dcfc3a0c54a|1|26",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "low",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1470,20 +1532,26 @@
     "canonical_id": "basil:7f9c83f7-3efa-4c7a-adef-3ebdeda96042|1|28",
     "bias_present": "yes",
     "bias_type": "informational",
-    "spans": [],
+    "spans": [
+      {
+        "start": 6,
+        "end": 15,
+        "text": "often has"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H102",
     "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|3|5",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1493,17 +1561,23 @@
     "bias_present": "yes",
     "bias_type": "informational",
     "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "no",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H104",
     "canonical_id": "basil:cad4bba5-cf97-45cb-8059-ebeb47dcec7a|3|26",
-    "bias_present": "",
-    "bias_type": "",
-    "spans": [],
+    "bias_present": "yes",
+    "bias_type": "informational",
+    "spans": [
+      {
+        "start": 45,
+        "end": 74,
+        "text": "threatens to muddy the waters"
+      }
+    ],
     "needs_context": "yes",
     "uncertainty": "low",
     "comments": ""
@@ -1516,18 +1590,18 @@
     "bias_type": "informational",
     "spans": [],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H106",
     "canonical_id": "basil:c21cb217-3e2c-49bd-884d-5c74a165ef10|1|15",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "high",
     "comments": ""
   },
   {
@@ -1537,8 +1611,8 @@
     "bias_present": "yes",
     "bias_type": "lexical",
     "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "needs_context": "yes",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1547,20 +1621,26 @@
     "canonical_id": "basil:0d10341a-9dba-4374-a524-814c300d1611|2|45",
     "bias_present": "yes",
     "bias_type": "informational",
-    "spans": [],
-    "needs_context": "yes",
-    "uncertainty": "",
+    "spans": [
+      {
+        "start": 24,
+        "end": 45,
+        "text": "claiming inaccurately"
+      }
+    ],
+    "needs_context": "no",
+    "uncertainty": "low",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H109",
     "canonical_id": "basil:542cd22c-ea80-4669-995b-6ac6a33823f7|1|23",
-    "bias_present": "yes",
-    "bias_type": "both",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "high",
     "comments": ""
   },
   {
@@ -1582,7 +1662,7 @@
       }
     ],
     "needs_context": "no",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1593,7 +1673,7 @@
     "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1604,15 +1684,15 @@
     "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H113",
     "canonical_id": "basil:2ec04201-2016-4227-baf7-ba8289058203|1|37",
-    "bias_present": "",
-    "bias_type": "",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
     "uncertainty": "med",
@@ -1626,7 +1706,7 @@
     "bias_type": "informational",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1635,20 +1715,26 @@
     "canonical_id": "basil:b7021938-ff8d-42ea-adec-5704c0b65237|3|15",
     "bias_present": "yes",
     "bias_type": "lexical",
-    "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "spans": [
+      {
+        "start": 36,
+        "end": 48,
+        "text": "doubled down"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "med",
     "comments": ""
   },
   {
     "annotator_id": "annB",
     "item_id": "H116",
     "canonical_id": "basil:1ed4f378-b9d4-43b8-8d50-53d0cc063332|1|14",
-    "bias_present": "yes",
-    "bias_type": "informational",
+    "bias_present": "no",
+    "bias_type": "none",
     "spans": [],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   },
   {
@@ -1657,9 +1743,20 @@
     "canonical_id": "basil:472158a1-4e39-4214-8397-904e66f2b4c5|1|0",
     "bias_present": "yes",
     "bias_type": "informational",
-    "spans": [],
-    "needs_context": "",
-    "uncertainty": "",
+    "spans": [
+      {
+        "start": 125,
+        "end": 153,
+        "text": "labeling him a public menace"
+      },
+      {
+        "start": 158,
+        "end": 192,
+        "text": "hinting that he was not quite sane"
+      }
+    ],
+    "needs_context": "yes",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1668,9 +1765,20 @@
     "canonical_id": "basil:aab91277-8d56-4844-a581-45630f873f49|1|27",
     "bias_present": "yes",
     "bias_type": "informational",
-    "spans": [],
+    "spans": [
+      {
+        "start": 4,
+        "end": 18,
+        "text": "brash behavior"
+      },
+      {
+        "start": 28,
+        "end": 68,
+        "text": "less of a subject of news media scrutiny"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "low",
     "comments": ""
   },
   {
@@ -1679,9 +1787,20 @@
     "canonical_id": "basil:3ae35b16-7f7f-4a5e-9f24-5ce724106a73|3|1",
     "bias_present": "yes",
     "bias_type": "both",
-    "spans": [],
+    "spans": [
+      {
+        "start": 0,
+        "end": 25,
+        "text": "Trying to regain momentum"
+      },
+      {
+        "start": 115,
+        "end": 128,
+        "text": "asserted that"
+      }
+    ],
     "needs_context": "yes",
-    "uncertainty": "",
+    "uncertainty": "med",
     "comments": ""
   }
 ]
